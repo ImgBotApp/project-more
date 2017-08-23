@@ -1,0 +1,95 @@
+.site-navbar
+  background white
+  display flex
+  align-items center
+  height 78px // Change
+  left 0
+  position fixed
+  top 0
+  width 100%
+  z-index 12
+
+  & + main
+    padding-top 78px // Change
+
+.site-navbar__menu-trigger,
+.site-navbar__mobile-logo-container
+  display none
+
+.site-navbar__menu-trigger
+  color white // Change
+
+.site-navbar__desktop-logo-container
+  img
+    width remify(150) // Change
+
+.site-navbar__menu-container
+  flex-grow 1
+  text-align right
+  height 100%
+
+.site-navbar__menu
+  height 100%
+  display flex
+  align-items center
+  justify-content flex-end
+
+.site-navbar__menu-link
+  color black // Change
+  font-size remify(19) // Change
+
+  &:hover, &.active
+    color white // Change
+
+@media screen and (max-width: 876px) // Change
+  .site-navbar
+    justify-content space-between
+    height 56px // Change
+    padding 0 18px // Change
+
+  .site-navbar__desktop-logo-container
+    img
+      height remify(20) // Change
+      width auto
+
+  .site-navbar__mobile-logo-container
+    display block
+    center-block()
+    width 70% // Change
+
+    img
+      width 100%
+
+  .site-navbar__menu-trigger
+    display block
+    float right
+    font-size 18px // Change
+
+  .site-navbar__menu-container
+    background white // Change
+    height 100vh
+    margin-right 0
+    overflow-y auto
+    position fixed
+    right -280px
+    top 0
+    transition right 0.2s
+    width 280px
+    padding-top 25px // Change
+
+  .site-navbar__menu-container--show-menu
+    right 0
+
+  .site-navbar__menu
+    margin-bottom 30px // Change
+    margin-top 30px // Change
+    text-align left
+    height auto
+    flex-wrap wrap
+
+  .site-navbar__menu-link
+    display block
+    height auto
+    display block
+    text-align left
+    flex-basis 100%

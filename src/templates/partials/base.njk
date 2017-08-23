@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% block meta %}{% endblock %}
+    {% block extra_css %}{% endblock %}
+    <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
+  </head>
+  <body>
+    <div id="page">
+      {% include 'partials/navbar.njk' %}
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+      {% include 'partials/footer.njk' %}
+    </div>
+    {% block js_libs_config %}
+    {% endblock %}
+    <script src="js/{{ projectFilesName }}.libs.js"></script>
+    {% block js_project_config %}
+    {% endblock %}
+    <script src="js/{{ projectFilesName }}.js"></script>
+    {% block js_inline %}
+    {% endblock %}
+  </body>
+</html>

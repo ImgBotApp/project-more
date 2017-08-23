@@ -1,0 +1,53 @@
+center-block()
+  margin-left auto
+  margin-right auto
+
+remify(pxsize)
+  return unit(pxsize / $baseFontSize, 'rem')
+
+rfont-size(baseSize, mediaSize, newSize, useMin = false)
+  font-size baseSize
+
+  if useMin
+    $mediaQuery = 'screen and (min-width: ' + mediaSize + ')'
+  else
+    $mediaQuery = 'screen and (max-width: ' + mediaSize + ')'
+
+  @media $mediaQuery
+    font-size newSize
+
+simple-border(side, width, colour, style = solid)
+  if side == 'top'
+    border-top width style colour
+  else if side == 'right'
+    border-right width style colour
+  else if side == 'bottom'
+    border-bottom width style colour
+  else if side == 'left'
+    border-left width style colour
+  else if side == 'topbottom'
+    border-bottom width style colour
+    border-top width style colour
+  else if side == 'leftright'
+    border-left width style colour
+    border-right width style colour
+  else if side == 'notop'
+    border-bottom width style colour
+    border-left width style colour
+    border-right width style colour
+  else if side == 'noright'
+    border-bottom width style colour
+    border-left width style colour
+    border-top width style colour
+  else if side == 'nobottom'
+    border-left width style colour
+    border-right width style colour
+    border-top width style colour
+  else if side == 'noleft'
+    border-bottom width style colour
+    border-right width style colour
+    border-top width style colour
+  else if side == 'all'
+    border width style colour
+  else
+    border width style colour

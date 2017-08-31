@@ -1,16 +1,42 @@
 .site-navbar
-  background white
+  background #ffffff00
   display flex
-  align-items center
-  height 78px // Change
+  justify-content center
+  height 109px // Change
   left 0
   position fixed
   top 0
   width 100%
   z-index 12
+  transition height .3s, transform .3s;
 
-  & + main
-    padding-top 78px // Change
+  // & + main
+  //   padding-top 109px // Change
+  
+  &.active
+    height 158px
+    transform translateY(101px)
+    
+    .header-wrapper
+      border-top 1px solid #fff
+    
+    .site-navbar__desktop-logo-container
+      transform translate(444px, -122px)
+    
+    .site-navbar__menu
+      transform translateX(-183px)
+    
+    .second_menu
+      transform translateX(178px)
+    
+    .site-navbar__divider
+      opacity 0
+
+.header-wrapper
+  display flex
+  max-width 1030px
+  justify-content space-between
+  width 100%
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -20,8 +46,12 @@
   color white // Change
 
 .site-navbar__desktop-logo-container
+  display flex
+  align-items center
+  transition transform .35s
+  
   img
-    width remify(150) // Change
+    width remify(143) // Change
 
 .site-navbar__menu-container
   flex-grow 1
@@ -31,15 +61,67 @@
 .site-navbar__menu
   height 100%
   display flex
-  align-items center
   justify-content flex-end
+  align-items flex-start
+  transition .5s transform
 
 .site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+  color white // Change
+  font-size remify(14) // Change
+  padding 32px 8px 8px
+  transition .2s background-color linear
+  border-radius 1px
+  letter-spacing .2px
 
-  &:hover, &.active
-    color white // Change
+  &:hover
+    background-color #2D698F
+    
+  &.active
+    background-color #408ab7
+
+
+.second_menu
+  height 80px
+  display flex
+  align-items center
+  transition transform .47s
+
+.site-navbar__divider
+  width 1px
+  background-color #fff
+  height 20px
+  margin 0 9px
+  transform opacity .25s
+
+.lang_menu_wrapper
+  display flex
+  border 1px solid #fff0
+  flex-direction column
+  height 20px
+  overflow hidden
+  transition height .2s, border-color .25s
+  
+  &.active
+    border 1px solid #fff
+    height auto
+    transform translateY(9px)
+    
+    .site-lang__menu:hover
+      background-color #2D698F
+
+.site-lang__menu
+  cursor pointer
+  background-color transparent
+  transition background-color .1s
+
+.site-lang__menu-link
+  color #fff
+  font-size remify(14)
+  padding 0 5px
+
+.lang-down-arrow
+  padding 0 5px 2.5px 0
+  
 
 @media screen and (max-width: 876px) // Change
   .site-navbar

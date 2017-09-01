@@ -7,7 +7,7 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
   window.addEventListener('scroll', changeNavSt);
 
   function changeNavSt() {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 20) {
       siteNavbar.classList.remove('active');
     } else {
       siteNavbar.classList.add('active');

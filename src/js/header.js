@@ -1,8 +1,8 @@
 if (window.location.pathname === "/index.html" || window.location.pathname === "/" || window.location.pathname === "project-more/index.html" || window.location.pathname === "project-more/") {
   
-  const siteNavbar = document.querySelector('.site-navbar');
+  var siteNavbar = document.querySelector('.site-navbar');
 
-  changeNavSt();
+  
 
   window.addEventListener('scroll', changeNavSt);
 
@@ -13,4 +13,5 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
       siteNavbar.classList.add('active');
     }
   }
+  changeNavSt();
 }

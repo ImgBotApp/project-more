@@ -4,9 +4,36 @@
 {% endblock %}
 
 {% block title %}
-contact
+Contact
 {% endblock %}
 
 {% block content %}
-
+<section class="contact-view">
+  <div class="contact-view__background"></div>
+  {# Title #}
+  <div class="contacto-view__title">
+    <p class="font-metropolis-bold">We’d love to hear from you!</p>
+  </div>
+  <div class="contacto-view__form"> {# Form container #}
+    <div class="contacto-view__form-box1"> {# Name, E-mail, Message #}
+      <form action="">
+        <label for="name" class="font-metropolis-medium">Name</label>
+        <br>
+        <input type="text" id="name" class="">
+        <br>
+        <label for="e-mail" class="font-metropolis-medium">E-mail</label>
+        <br>
+        <input type="email" id="e-mail" class="">
+        <br>
+        <label for="message" class="font-metropolis-medium">Message</label>
+        <br>
+        <textarea name="" id="message" cols="38" rows="10" placeholder="Type here..." class=""></textarea>
+      </form>
+      <span class="font-metropolis-medium contact-form__button">Submit</span>
+    </div>
+    <div class="contacto-view__form-box2"> {# Gray box #}
+      
+    </div>
+  </div>
+</section>
 {% endblock %}

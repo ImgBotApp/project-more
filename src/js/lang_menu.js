@@ -1,3 +1,3 @@
-const langMenu = document.querySelector('.lang_menu_wrapper');
+var langMenu = document.querySelector('.lang_menu_wrapper');
 
-langMenu.addEventListener('click', () => langMenu.classList.toggle('active'));
+langMenu.addEventListener('click', function () {  langMenu.classList.toggle('active')});

@@ -1,16 +1,56 @@
 .site-navbar
-  background white
+  background #fff
   display flex
-  align-items center
-  height 78px // Change
+  justify-content center
+  height 85px // Change
   left 0
   position fixed
   top 0
   width 100%
   z-index 12
+  transition height .3s, transform .3s
 
-  & + main
-    padding-top 78px // Change
+  // & + main
+  //   padding-top 109px // Change
+  
+  &.active
+    height 158px
+    transform translateY(85px)
+    background #ffffff00
+        
+    .header-wrapper
+      border-top 1px solid #fff
+    
+    .site-navbar__desktop-logo-container
+      transform translate(444px, -122px)
+    
+    .site-navbar__menu
+      transform translateX(-183px)
+    
+    .second_menu
+      transform translateX(178px)
+    
+    .site-navbar__divider
+      opacity 0
+    
+    .site-navbar__menu-link
+      color #fff
+      
+    .site-navbar__desktop-logo-top
+      display block
+    
+    .site-navbar__desktop-logo-bottom
+      opacity 0
+      display none
+      
+    .site-lang__menu-link
+      color #fff
+
+.header-wrapper
+  display flex
+  max-width 1030px
+  justify-content space-between
+  width 100%
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -20,9 +60,20 @@
   color white // Change
 
 .site-navbar__desktop-logo-container
+  display flex
+  align-items center
+  transition transform .4s
+  
   img
-    width remify(150) // Change
-
+    width 8.9375rem // Change
+    -webkit-transition opacity 0.1s ease-in-out
+    -moz-transition opacity 0.1s ease-in-out
+    -o-transition opacity 0.1s ease-in-out
+    transition opacity 0.1s ease-in-out
+  
+  .site-navbar__desktop-logo-top
+    display none
+    
 .site-navbar__menu-container
   flex-grow 1
   text-align right
@@ -31,15 +82,74 @@
 .site-navbar__menu
   height 100%
   display flex
-  align-items center
   justify-content flex-end
+  align-items flex-start
+  transition .5s transform
 
 .site-navbar__menu-link
   color black // Change
-  font-size remify(19) // Change
+  font-size remify(14) // Change
+  padding 32px 8px 8px
+  transition .2s background-color linear
+  border-radius 1px
+  letter-spacing .2px
+  
 
-  &:hover, &.active
-    color white // Change
+  &:hover
+    background-color #2D698F
+    color #fff
+    
+  &.active
+    background-color $blueStandar
+    color #fff
+
+.second_menu
+  height 80px
+  display flex
+  align-items center
+  transition transform .47s
+
+.site-navbar__divider
+  width 1px
+  background-color $blueStandar
+  height 20px
+  margin 0 9px
+  transition opacity .2s
+
+.lang_menu_wrapper
+  display flex
+  border 1px solid #fff0
+  flex-direction column
+  height 20px
+  overflow hidden
+  transition height .2s, border-color .25s
+  
+  &.active
+    border 1px solid #fff
+    height auto
+    transform translateY(9px)
+    
+    .site-lang__menu:hover
+      background-color #2D698F
+
+.site-lang__menu
+  cursor pointer
+  background-color transparent
+  transition background-color .1s
+
+.site-lang__menu-link
+  color #000
+  font-size remify(14)
+  padding 0 5px
+  -webkit-transition color 0.2s linear
+     -moz-transition color 0.2s linear
+      -ms-transition color 0.2s linear
+       -o-transition color 0.2s linear
+          transition color 0.2s linear
+
+.lang-down-arrow
+  padding 0 5px 2.5px 0
+  
 
 @media screen and (max-width: 876px) // Change
   .site-navbar

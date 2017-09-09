@@ -16,12 +16,15 @@
   margin: 180px 0 167px;
 }
 
+//////// Form Container /////////
 .contacto-view__form {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 0 141px;
 }
 
+// Name, e-mail, mesage //
 .contacto-view__form-box1 {
   display: flex;
   flex-direction: column;
@@ -56,6 +59,34 @@ form {
     color: #c4c4c4;
     font-size: remify(13px);
   }
+}
+
+// Gray box //
+.contacto-view__form-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 22.62em;
+  padding: 5.81em 4em 5.75em
+  margin: 0 0 70px -500px;
+    .cw-mail, .cw-map {
+      display: flex;
+      align-items: center;
+      margin: 0 0 7px 0;
+        span {
+          color: #223a48;
+          font-size: remify(16px);
+          margin: 0 0 0 9px;
+        }
+    }
+    .cw-map {
+      margin: 25px 0 0;
+    }
+    span {
+      color: #223a48;
+      font-size: remify(11px);
+    }
 }
 
 .contact-form__button {

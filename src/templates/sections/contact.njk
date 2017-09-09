@@ -1,0 +1,48 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block content %}
+<section class="contact-view">
+  <div class="contact-view__background"></div>
+  {# Title #}
+  <div class="contacto-view__title">
+    <p class="font-metropolis-bold">We’d love to hear from you!</p>
+  </div>
+  <div class="contacto-view__form"> {# Form container #}
+    <div class="contacto-view__form-box1"> {# Name, E-mail, Message #}
+      <form action="">
+        <label for="name" class="font-metropolis-medium">Name</label>
+        <br>
+        <input type="text" id="name" class="">
+        <br>
+        <label for="e-mail" class="font-metropolis-medium">E-mail</label>
+        <br>
+        <input type="email" id="e-mail" class="">
+        <br>
+        <label for="message" class="font-metropolis-medium">Message</label>
+        <br>
+        <textarea name="" id="message" cols="47" rows="10" placeholder="Type here..." class="font-gandhisans-regular"></textarea>
+      </form>
+      <span class="font-metropolis-medium contact-form__button">Submit</span>
+    </div>
+    <div class="contacto-view__form-box2"> {# Gray box #}
+      <div class="cw-mail">
+        <img src="img/icons/np-mail.svg" alt="mail" width="13" height="9">
+        <span class="font-metropolis-bold">Get in touch</span>
+      </div>
+      <a href="mailto:hola@blick.mx"><span class="font-gandhisans-regular">hola@blick.mx</span></a>
+      <div class="cw-map">
+        <img src="/img/icons/np-map.svg" alt="map" width="13" height="17">
+        <span class="font-metropolis-bold">Come and meet us</span>
+      </div>
+      <a href=""><span class="font-gandhisans-regular">Av. Chapultepec 480 Col. Roma Norte, CDMX</span></a>
+    </div>
+  </div>
+</section>
+{% endblock %}

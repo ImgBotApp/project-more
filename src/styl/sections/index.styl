@@ -1,6 +1,10 @@
-*
+*, h1, h2, h3, h4, h5, p
   margin 0
   padding 0
+  box-sizing border-box
+
+a 
+  text-decoration none 
 
 .section_one
   height 100vh
@@ -92,10 +96,12 @@
 .section_projects-container
   position relative
   width 100vw
+  padding-top remify(60)
+  padding-bottom remify(60)
   
 .section_projects-title-wrapper
   total-center()
-  padding-top remify(130)
+  
 
 .section-blue-font
   color $blueStandar
@@ -203,9 +209,195 @@
   background-color $blueStandar
   width 171px
   height 51px
+ 
 
   p 
     font-size remify(15)
     color #fff
+
+//----------------------fin section_projects-----------------------------
+
+
+// ========== section_services ========== //
+.section_services
+  background-color #efefef 
+  height calc(100% - 50px)
+
+.section_services-wrapper
+  height 100%
+
+.section_services-container
+  position relative
+  max-width 1030px
+  height 100%
+  padding-top remify(60)
+  padding-bottom remify(60)
+  center-block()
+
+.section_services-title-wrapper
+  @extends .section_projects-title-wrapper
+
+.section_services-tabs
+  display flex
+  margin 25px 0
+
+  .section_services-tablink
+    position relative
+    width 33.3333%
+    padding 20px 0
+    border none
+    border-bottom 2px solid $blueStandar
+    background-color inherit
+    transition 0.3s
+    outline none
+
+    &:hover
+      background-color #d6d6d6
+    
+    &.open-tab
+      p
+        color #000
+        font-weight bold
+        letter-spacing 1px
+
+    &.open-tab::after
+      content ''
+      width 100%
+      height 5px
+      background-color $blueStandar
+      position absolute
+      bottom -7px
+      left 0
+
+    .section_services-tablink-title
+      color #9d9d9d
+  
+.section_services-tabcontent-wrapper
+  total-center()
+  -webkit-animation fade 1s
+  -moz-animation fade 1s
+  animation fade 1s
+  
+  .section_services-tabcontent-img
+    width 488px
+    height 329px
+
+.section_services-tabcontent
+  padding 70px 45px 70px 50px;
+  width 512px 
+  height 412px
+  background-color $blueStandar
+  color #fff 
+
+  img
+    width 21%
+    margin-top 15px
+
+.section_services-tabcontent-title
+  font-size remify(39)
+  position relative
+
+.section_services-tabcontent-divider
+  width 6%
+  height 2px
+  background-color #fff
+  margin-top 15px
+  margin-bottom 20px
+
+.section_services-btn
+  background-color $darkBlue
+  width 137px
+  height 50px
+  margin-top 30px
+  total-center()
+    
+  p
+    color #fff
+    font-size remify(15)
+
+-webkit-keyframes fade
+    from opacity 0
+    to opacity 1
+
+@keyframes fade
+    from opacity 0
+    to opacity 1
+
+
   
 
+
+
+//----------------------fin section_services-------------------------
+
+// ========== section_ Form ========== //
+.section_form
+  background-color $blueStandar
+  total-center()
+  height 45vh
+
+.section_form-carousel
+  center-block()
+  width 85vw
+  
+  .slick-prev
+    display none !important
+
+  .slick-right
+    right 0 
+    
+.section_form-carousel-item
+  display flex !important
+  align-items center
+  justify-content center
+  margin 0 30px
+
+  p
+    color $lightBlue
+    font-size remify(17)
+  
+  input
+    visibility hidden
+    border none
+    appearance none
+    box-shadow none
+    background transparent
+
+.section_form-carousel-item.slick-center
+  p
+    color #fff
+    font-size remify(44)
+  
+  input
+    visibility visible
+    padding 10px
+    font-size remify(17)
+    color #FFF
+    border none
+    appearance none
+    box-shadow none
+    background transparent
+    border-bottom 2px solid #fff
+
+//----------------------fin section_form-----------------
+
+// ========== section_Work With Us ========== //
+.section_workWithUs
+  background-image url('../img/backgrounds/work-wUs-bgd.jpg')
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  height 80vh
+  total-center()
+  flex-direction column
+
+.site-footer__menu
+  margin 40px 0 60px 0
+
+.section_workWithUs_title
+  font-size remify(44)
+  margin-bottom 5%
+  color #fff
+
+.section_workWithUs-btn
+  @extends .section_projects-blue-btn

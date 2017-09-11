@@ -81,7 +81,7 @@ form {
         }
     }
     .cw-map {
-      margin: 25px 0 0;
+      margin: 25px 0 7px 0;
     }
     span {
       color: #223a48;
@@ -105,6 +105,7 @@ form {
 
 ////////////////// Mobile section ////////////////////
 
+// Small devices
 @media screen and (max-width: 39.9375em) {
   
   .contacto-view__title {
@@ -167,7 +168,6 @@ form {
   // Submit botton
   .contact-form__button {
   margin: 26px 0 31px auto;
-  align-self: flex-end;
   }
 
   // Gray box
@@ -176,4 +176,52 @@ form {
     margin: 0;
     padding: 3.81em 5.25em 4.06em  2.56em;
   }
+}
+
+// Medium devices
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+  .contacto-view__title {
+    font-size: remify(39px);
+    margin: 133px 0 61px;
+    center-block();
+  }
+  
+  // Form Container
+  .contacto-view__form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  // Name, e-mail, mesage
+  .contacto-view__form-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+    center-block();
+    z-index: 1;
+  }
+
+  form {
+    margin: 37px 0 0;
+  }
+
+  // Submit button 
+  .contact-form__button {
+    margin: 26px 0 31px auto;
+  }
+
+  // Gray box
+  .contacto-view__form-box2 {
+    width: 100%;
+    margin: 0;
+    padding: auto;
+    padding-left: 250px;
+  }  
 }

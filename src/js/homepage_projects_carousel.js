@@ -4,25 +4,27 @@
   $('.section_projects-slick-firstrow').slick({
     dots: false,
     infinite: true,
-    speed: 400,
-    slidesToShow: 4,
+    cssEase: 'ease-in',
+    autoplaySpeed: 0,
+    speed: 5000,
+    slidesToShow: 2,
     centerMode: false,
     variableWidth: true,
     adaptiveHeight: true,
     arrows: false,
-    focusOnSelect: true,
     autoplay: true
   });
   $('.section_projects-slick-secondrow').slick({
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
+    cssEase: 'ease-out',
+    autoplaySpeed: 0,
+    speed: 5000,
+    slidesToShow: 2,
     centerMode: false,
     variableWidth: true,
     adaptiveHeight: true,
     arrows: false,
-    focusOnSelect: true,
     autoplay: true
   });
 })();

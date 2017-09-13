@@ -26,6 +26,7 @@ a
 
 .section_one-title-wrapper
   display flex
+  margin-left 20px
 
 .section_one-title-container
   max-width 522px
@@ -43,6 +44,7 @@ a
 .section_one-description-wrapper
   display flex
   justify-content flex-end
+  margin-right 20px
 
 .section_one-description-container
   max-width 496px
@@ -64,9 +66,9 @@ a
 
 .section_one-blue-box
   width 100%
-  height 120px
+  height 55px
   background-color $blueStandar
-  bottom calc(-120px / 2)
+  bottom calc(-55px / 2)
   position absolute
   display flex
   flex-direction column
@@ -74,13 +76,13 @@ a
   align-items center
 
 .section_one-white-divider-blue-box
-  height calc(60% - 29px)
+  height calc(70% - 20px)
   width 1px
   background-color #fff
 
 .section_one-cicle-arrow
-  width 29px
-  height 29px
+  width 20px
+  height 20px
   border-radius 50%
   background-color #fff
   total-center()
@@ -96,8 +98,8 @@ a
 .section_projects-container
   position relative
   width 100vw
-  padding-top 3.75rem
-  padding-bottom 3.75rem
+  padding-top 5.75rem
+  padding-bottom 5.75rem
   
 .section_projects-title-wrapper
   total-center()
@@ -126,80 +128,137 @@ a
   background-repeat no-repeat
   background-position center
   background-size cover
-  width 325px
-  height 208px
-  margin 0 25px
+  width 16rem
+  height 10rem
+  margin 0 15px
   display flex !important 
   justify-content center
   align-items center
-    
-  img
-    width 87.7px
-    height 99.8px
 
+  img
+    -webkit-transition all .2s ease-in
+    -ms-transition all .2s ease-in
+    -moz-transition all .2s ease-in
+    transition all .2s ease-in
+
+  img:hover
+    -webkit-transition all .2s ease-in
+    -webkit-transform scale(1.2)
+    -ms-transition all .2s ease-in
+    -ms-transform scale(1.2);  
+    -moz-transition all .2s ease-in
+    -moz-transform scale(1.2)
+    transition all .2s ease-in
+    transform scale(1.2)
 
 .item_project-bgd-1
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/c_aerial.png')
+
+  img
+    width 5rem
 
 .item_project-bgd-2
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/c_aguaviento.png')
+
+  img
+    width 8rem
 
 .item_project-bgd-3
-  background-image url('../img/work@more2.jpg')
-  width 456px
-  height 297px
+  background-image url('../img/g_neopraxis.png')
+  width 21.5rem
+  height 13.5625rem
+
+  img
+    width 10rem
 
 .item_project-bgd-4
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/c_dondinero.png')
+
+  img
+    width 9rem
 
 .item_project-bgd-5
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/c_florella.png')
+
+  img
+    width 7rem
 
 .item_project-bgd-6
-  background-image url('../img/work@more2.jpg')
-  width 456px
-  height 297px
+  background-image url('../img/g_brick.png')
+  width 21.5rem
+  height 13.5625rem
+
+  img
+    width 9rem
 
 .item_project-bgd-7
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/c_jb.png')
+
+  img
+    width 4.7rem
 
 .item_project-bgd-8
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/c_vre.png')
+
+  img
+    width 9rem
 
 .item_project-bgd-9
-  background-image url('../img/work@more2.jpg')
-  width 456px
-  height 297px
+  background-image url('../img/g_nutriologa.png')
+  width 21.5rem
+  height 13.5625rem
+
+  img
+    width 9rem
 
 .item_project-bgd-10
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/c_workingch.png')
+
+  img
+    width 6rem
 
 .item_project-bgd-11
-  background-image url('../img/work@more2.jpg')
-  width 406px
-  height 265px
+  background-image url('../img/g_rgv.png')
+  
+  img
+    width 7rem
 
 .item_project-bgd-12
-  background-image url('../img/work@more2.jpg')
+  background-image url('../img/g_rochalandero.png')
+  width 21.5rem
+  height 13.5625rem
 
-.item_project-bgd-13
-  background-image url('../img/work@more2.jpg')
+  img
+    width 3rem
 
-.item_project-bgd-14
-  background-image url('../img/work@more2.jpg')
-  width 406px
-  height 265px
+// .item_project-bgd-13
+  // img
+  //   width 6rem
+//   background-image url('../img/work@more2.jpg')
 
-.item_project-bgd-15
-  background-image url('../img/work@more2.jpg')
+// .item_project-bgd-14
+  // img
+  //   width 6rem
+//   background-image url('../img/work@more2.jpg')
+//   width 406px
+//   height 265px
 
-.item_project-bgd-16
-  background-image url('../img/work@more2.jpg')
+// .item_project-bgd-15
+  // img
+  //   width 6rem
+//   background-image url('../img/work@more2.jpg')
 
-.item_project-bgd-17
-  background-image url('../img/work@more2.jpg')
-  width 406px
-  height 265px
+// .item_project-bgd-16
+  // img
+  //   width 6rem
+//   background-image url('../img/work@more2.jpg')
+
+// .item_project-bgd-17
+  // img
+  //   width 6rem
+//   background-image url('../img/work@more2.jpg')
+//   width 406px
+//   height 265px
 
 .section_projects-btn-wrapper
   total-center()
@@ -221,25 +280,23 @@ a
 // ========== section_services ========== //
 .section_services
   background-color #efefef 
-  height calc(100% - 50px)
-
-.section_services-wrapper
-  height 100%
-
+ 
 .section_services-container
   position relative
   max-width 1030px
-  height 100%
   padding-top 3.75rem
   padding-bottom 3.75rem
   center-block()
+  display flex
+  justify-content space-around
+  flex-direction column
 
 .section_services-title-wrapper
   @extends .section_projects-title-wrapper
 
 .section_services-tabs
   display flex
-  margin 25px 0
+  margin 40px 0 70px 0
 
   .section_services-tablink
     position relative
@@ -284,7 +341,7 @@ a
 
 .section_services-tabcontent
   padding 70px 45px 70px 50px;
-  width 512px 
+  width 512px
   height 412px
   background-color $blueStandar
   color #fff 
@@ -351,25 +408,27 @@ a
   align-items center
   justify-content center
   margin 0 30px
+  transition all 1s
 
   p
     color $lightBlue
     font-size remify(17)
   
   input
-    visibility hidden
     border none
     appearance none
     box-shadow none
     background transparent
 
 .section_form-carousel-item.slick-center
+  transition all 1s
+  outline none
+
   p
     color #fff
     font-size remify(44)
   
   input
-    visibility visible
     padding 10px
     font-size remify(17)
     color #FFF
@@ -379,6 +438,11 @@ a
     background transparent
     border-bottom 2px solid #fff
 
+.section_form-carousel-next
+    position absolute
+    right 0
+    bottom -100px
+    width 30px
 //----------------------fin section_form-----------------
 
 // ========== section_Work With Us ========== //

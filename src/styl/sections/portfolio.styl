@@ -3,6 +3,10 @@
   margin: 0 0 12px 0;
 }
 
+// Logo size
+.portfolio-logo-size {
+  width: 9.68em;
+}
 //////// Title ///////
 .portfolio-view__background {
   background-image: url(../img/backgrounds/projects-bgd.svg);
@@ -212,20 +216,24 @@
 //////////////// Mobile small devices ////////////////////
 
  @media screen and (max-width: 39.9375em) {
+   
+  .card-bottom-margin {
+    margin: 0 0 7px 0;
+  }    
   // Card size
   .card-lg {
-    width: 50%;
-    height: 28.31em;
+    width: 49%;
+    height: 18.31em;
   }
 
   .card-md {  
-    width: 50%;
-    height: 24.5em;
+    width: 49%;
+    height: 18.31em;
   }
 
   .card-sm {
-    width: 50%;
-    height: 21.68em;  
+    width: 49%;
+    height: 18.31em;  
   }
 
   // Title
@@ -261,4 +269,30 @@
   .portfolio-view__more-log {
     margin: 68px 0 81px 0;
   }
+}
+
+//////////////// Mobile medium devices ////////////////////
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {  
+  // Card size
+  .card-lg {
+    width: 125%;
+    height: 16.5em;
+  }
+
+  .card-md {  
+    width: 125%;
+    height: 16.5em;
+  }
+
+  .card-sm {
+    width: 125%;
+    height: 14.68em;  
+  }
+
+  .portfolio-view__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 520px;
+  }  
 }

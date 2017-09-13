@@ -3,6 +3,10 @@
   margin: 0 0 12px 0;
 }
 
+// Logo size
+.portfolio-logo-size {
+  width: 9.68em;
+}
 //////// Title ///////
 .portfolio-view__background {
   background-image: url(../img/backgrounds/projects-bgd.svg);
@@ -44,6 +48,7 @@
   center-block();
   max-width: 1010px;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 ////// Card size /////
@@ -66,7 +71,7 @@
 
 // lg
 .card-lg-bg1 {
-  background-image: url(../img/portfolio/portfolio_finacero.png)
+  background-image: url(../img/portfolio/portfolio_financiero.png)
   total-center(); 
 }
 
@@ -207,25 +212,30 @@
 .portfolio-view__more-log {
   total-center();
   margin: 0 0 138px 0;
+  display: none;
 }
 
 //////////////// Mobile small devices ////////////////////
 
  @media screen and (max-width: 39.9375em) {
+   
+  .card-bottom-margin {
+    margin: 0 0 7px 0;
+  }    
   // Card size
   .card-lg {
-    width: 50%;
-    height: 28.31em;
+    width: 49%;
+    height: 18.31em;
   }
 
   .card-md {  
-    width: 50%;
-    height: 24.5em;
+    width: 49%;
+    height: 18.31em;
   }
 
   .card-sm {
-    width: 50%;
-    height: 21.68em;  
+    width: 49%;
+    height: 18.31em;  
   }
 
   // Title
@@ -248,7 +258,7 @@
 
   // Portfolio 
   .portfolio-view__container {
-    margin: 50px 0 0;
+    margin: 50px 0 30px;
   }
   // Columns size
   .col-1, .col-2, .col-3 {
@@ -261,4 +271,31 @@
   .portfolio-view__more-log {
     margin: 68px 0 81px 0;
   }
+}
+
+//////////////// Mobile medium devices ////////////////////
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {  
+  // Card size
+  .card-lg {
+    width: 125%;
+    height: 16.5em;
+  }
+
+  .card-md {  
+    width: 125%;
+    height: 16.5em;
+  }
+
+  .card-sm {
+    width: 125%;
+    height: 14.68em;  
+  }
+
+  .portfolio-view__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 520px;
+    margin: 0 auto 30px auto;
+  }  
 }

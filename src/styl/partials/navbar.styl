@@ -2,7 +2,7 @@
   background #fff
   display flex
   justify-content center
-  height 50px // Change
+  height 55px // Change
   left 0
   position fixed
   top 0
@@ -94,7 +94,7 @@
 .site-navbar__menu-link
   color black // Change
   font-size remify(14) // Change
-  padding 18px 8px 8px
+  padding 18px 8px 21px
   transition .6s background-color linear
   border-radius 1px
   letter-spacing .2px
@@ -156,32 +156,71 @@
   padding 0 5px 2.5px 0
   
 
-@media screen and (max-width: 876px) // Change
+@media screen and (max-width: 768px) // Change
+  .second_menu
+    display none 
+  
   .site-navbar
     justify-content space-between
     height 56px // Change
     padding 0 18px // Change
+
+    &.active
+      height 158px
+      transform translateY(30px)
+
+      .site-navbar__desktop-logo-container
+        transform translate(0)
+        align-items flex-start
+      
+      .site-navbar__menu-trigger
+        display block
+        float right
+        font-size 18px // Change
+      
+      .site-navbar__menu-container
+        top -30px
+      
+      .site-navbar__menu-black
+        display none
+      
+      .site-navbar__menu
+        transform translateX(0)
+
+  .site-navbar
+    .site-navbar__menu-black
+      display block
 
   .site-navbar__desktop-logo-container
     img
       height remify(20) // Change
       width auto
 
+  .site-navbar.active .header-wrapper
+    border none 
+
   .site-navbar__mobile-logo-container
-    display block
+    display flex
+    align-items center
+    justify-content space-between
     center-block()
-    width 70% // Change
+    width 80% // Change
+
+    .site-navbar__mobile-img-menu
+      width 2.8em
 
     img
-      width 100%
+      width 3.5em
 
   .site-navbar__menu-trigger
-    display block
+    display flex
+    align-items center
     float right
     font-size 18px // Change
 
   .site-navbar__menu-container
-    background white // Change
+    background #1b1e20 // Change
+    color #fff
     height 100vh
     margin-right 0
     overflow-y auto
@@ -202,9 +241,20 @@
     height auto
     flex-wrap wrap
 
+
+
   .site-navbar__menu-link
+    color #fff
+    padding 18px 8px 8px 30px
     display block
     height auto
     display block
     text-align left
     flex-basis 100%
+  
+    &.active
+      border-left 4px solid $blueStandar
+      background-color transparent
+  
+  .site-navbar__desktop-logo-container
+      transform translate(0px, 0px)

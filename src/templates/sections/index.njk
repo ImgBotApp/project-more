@@ -14,15 +14,17 @@
         </div>
         <div class="section_one-description-wrapper">
           <div class="section_one-description-container">
-            <p class="section_one-description font-athelas-regular">We are a Design and Software Development Company and we create the best solutions. From Webpages and Online Stores to big Tailor-made platforms.<br> We’d love to hear from you.</p>
+            <p class="section_one-description font-athelas-regular">We are a Design and Software Development Company and we create the best solutions. <span class="hide-onMobile">From Webpages and Online Stores to big Tailor-made platforms.</span class="hide-text-onMobile"><br> We’d love to hear from you.</p>
           </div>
         </div>
         <div class="section_one-blue-divider"></div>
         <div class="section_one-blue-box" data-aos="fade-up" data-aos-duration="250">
           <div class="section_one-white-divider-blue-box" data-aos="fade-up" data-aos-delay="150"></div>
-          <div class="section_one-cicle-arrow" data-aos="fade-up" data-aos-offset="85">
-            <img src="img/icons/np-down-arrow1.png" alt="ARROW">
-          </div>
+          <div class="section_one-cicle-circle">
+            <div class="section_one-cicle-arrow" data-aos="fade-up" data-aos-offset="85">
+              <img src="img/icons/np-down-arrow1.png" alt="ARROW">
+            </div>
+          </div class="section_one-cicle-circle">
         </div>
       </div>
     </div>
@@ -39,7 +41,7 @@
           <div class="section_projects-carousel-container">
             <div class="section_projects-slick-firstrow">
               <div class="section_projects-slick-item item_project-bgd-1">
-                <a href=""><img src="img/logos/aerial.png" alt="aerial logo"></a>
+                <a href=""><img src="img/logos/aerial360.png" alt="aerial logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-2">
                 <a href=""><img src="img/logos/aguaviento.png" alt="aguaviento logo"></a>
@@ -120,9 +122,9 @@
           </div>
         </div>
         <div class="section_services-tabs">
-          <button class="section_services-tablink" onclick="showTab('websites')" target="websites" id="defaultTab"><p class="section_services-tablink-title font-metropolis-regular">Websites</p></button>
-          <button class="section_services-tablink" onclick="showTab('eCommerce')" target="eCommerce"><p class="section_services-tablink-title font-metropolis-regular">E-commerce</p></button>
-          <button class="section_services-tablink" onclick="showTab('software')" target="software"><p class="section_services-tablink-title font-metropolis-regular">Sofware Development</p></button>
+          <button class="section_services-tablink" onclick="showTab(this, 'websites')" target="websites" id="defaultTab"><p class="section_services-tablink-title font-metropolis-regular">Websites</p></button>
+          <button class="section_services-tablink" onclick="showTab(this, 'eCommerce')" target="eCommerce"><p class="section_services-tablink-title font-metropolis-regular">E-commerce</p></button>
+          <button class="section_services-tablink" onclick="showTab(this, 'software')" target="software"><p class="section_services-tablink-title font-metropolis-regular">Sofware Development</p></button>
         </div>
         <div class="section_services-tabs-wrapper">
           <div id="websites" class="section_services-tabcontent-wrapper">
@@ -169,7 +171,7 @@
       </div>
     </div>
   </div>{# / section_services #}
-  <div class="section_form">
+  <div class="section_form hide-onMobile">
     <div class="section_form-carousel">
       <div class="section_form-carousel-item">
         <p class="font-metropolis-bold">Your name</p>
@@ -185,8 +187,26 @@
       </div>
     </div>
   </div>
+  <div class="section_form_mobile">
+    <div class="section_form_mobile-item">
+      <input class="font-metropolis-light" type="text" required>
+      <p class="font-metropolis-bold">Your name</p>
+    </div>
+    <div class="section_form_mobile-item">
+      <input class="font-metropolis-light" type="email" required>
+      <p class="font-metropolis-bold">Your e-mail</p>
+    </div>
+    <div class="section_form_mobile-item">
+      <textarea name="" id="" cols="30" rows="1" class="font-metropolis-light" type="text" required></textarea> 
+      <p class="font-metropolis-bold">Your message</p>
+    </div>
+    <div class="section_form_mobile-btn">
+      <img src="img/icons/np-right-arrow.png" alt="Send Arrow">
+      <p class="font-metropolis-medium">Send</p>
+    </div>
+  </div>
   <div class="section_workWithUs">
-    <div class="section_workWithUs_title font-metropolis-bold">Want to work with us?</div>
+    <p class="section_workWithUs_title font-metropolis-bold">Want to work with us?</p>
     <a href="careers.html">
       <div class="section_workWithUs-btn">
         <p class="font-metropolis-medium">Apply here</p>

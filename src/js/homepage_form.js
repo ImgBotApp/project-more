@@ -4,8 +4,8 @@ $('.section_form-carousel').slick({
   slidesToShow: 1,
   centerMode: true,
   infinite: false,
-  centerPadding: '111px',
-  adaptiveHeight: true,
+  centerPadding: '100px',
+  draggable: false,
   variableWidth: true,
   focusOnSelect: false,
   nextArrow: '<img class="section_form-carousel-next" src="img/icons/np-right-arrow.png" alt="next arrow">'

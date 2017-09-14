@@ -103,7 +103,12 @@ a
 
 
 // ========== section_projects ========== //
-  
+.section_projects
+  background-image url('../img/backgrounds/projects-bgd.png')
+  background-position top
+  background-size contain
+  background-repeat no-repeat
+    
 .section_projects-container
   position relative
   width 100vw
@@ -125,7 +130,7 @@ a
   margin 75px 0
 
 .section_projects-slick-firstrow
-  margin 0 0 37px -45px
+  margin 0 0 30px -45px
   
   .slick-track
     display flex 
@@ -165,13 +170,13 @@ a
   background-image url('../img/c_aerial.png')
 
   img
-    width 5rem
+    width 4rem
 
 .item_project-bgd-2
   background-image url('../img/c_aguaviento.png')
 
   img
-    width 8rem
+    width 7rem
 
 .item_project-bgd-3
   background-image url('../img/g_neopraxis.png')
@@ -179,19 +184,19 @@ a
   height 13.5625rem
 
   img
-    width 10rem
+    width 11rem
 
 .item_project-bgd-4
   background-image url('../img/c_dondinero.png')
 
   img
-    width 9rem
+    width 8rem
 
 .item_project-bgd-5
   background-image url('../img/c_florella.png')
 
   img
-    width 7rem
+    width 6.5rem
 
 .item_project-bgd-6
   background-image url('../img/g_brick.png')
@@ -199,19 +204,19 @@ a
   height 13.5625rem
 
   img
-    width 9rem
+    width 8rem
 
 .item_project-bgd-7
   background-image url('../img/c_jb.png')
 
   img
-    width 4.7rem
+    width 3.7rem
 
 .item_project-bgd-8
   background-image url('../img/c_vre.png')
 
   img
-    width 9rem
+    width 7rem
 
 .item_project-bgd-9
   background-image url('../img/g_nutriologa.png')
@@ -219,19 +224,19 @@ a
   height 13.5625rem
 
   img
-    width 9rem
+    width 8.5rem
 
 .item_project-bgd-10
   background-image url('../img/c_workingch.png')
 
   img
-    width 6rem
+    width 5.5rem
 
 .item_project-bgd-11
   background-image url('../img/g_rgv.png')
   
   img
-    width 7rem
+    width 4rem
 
 .item_project-bgd-12
   background-image url('../img/g_rochalandero.png')
@@ -239,7 +244,7 @@ a
   height 13.5625rem
 
   img
-    width 3rem
+    width 3.5rem
 
 // .item_project-bgd-13
   // img
@@ -321,6 +326,7 @@ a
     background-color inherit
     transition 0.3s
     outline none
+    cursor pointer
 
     &:hover
       background-color #d6d6d6
@@ -330,7 +336,7 @@ a
 
 .section_services-tablink.open-tab
   p
-    color #000
+    color #000 !important
     font-weight bold
     letter-spacing 1px
 
@@ -434,7 +440,7 @@ a
   margin 0 30px
   transition all 1s
 
-  p
+  label
     color $lightBlue
     font-size remify(17)
   
@@ -449,7 +455,7 @@ a
   transition all 1s
   outline none
 
-  p
+  label
     color #fff
     font-size remify(44)
   
@@ -468,6 +474,7 @@ a
     right 0
     bottom -100px
     width 30px
+    cursor pointer
 //----------------------fin section_form-----------------
 
 // ========== section_Work With Us ========== //
@@ -513,6 +520,7 @@ a
   
   .section_one-description-wrapper
     @extends .section_one-title-wrapper
+    margin 0 25px
   
   .section_one-description
     font-size 1.5rem
@@ -554,7 +562,7 @@ a
         border-bottom 2px solid $darkBlue
         section_form-mobile_input-focus = true
 
-      &:focus + p
+      &:focus + label
         font-size remify(26)
         color $darkBlue
         font-weight bold

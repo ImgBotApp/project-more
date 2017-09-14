@@ -8,8 +8,7 @@ Contact
 {% endblock %}
 
 {% block content %}
-<section class="contact-view">
-  <div class="contact-view__background"></div>
+<section class="contact-view contact-view__background">
   {# Title #}
   <div class="contacto-view__title">
     <p class="font-metropolis-bold">We’d love to hear from you!</p>
@@ -35,16 +34,18 @@ Contact
       </form>
     </div>
     <div class="contacto-view__form-box2"> {# Gray box #}
-      <div class="cw-mail">
-        <img src="img/icons/np-mail.svg" alt="mail" width="13" height="9">
-        <span class="font-metropolis-bold">Get in touch</span>
-      </div>
-      <a href="mailto:hola@blick.mx"><span class="font-gandhisans-regular">hola@blick.mx</span></a>
-      <div class="cw-map">
-        <img src="img/icons/np-map.svg" alt="map" width="13" height="17">
-        <span class="font-metropolis-bold">Come and meet us</span>
-      </div>
-      <a href=""><span class="font-gandhisans-regular">Av. Chapultepec 480 Col. Roma Norte, CDMX</span></a>
+      <div class="contacto-view__form-box2-container">
+        <div class="cw-mail">
+          <img src="img/icons/np-mail.svg" alt="mail" width="13" height="9">
+          <span class="font-metropolis-bold">Get in touch</span>
+        </div>
+        <a href="mailto:hola@blick.mx"><span class="font-gandhisans-regular">hola@blick.mx</span></a>
+        <div class="cw-map">
+          <img src="img/icons/np-map.svg" alt="map" width="13" height="17">
+          <span class="font-metropolis-bold">Come and meet us</span>
+        </div>
+        <a href=""><span class="font-gandhisans-regular">Av. Chapultepec 480 Col. Roma Norte, CDMX</span></a>
+      </div>  
     </div>
   </div>
 </section>

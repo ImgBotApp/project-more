@@ -4,7 +4,10 @@
 }
 
 .contact-view__background {
-  background-image: url();
+  background-image: url(../img/backgrounds/services-bgd1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: center;
 }
 
 .contacto-view__title {
@@ -13,7 +16,7 @@
   align-items: center;
   color: #3b84af;
   font-size: remify(44px);
-  margin: 180px 0 167px;
+  padding: 180px 0 167px;
 }
 
 .contacto-view__more-logo {
@@ -31,15 +34,17 @@
   justify-content: space-around;
   align-items: center;
   margin: 0 0 141px;
+  max-width: 1450px;
+  center-block();
 }
 
 // Name, e-mail, mesage //
 .contacto-view__form-box1 {
   display: flex;
   flex-direction: column;
-  width: 50.75em;
-  padding: 4.56em 24.12em 0 6.25em;
+  padding: 4.56em 20.12em 0 6.25em;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ffffff;
 }
 
 form {
@@ -52,7 +57,7 @@ form {
     margin: 0 0 3.12em;
     border: 0;
     border-bottom: solid 1px #e5e5e5;
-    width: 326px;
+    width: 100%;
     padding: 0.5em;
     font-size: remify(13px);
     color: #141414;
@@ -108,7 +113,7 @@ form {
   cursor: pointer;
   border-radius: 1px
   width: 96px;
-  height: 42px;
+  height: 43px;
   margin: 26px 0 89px auto;
 }
 
@@ -119,9 +124,9 @@ form {
   
   .contacto-view__title {
   font-size: remify(39px);
-  margin: 133px 0 61px;
+  padding: 133px 0 61px;
+  margin-left: 5%;
   width: 8.31em;
-  center-block();
   }
 
   .contacto-view__more-logo {
@@ -140,16 +145,16 @@ form {
   .contacto-view__form-box1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   padding: 0;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.22);
-  center-block();
   z-index: 1;
   }
 
   form {
     margin: 37px 0 0;
+    margin-left: 5%;
+    width: 90%;
     label {
     color: #141414;
     font-size: remify(15px);
@@ -159,7 +164,7 @@ form {
     margin: 0 0 3.12em;
     border: 0;
     border-bottom: solid 1px #e5e5e5;
-    width: 326px;
+    width: 100%;
     padding: 0.5em;
     font-size: remify(13px);
     color: #141414;
@@ -187,7 +192,14 @@ form {
   .contacto-view__form-box2 {
     width: 100%;
     margin: 0;
-    padding: 3.81em 5.25em 4.06em  2.56em;
+    padding: 0;
+      .contacto-view__form-box2-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 61px 0 65px;
+        margin-left: 5%;
+      }
   }
 }
 
@@ -196,7 +208,7 @@ form {
 
   .contacto-view__title {
     font-size: remify(39px);
-    margin: 133px 0 61px;
+    padding: 133px 0 61px;
     center-block();
   }
   

@@ -105,8 +105,8 @@ a
 // ========== section_projects ========== //
 .section_projects
   background-image url('../img/backgrounds/projects-bgd.png')
-  background-position top
-  background-size contain
+  background-position top right
+  background-size 100% 50%
   background-repeat no-repeat
     
 .section_projects-container
@@ -360,7 +360,7 @@ a
     height 329px
 
 .section_services-tabcontent
-  padding 0 50px;
+  padding 0 25px 0 30px !important
   width 512px
   height 412px
   background-color $blueStandar
@@ -370,7 +370,7 @@ a
   justify-content center
 
   img
-    width 21%
+    width 70px
     margin-top 15px
 
 .section_services-tabcontent-title
@@ -425,7 +425,7 @@ a
 
 .section_form-carousel
   center-block()
-  width 85vw
+  width 80vw
   
   .slick-prev
     display none !important
@@ -434,6 +434,7 @@ a
     right 0 
 
 .section_form-carousel-item
+  position relative
   display flex !important
   align-items center
   justify-content center
@@ -452,9 +453,15 @@ a
     background transparent
 
 .section_form-carousel-item.slick-center
+  width 1030px
   transition all 1s
   outline none
+  display flex
+  justify-content center
 
+  .section_form-input-wrapper
+    center-block()
+  
   label
     color #fff
     font-size remify(44)
@@ -469,12 +476,29 @@ a
     background transparent
     border-bottom 2px solid #fff
 
+  p
+    text-align right
+    color $lightBlue
+    font-size remify(17)
+
+
 .section_form-carousel-next
     position absolute
-    right 0
-    bottom -100px
-    width 30px
+    right 85px
+    bottom -40px
+    width 20px
     cursor pointer
+
+.section_form-btn
+  @extends .section_services-btn
+  width 100px
+  justify-content space-around
+  padding 0 15px
+  margin-left auto
+  margin-top 10vh
+  img
+    width 1.3rem
+    
 //----------------------fin section_form-----------------
 
 // ========== section_Work With Us ========== //
@@ -509,6 +533,7 @@ a
 // MOBILE
 
 @media screen and (max-width: 768px)
+
   .hide-onMobile
     display none
 
@@ -525,6 +550,9 @@ a
   .section_one-description
     font-size 1.5rem
     margin-top 30px
+  
+  .section_one-blue-divider
+    height 9rem
   
   .section_services-tabcontent-wrapper
     flex-wrap wrap
@@ -576,3 +604,9 @@ a
     
     img
       width 1.3rem
+
+  .section_projects
+    background-image url('../img/backgrounds/projects-bgd-mobile.png')
+    background-position 0 14%
+    background-size 100% 14%
+    background-repeat no-repeat

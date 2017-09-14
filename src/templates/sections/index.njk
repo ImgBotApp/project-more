@@ -41,42 +41,42 @@
           <div class="section_projects-carousel-container">
             <div class="section_projects-slick-firstrow">
               <div class="section_projects-slick-item item_project-bgd-1">
-                <a href=""><img src="img/logos/aerial360.png" alt="aerial logo"></a>
+                <a href="http://aerial360.org/" target="_blanck"><img src="img/logos/aerial360.png" alt="aerial logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-2">
-                <a href=""><img src="img/logos/aguaviento.png" alt="aguaviento logo"></a>
+                <a href="http://aguaviento.com/" target="_blanck"><img src="img/logos/aguaviento.png" alt="aguaviento logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-3">
-                <a href=""><img src="img/logos/neopraxis.png" alt="neopraxis logo"></a>
+                <a href="http://neopraxis.mx/" target="_blanck"><img src="img/logos/neopraxis.png" alt="neopraxis logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-4">
-                <a href=""><img src="img/logos/dondinero.png" alt="dondinero logo"></a>
+                <a href="https://dondinero.mx/" target="_blanck"><img src="img/logos/dondinero.png" alt="dondinero logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-5">
-                <a href=""><img src="img/logos/florella.png" alt="florella logo"></a>
+                <a href="https://florella.mx/" target="_blanck"><img src="img/logos/florella.png" alt="florella logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-6">
-                <a href=""><img src="img/logos/brick.png" alt="brick logo"></a>
+                <a href="http://bricksa.mx/" target="_blanck"><img src="img/logos/brick.png" alt="brick logo"></a>
               </div>
             </div>
             <div class="section_projects-slick-secondrow">
               <div class="section_projects-slick-item item_project-bgd-7">
-                <a href=""><img src="img/logos/jb.png" alt="jb logo"></a>
+                <a href="https://jbaccesorios.com/" target="_blanck"><img src="img/logos/jb.png" alt="jb logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-8">
-                <a href=""><img src="img/logos/vre.png" alt="vre logo"></a>
+                <a href="https://vre.com.mx/" target="_blanck"><img src="img/logos/vre.png" alt="vre logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-9">
-                <a href=""><img src="img/logos/nutriologa.png" alt="nutriologa logo"></a>
+                <a href="http://alegpaez.com/" target="_blanck"><img src="img/logos/nutriologa.png" alt="nutriologa logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-10">
-                <a href=""><img src="img/logos/workingch.png" alt="workingch logo"></a>
+                <a href="http://workingch.com/" target="_blanck"><img src="img/logos/workingch.png" alt="workingch logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-11">
-                <a href=""><img src="img/logos/rgv.png" alt="rgv logo"></a>
+                <a href="http://rgvsoluciones.com/" target="_blanck"><img src="img/logos/rgv.png" alt="rgv logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-12">
-                <a href=""><img src="img/logos/rochalandero.png" alt="rochalandero logo"></a>
+                <a href="http://rlabogados.mx/" target="_blanck"><img src="img/logos/rochalandero.png" alt="rochalandero logo"></a>
               </div>
               {# <div class="section_projects-slick-item item_project-bgd-13">
                 <a href=""><img src="img/logos/jb.png" alt=""></a>
@@ -122,7 +122,7 @@
           </div>
         </div>
         <div class="section_services-tabs">
-          <button class="section_services-tablink" onclick="showTab(this, 'websites')" target="websites" id="defaultTab"><p class="section_services-tablink-title font-metropolis-regular">Websites</p></button>
+          <button class="section_services-tablink open-tab" onclick="showTab(this, 'websites')" target="websites" id="defaultTab"><p class="section_services-tablink-title font-metropolis-regular">Websites</p></button>
           <button class="section_services-tablink" onclick="showTab(this, 'eCommerce')" target="eCommerce"><p class="section_services-tablink-title font-metropolis-regular">E-commerce</p></button>
           <button class="section_services-tablink" onclick="showTab(this, 'software')" target="software"><p class="section_services-tablink-title font-metropolis-regular">Sofware Development</p></button>
         </div>
@@ -174,16 +174,30 @@
   <div class="section_form hide-onMobile">
     <div class="section_form-carousel">
       <div class="section_form-carousel-item">
-        <p class="font-metropolis-bold">Your name</p>
-        <input class="font-metropolis-light" type="text">
+        <div class="section_form-input-wrapper">
+          <label class="font-metropolis-bold">Your name</label>
+          <input class="font-metropolis-light" type="text">
+        </div>
+        <p class="font-metropolis-bold">Your email</p>
       </div>
       <div class="section_form-carousel-item">
-        <p class="font-metropolis-bold">Your e-mail</p>
-        <input class="font-metropolis-light" type="text">
-      </div>
-      <div class="section_form-carousel-item">
+        <p class="font-metropolis-bold section_form-fild-nameInput">Liliana</p>
+        <div class="section_form-input-wrapper">
+          <label class="font-metropolis-bold">Your e-mail</label>
+          <input class="font-metropolis-light" type="text">
+        </div>
         <p class="font-metropolis-bold">Your message</p>
-        <input class="font-metropolis-light" type="text">
+      </div>
+      <div class="section_form-carousel-item">
+        <p class="font-metropolis-bold section_form-fild-emailInput">foo@lala.com</p>
+        <div class="section_form-input-wrapper">
+          <label class="font-metropolis-bold">Your message</label>
+          <input class="font-metropolis-light" type="text">
+        </div>
+        <div class="section_form-btn">
+          <img src="img/icons/np-right-arrow.png" alt="Send Arrow">
+          <p class="font-metropolis-medium">Send</p>
+        </div>
       </div>
     </div>
   </div>
@@ -206,7 +220,7 @@
     </div>
   </div>
   <div class="section_workWithUs">
-    <p class="section_workWithUs_title font-metropolis-bold">Want to work with us?</p>
+    <p class="section_workWithUs_title font-metropolis-bold">Want to work <br> with us?</p>
     <a href="careers.html">
       <div class="section_workWithUs-btn">
         <p class="font-metropolis-medium">Apply here</p>

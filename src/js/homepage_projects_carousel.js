@@ -4,7 +4,7 @@
   $('.section_projects-slick-firstrow').slick({
     dots: false,
     infinite: true,
-    cssEase: 'ease-in',
+    cssEase: 'linear',
     autoplaySpeed: 0,
     speed: 5000,
     slidesToShow: 2,
@@ -17,9 +17,9 @@
   $('.section_projects-slick-secondrow').slick({
     dots: false,
     infinite: true,
-    cssEase: 'ease-out',
+    cssEase: 'linear',
     autoplaySpeed: 0,
-    speed: 5000,
+    speed: 6000,
     slidesToShow: 2,
     centerMode: false,
     variableWidth: true,

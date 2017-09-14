@@ -14,8 +14,8 @@ function showTab($this, service) {
   }
 
   document.getElementById(service).style.display = "flex";
-  $this.classList.add('open-class');
+  $this.classList.add('open-tab');
 }
 
 // Get the element with id="defaultOpen" and click on it
-// document.getElementById("defaultTab").click();
+document.getElementById("defaultTab").click();

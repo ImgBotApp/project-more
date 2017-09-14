@@ -75,6 +75,7 @@
   .site-navbar__desktop-logo-top
     width 8.9375rem  // Change
     display none
+    margin-top 11px
   
   .site-navbar__desktop-logo-bottom
     width 6.9375rem 
@@ -94,7 +95,7 @@
 .site-navbar__menu-link
   color black // Change
   font-size remify(14) // Change
-  padding 18px 8px 21px
+  padding 21px 8px 18px
   transition .6s background-color linear
   border-radius 1px
   letter-spacing .2px
@@ -109,7 +110,7 @@
     color #fff
 
 .second_menu
-  height 50px
+  height 55px
   display flex
   align-items center
   transition transform .47s
@@ -132,7 +133,7 @@
   &.active
     border 1px solid #fff
     height auto
-    transform translateY(9px)
+    transform translateY(8px)
     
     .site-lang__menu:hover
       background-color #2D698F
@@ -144,7 +145,7 @@
 
 .site-lang__menu-link
   color #000
-  font-size remify(14)
+  font-size remify(13)
   padding 0 5px
   -webkit-transition color 0.2s linear
      -moz-transition color 0.2s linear
@@ -163,20 +164,23 @@
   .site-navbar
     justify-content space-between
     height 56px // Change
-    padding 0 18px // Change
+    padding 0 25px // Change
 
     &.active
       height 158px
       transform translateY(30px)
 
       .site-navbar__desktop-logo-container
-        transform translate(0)
+        transform translate(-25px, 0)
         align-items flex-start
       
       .site-navbar__menu-trigger
         display block
         float right
         font-size 18px // Change
+
+        img
+          width 35px
       
       .site-navbar__menu-container
         top -30px
@@ -207,7 +211,7 @@
     width 80% // Change
 
     .site-navbar__mobile-img-menu
-      width 2.8em
+      width 35px
 
     img
       width 3.5em
@@ -217,6 +221,9 @@
     align-items center
     float right
     font-size 18px // Change
+
+    img
+      width 35px
 
   .site-navbar__menu-container
     background #1b1e20 // Change
@@ -251,6 +258,7 @@
     display block
     text-align left
     flex-basis 100%
+    font-size 15px
   
     &.active
       border-left 4px solid $blueStandar

@@ -422,10 +422,11 @@ a
   background-color $blueStandar
   total-center()
   height 45vh
+  width 100%
 
 .section_form-carousel
   center-block()
-  width 80vw
+  width 100%
   
   .slick-prev
     display none !important
@@ -435,33 +436,14 @@ a
 
 .section_form-carousel-item
   position relative
+  outline none
   display flex !important
   align-items center
-  justify-content center
-  margin 0 30px
-  transition all 1s
-
-  label
-    color $lightBlue
-    font-size remify(17)
-  
-  input
-    border none
-    appearance none
-    box-shadow none
-    outline none
-    background transparent
-
-.section_form-carousel-item.slick-center
-  width 1030px
-  transition all 1s
-  outline none
-  display flex
-  justify-content center
+  justify-content space-between
+  margin 0 100px
 
   .section_form-input-wrapper
     center-block()
-  
   label
     color #fff
     font-size remify(44)
@@ -470,35 +452,45 @@ a
     padding 10px
     font-size remify(17)
     color #FFF
-    border none
     appearance none
+    border none
     box-shadow none
+    outline none
     background transparent
     border-bottom 2px solid #fff
-
   p
-    text-align right
     color $lightBlue
     font-size remify(17)
 
+.carousel-arrow
+  position absolute
+  bottom -55px
+  width 20px
+  cursor pointer
 
 .section_form-carousel-next
-    position absolute
-    right 85px
-    bottom -40px
-    width 20px
-    cursor pointer
+  right 0
+
+.section_form-carousel-prev
+  left 0
+  transform rotate(180deg)
+
+.carousel-arrow.last-prev
+  bottom 0 
 
 .section_form-btn
   @extends .section_services-btn
-  width 100px
+  width 115px
   justify-content space-around
   padding 0 15px
   margin-left auto
   margin-top 10vh
+  cursor pointer
   img
-    width 1.3rem
-    
+    width 1rem
+  p
+    color #fff
+    font-size 15px
 //----------------------fin section_form-----------------
 
 // ========== section_Work With Us ========== //
@@ -564,43 +556,53 @@ a
     padding-bottom 0
   
   .section_form_mobile
-    display block
+    position relative
+    display flex
     background-color #f0f0f0
     padding 30px
+    display flex
+    height 500px
+    flex-direction column
+    justify-content flex-start
 
   .section_form_mobile-item
-    height 50px
     display flex
-    flex-direction row-reverse
-    align-items center
+    flex-direction column-reverse
+    align-items flex-start
     justify-content flex-end
+    margin 15px 0 
+    height 100px
 
-    p
+    label
       color #c9c9c9
-
 
     input, textarea
       @extends .section_form-carousel-item input
-      width 100px
+      width 100%
       color #4d4d4d
-      margin-left 10px
+      border none
 
       &:focus
         outline none
         border-bottom 2px solid $darkBlue
-        section_form-mobile_input-focus = true
+        margin-bottom 35px
 
       &:focus + label
         font-size remify(26)
         color $darkBlue
         font-weight bold
+        
   
   .section_form_mobile-btn
     @extends .section_services-btn
+    position absolute
+    right 0
+    bottom 0
     width 100px
     justify-content space-around
     padding 0 15px
-    margin-left auto
+    margin-left autos
+    
     
     img
       width 1.3rem

@@ -1,12 +1,33 @@
 $('.section_form-carousel').slick({
   dots: false,
-  arrows: true,
+  arrows: false,
   slidesToShow: 1,
-  centerMode: true,
+  slidesToScroll: 1,
+  speed: 800,
   infinite: false,
-  centerPadding: '100px',
   draggable: false,
-  variableWidth: true,
+  variableWidth: false,
   focusOnSelect: false,
-  nextArrow: '<img class="section_form-carousel-next" src="img/icons/np-right-arrow.png" alt="next arrow">'
 });
+
+$(function () {
+  $('.section_form-carousel-next').on('click', function () {
+    $('.section_form-carousel').slick('slickNext');
+  });
+  $('.section_form-carousel-prev').on('click', function () {
+    $('.section_form-carousel').slick('slickPrev');
+  });
+});
+
+$('.section_form-carousel-next').eq(0).on("click", function() {
+ var inputName = $('#inputName').val();
+ $('#nameText').text(inputName);
+});
+
+$('.section_form-carousel-next').eq(1).on("click", function() {
+ var inputEmail = $('#inputEmail').val();
+ $('#emailText').text(inputEmail);
+});
+
+
+

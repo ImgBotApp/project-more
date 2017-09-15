@@ -1,0 +1,66 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Careers
+{% endblock %}
+
+{% block content %}
+<section class="careers-view">
+  {# Title #}
+  <p class="font-metropolis-bold careers-view__title">Why work at More?</p>
+  {# Careers Carousel #}
+  <div class="careers-view__carousel">
+    <div class="careers-view__carousel-container">
+      <div class="cv-carousel-item">
+        <div class="">
+          
+        </div>
+        <div class="">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {# Apply Now Title#}
+  <div class="careers-view__apply">
+    <p class="font-metropolis-bold careers-view__apply-title">Apply now</p>
+  </div>
+  {# Form Container #}
+  <div class="careers-view__form">
+    <div class="cv-form__box1">
+      <form action="">
+        <label for="name" class="font-metropolis-medium">Full name</label>
+        <br>
+        <input type="text" name="" id="name">
+        <br>
+        <label for="mail" class="font-metropolis-medium">E-mail</label>
+        <br>
+        <input type="email" name="" id="mail">
+        <br>
+        <label for="phone" class="font-metropolis-medium">Phone number</label>
+        <br>
+        <input type="text" name="" id="phone">
+        <br>
+        <label for="opening" class="font-metropolis-medium">Selec an openning</label>
+        <br>
+        <input type="text" name="" id="opening">
+        <br>
+        <label for="linkedin" class="font-metropolis-medium">Linkedin profile</label>
+        <br>
+        <input type="text" name="" id="linkedin">
+        {# Button #}
+        <span class="cv-send__button">
+          <img src="img/icons/np-right-arrow.png">
+          <p class="font-metropolis-medium">Send</p>
+        </span>
+      </form>
+    </div>
+    <div class="cv-form__box2">
+      <img src="img/work@more2.jpg" alt="">
+    </div>
+  </div>
+</section>
+{% endblock %}

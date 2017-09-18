@@ -1,7 +1,6 @@
 
 function showTab($this, service) {
   $this.classList.add('section_services-tablink');
-  console.log('this', $this);
   var i, tabcontent, tablinks;  tablinks = document.getElementsByClassName("section_services-tablink");
   tabcontent = document.getElementsByClassName("section_services-tabcontent-wrapper");
 
@@ -16,6 +15,3 @@ function showTab($this, service) {
   document.getElementById(service).style.display = "flex";
   $this.classList.add('open-tab');
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultTab").click();

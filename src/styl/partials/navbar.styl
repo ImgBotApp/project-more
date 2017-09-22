@@ -1,3 +1,6 @@
+.site-navbar_menu-divider
+  display none
+
 .site-navbar
   background #fff
   display flex
@@ -163,6 +166,13 @@
   
 
 @media screen and (max-width: 768px) // Change
+  .site-navbar_menu-divider
+    display flex
+    height 1px
+    width 180px
+    margin 20px auto 20px 30px
+    background-color #fff
+
   .second_menu
     display none 
   
@@ -252,7 +262,7 @@
 
   .site-navbar__menu
     margin-bottom 30px // Change
-    margin-top 30px // Change
+    margin-top 40px // Change
     text-align left
     height auto
     flex-wrap wrap
@@ -261,7 +271,7 @@
 
   .site-navbar__menu-link
     color #fff
-    padding 18px 8px 8px 30px
+    padding 10px 8px 10px 30px
     display block
     height auto
     display block

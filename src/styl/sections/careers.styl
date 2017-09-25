@@ -194,7 +194,7 @@
         color #c4c4c4
         margin 0 65px
         border none
-        font-size 15px
+        font-size remify(15px)
         background-color transparent
 
     .careers-view__main-form-send__button
@@ -299,5 +299,76 @@
         font-size remify(13px)
         margin-top 3px
 
+@media screen and (max-width: 768px)
+  .careers-view
+    padding 155px 0 0 0
+  .careers-view__title
+    text-align left
+    padding 0 35px
+  .careers-view__carousel-item
+    padding 75px 40px 75px 80px !important
+    height 455px !important
+  .careers-view__carousel-item-heading
+    margin 50px 0 40px 0 !important
+    font-size remify(34) !important
+  .careers-view__carousel-item-description
+    margin 0 !important
+  .careers-view__carousel-item:after
+      content ''
+      width 70% !important
+      height 208px !important
+      position absolute
+      background-position top right
+      background-size cover
+      background-repeat no-repeat
+      bottom calc(-208px / 2) !important
+      right 0 !important
+  
+  .careers-view__carousel-dots
+    bottom -150px!important
+    left 50% !important
+    transform translateX(-50%) !important
+  .careers-view__carousel-arrow
+    justify-content flex-start
+    img
+      margin-left 10px
+  .careers-view__nextArrow
+    right -18px !important
 
+  .career-view_apply-now-section   
+    background-size 100% 15%
+    background-position-y 3%
+    padding 200px 0 100px 0
+    &:after
+      height 25%
+  
+  .cv-form__box2 
+    display none
+  
+  .careers-view__main-form__col1
+    width 80%
+    padding 35px 25px 25px 0px
+    height 450px
+    form
+      margin 0
+      margin-left 0
+      width 100%
+  
+  .careers-view__main-form-group 
+    input
+      margin 0 45px !important
+      width 80% !important
+
+      &:focus + label
+        font-size remify(20) !important
+    
+    label
+      padding 5px 0 5px 45px !important
+      margin-left 0
+    
+    select
+      margin 0 40px !important
+
+  .careers-view__optional-form
+    display none
   

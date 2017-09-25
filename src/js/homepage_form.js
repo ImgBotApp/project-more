@@ -28,17 +28,3 @@ $('.section_form-carousel-next').eq(1).on("click", function() {
   var inputEmail = $('#inputEmail').val();
   $('#emailText').text(inputEmail);
 });
-
-
-$('#nameInputMobile').change(function () {
-  $('label[for="nameInputMobile"]').text($('#nameInputMobile').val());
-  $('#nameInputMobile').val(' ');
-});
-$('#emailInputMobile').change(function () {
-  $('label[for="emailInputMobile"]').text($('#emailInputMobile').val());
-  $('#emailInputMobile').val(' ');
-});
-$('#messageInputMobile').change(function () {
-  $('label[for="messageInputMobile"]').text($('#messageInputMobile').val());
-  $('#messageInputMobile').val(' ');
-});

@@ -8,6 +8,7 @@ footer
   flex-direction column
 
 .site-footer__menu
+  display flex
   color black
   margin 2rem 0 3rem 0
 
@@ -24,9 +25,26 @@ footer
   &:hover
     color $blueStandar
 
-.site-footer__menu-link:last-child
-  border none
+.site-footer-menu-col2
+  .site-footer__menu-link:last-child
+    border none
 
 .site-footer__menu-copyright
   font-size remify(14)
+
+@media screen and (max-width: 768px) // Change
+  .site-footer__menu
+    margin 40px 0 60px calc(50% - 15px) !important
+    width 100%
+
+  .site-footer-menu-col2, .site-footer-menu-col1
+    display flex
+    flex-direction column
+    .site-footer__menu-link
+      padding 5px 15px
+  
+  .site-footer-menu-col2
+    .site-footer__menu-link
+      border none
+  
   

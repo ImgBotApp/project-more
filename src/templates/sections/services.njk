@@ -1,0 +1,91 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Team
+{% endblock %}
+
+{% block content %}
+
+<section class="services_view">
+  <div class="services_view-wrapper">
+    <div class="services_view-title-container">
+      <h1 class="services_view-title font-metropolis-bold">Services</h1>
+    </div>
+    <div class="services_view-options-wrapper">
+      <a class="services_view-option-link" href="#websites">
+        <div class="services_view-options-container">
+          <img class="services_view-options-icon" src="img/icons/websites-icon.png" alt="website icon">
+          <p class="services_view-options-title font-athelas-regular">Websites</p>
+        </div>
+      </a>
+      <a class="services_view-option-link" href="#eCommerce">
+        <div class="services_view-options-container">
+          <img class="services_view-options-icon" src="img/icons/eCommerce-icon.png" alt="eCommerce icon">
+          <p class="services_view-options-title font-athelas-regular">E-commerce</p>
+        </div>
+      </a>
+      <a class="services_view-option-link" href="#software">
+        <div class="services_view-options-container">
+          <img class="services_view-options-icon" src="img/icons/software-icon.png" alt="software icon">
+          <p class="services_view-options-title font-athelas-regular">Software</p>
+        </div>
+      </a>
+    </div>
+    <div class="services_view-items-wrapper">
+      <div id="websites" class="services_view-item">
+        <div class="services_view-item-img">
+          <img src="img/services-bgd2.jpg" alt="service image">
+        </div>
+        <div class="services_view-item-details details1">
+          <img class="services_logo_more" src="img/logos/more-black-mobile.png" alt="">
+          <p class="services_view-item-subtitle font-athelas-regular">Websites</p>
+          <h1 class="services_view-item-details-heading font-metropolis-bold">Make a great first impression</h1>
+          <p class="service_view-item-details-description font-athelas-regular">Your Website is your new business card. Why don’t make it amazing? With less text and more images make your customers fall in love with your service or product, understand it have a great user experience. Show them know you’re the right choice.</p>
+          <div class="services_view-item-details-projects">
+            <a href="http://rgvsoluciones.com/" target="_blank"><img src="img/services_rgv.jpg" alt="project image" class="services_view-item-details-project1"></a>
+            <a href="http://finacero.mx/" target="_blank"><img src="img/services_finacero.jpg" alt="project image" class="services_view-item-details-project2"></a>
+            <a href="http://rlabogados.mx/" target="_blank"><img src="img/services_rl.jpg" alt="project image" class="services_view-item-details-project3"></a>
+          </div>
+        </div>
+      </div>
+      <div id="eCommerce" class="services_view-item">
+        <div class="services_view-item-img">
+          <img src="img/services-bgd3.jpg" alt="service image">
+        </div>
+        <div class="services_view-item-details">
+          <div class="services_view-item-subtitle subEcommerce">
+            <img src="img/logos/shopify-partner-copy.png" alt="shopify logo">
+            <p class="font-athelas-regular">E-commerce</p>
+          </div>
+          <h1 class="services_view-item-details-heading font-metropolis-bold">Sell your service or product</h1>
+          <p class="service_view-item-details-description font-athelas-regular">Wether you're a big or small company, you create or manufacture your products, or even if you sell a service, we can help you to become a real online business by designing and developing a beautiful store for you. You will reach millions of customers by creating an amazing buying experience.</p>
+          <div class="services_view-item-details-projects">
+            <a href="https://wellnessstore.mx/" target="_blank"><img src="img/services_wellnes.jpg" alt="project image" class="services_view-item-details-project1"></a>
+            <a href="https://drinkdreamwater.com/" target="_blank"><img src="img/services_dw.jpg" alt="project image" class="services_view-item-details-project2"></a>
+            <a href="https://jbaccesorios.com/" target="_blank"><img src="img/services_jb.jpg" alt="project image" class="services_view-item-details-project3"></a>
+          </div>
+        </div>
+      </div>
+      <div id="software" class="services_view-item">
+        <div class="services_view-item-img">
+          <img src="img/services-bgd4.jpg" alt="service image">
+        </div>
+        <div class="services_view-item-details">
+          <p class="services_view-item-subtitle font-athelas-regular">Software development</p>
+          <h1 class="services_view-item-details-heading font-metropolis-bold">Tailor made Software</h1>
+          <p class="service_view-item-details-description font-athelas-regular">Anything you can imagine is real. Technology is the best way for creating new companies, products and any software you have in mind. We want to hear all your challenges so we can use technology to overcome them. Create something amazing with us!</p>
+          <div class="services_view-item-details-projects">
+            <a href="https://local-e.mx/" target="_blank"><img src="img/services_locale.jpg" alt="project image" class="services_view-item-details-project1"></a>
+            <a href="https://dondinero.mx/" target="_blank"><img src="img/services_don_dinero.jpg" alt="project image" class="services_view-item-details-project2"></a>
+            <a href="http://bricksa.mx/" target="_blank"><img src="img/services_brick.jpg" alt="project image" class="services_view-item-details-project3"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

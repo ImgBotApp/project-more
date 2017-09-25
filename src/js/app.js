@@ -43,4 +43,23 @@
         });
     }
   });
+  var inputs = document.querySelectorAll('input');
+  var textAreas = document.querySelectorAll('textArea');
+
+  function labelChange(idElement) {
+    $('#' + idElement).change(function () {
+      $('label[for="' + idElement + '"]').text($('#' + idElement).val());
+      $('#' + idElement).val(' ');
+    });
+  }
+  
+  inputs.forEach(function (inputValue) {
+    labelChange(inputValue.id);
+  });
+  
+  textAreas.forEach(function (inputValue) {
+    labelChange(inputValue.id);
+  });
+  
+  
 })();

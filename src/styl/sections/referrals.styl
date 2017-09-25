@@ -1,0 +1,55 @@
+.referrals-view
+  @extends .careers-view
+  background-image url('../img/backgrounds/referrals-bgd.png')
+  background-position-y 73%
+  background-repeat no-repeat
+  background-size 100% 30%
+
+.referrals_view-wrapper
+  max-width 1030px
+  center-block()
+  
+.referrals-view__title
+  @extends .careers-view__title
+
+.referrals_view__description
+  text-align center
+  font-size remify(20)
+  line-height 27px
+  margin 50px 0
+
+hr
+  border none 
+  background-color #dcdcdc
+  width 70%
+  height 1px
+  center-block()
+  margin-bottom 50px
+
+.referrals_view-container
+  width 60%
+  center-block()
+  .referrals_view-condition-wrapper
+    display flex
+    align-items center
+
+    .referrals-view-hyphen
+      height 1px
+      width 23px
+      background-color #000
+      margin-right 15px
+
+    .referrals_view-condition-text
+      font-size remify(20)
+      line-height 27px
+
+  .referrals_view-comision-text
+    margin-left 38px
+    font-size remify(17)
+    line-height 33px
+    margin-top 30px
+
+.referrals-view-form
+  @extends .careers-view__optional-form
+  padding-top 0
+

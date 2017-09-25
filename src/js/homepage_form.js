@@ -18,27 +18,6 @@ $(function () {
   });
 });
 
-// $('.section_form-carousel-next').eq(0).on("click", function() {
-//   var inputName = $('#inputName').val();
-//   $('#nameText').text(inputName);
-// });
-
-// $('.section_form-carousel-next').eq(1).on("click", function() {
-//   var inputEmail = $('#inputEmail').val();
-//   $('#emailText').text(inputEmail);
-// });
-
-
-// $('#nameInputMobile').change(function () {
-//   $('label[for="nameInputMobile"]').text($('#nameInputMobile').val());
-// });
-// $('#emailInputMobile').change(function () {
-//   $('label[for="emailInputMobile"]').text($('#emailInputMobile').val());
-// });
-// $('#messageInputMobile').change(function () {
-//   $('label[for="messageInputMobile"]').text($('#messageInputMobile').val());
-// });
-
 // Validation form contact in home_desktop
 
 $('form[name="form-contact-more_desktop"]').validate({

@@ -18,6 +18,18 @@ $(function () {
   });
 });
 
+$('.section_form-carousel-next').eq(0).on("click", function() {
+  
+    var inputName = $('#inputName').val();
+  
+    $('#nameText').text(inputName);
+  });
+  
+  $('.section_form-carousel-next').eq(1).on("click", function() {
+    var inputEmail = $('#inputEmail').val();
+    $('#emailText').text(inputEmail);
+  });
+
 // Validation form contact in home_desktop
 
 $('form[name="form-contact-more_desktop"]').validate({

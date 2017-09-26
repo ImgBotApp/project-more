@@ -1,0 +1,170 @@
+.quotation-view
+  @extends .careers-view
+  position relative
+  &:after
+    content ''
+    width 992px
+    height 631px
+    background-color #2f76a1
+    position absolute
+    bottom 0
+    right 0
+    z-index -1
+
+.quotation_view-wrapper
+  max-width 1030px
+  center-block()
+
+.quotation-view__main-title,
+.quotation-view__second-title
+  @extends .careers-view__title
+
+.quotation-view__second-title
+  display none
+
+.quotation_view__description
+  text-align center
+  font-size remify(20)
+  line-height 27px
+  margin 50px 0
+
+.quotation_view-comision-text
+  font-size remify(17)
+  line-height 33px
+  text-align center
+
+.quotation_view-container
+  margin-top 100px
+
+.quotation-view-form-wrapper
+  width 100%
+  display flex
+  flex-flow row wrap
+  align-items flex-start
+  justify-content center
+  background-color #fff
+  box-shadow 0 2px 7px 0 rgba(0, 0, 0, 0.25)
+  padding 60px 80px
+  center-block()
+  position relative
+
+.quotation-view__form-group
+  width 100%
+  margin-bottom 40px
+  display flex
+  flex-direction column-reverse
+  position relative
+  
+  label
+    font-size 17px
+    line-height 13px
+    padding-left 10px
+    transition .2s all ease
+    position absolute
+    top 10px
+
+  input, textarea
+    width 100%
+    border none
+    background transparent
+    outline none
+    padding 10px
+    color #bfbfbf   
+
+    &:focus
+      color #bfbfbf    
+
+    &:focus + label
+      font-size 15px
+      color #2f76a1
+      top -10px     
+
+  input
+    border-bottom 1px solid #e5e5e5
+
+  textarea
+    border 1px solid #e5e5e5
+    margin 40px 0
+
+.quotation-view_form-col1
+  padding-right 35px
+
+.quotation-view_form-col2
+  padding-left 35px
+
+.quotation-view_form-col1, 
+.quotation-view_form-col2
+  width 50%
+  display flex
+  flex-direction column
+  align-items flex-start
+  justify-content center
+
+.quotation-view_form-col3
+  width 100%
+
+.quotation-view__form-send__button
+  display flex
+  justify-content space-around
+  align-items center
+  border none
+  background-color #223a48
+  padding 0 12px
+  width 96px
+  height 42px
+  cursor pointer
+  position absolute
+  right 80px
+  bottom 60px
+  img
+    width 1rem
+  p
+    color #ffffff
+    font-size remify(13px)
+    margin-top 3px
+
+@media screen and (max-width: 768px)
+  .quotation-view 
+    padding 155px 0
+    background-image url('../img/backgrounds/services-bgd1.jpg')
+    background-position 100% 0
+    background-size 150% 30%
+    background-repeat no-repeat
+
+    &:after
+      width 65%
+      height 30%
+
+  .quotation-view__second-title
+    display block
+    font-size remify(39)
+
+  .quotation_view-wrapper
+    .quotation-view__main-title,
+    .quotation_view__description,
+    .quotation_view-comision-text,
+    hr
+      display none
+    
+
+  .quotation_view-container
+    form
+      margin 0
+      margin-left 0
+      width 100%
+  .quotation-view-form-wrapper
+    flex-flow column nowrap
+    padding 60px 25px
+    .quotation-view_form-col1, 
+    .quotation-view_form-col2
+      width 100%
+      padding 0
+  
+  .quotation-view__form-group 
+    
+    label
+      padding-left 0
+      font-size 15px
+
+  .quotation-view__form-send__button
+    right 25px

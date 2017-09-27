@@ -48,7 +48,8 @@
   function labelChange(idElement) {
     $('#' + idElement).change(function () {
       $('label[for="' + idElement + '"]').text($('#' + idElement).val());
-      $('#' + idElement).val(' ');
+      $('#' + idElement).css('visibility', 'hidden');
+      
     });
   }
   

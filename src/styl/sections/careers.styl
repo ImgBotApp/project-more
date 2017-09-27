@@ -1,78 +1,374 @@
-// Title
-.careers-view__title {
-  color: #3b84af;
-  font-size: remify(44px);
-  text-align: center;
-  margin: 170px 0 0;
-}
+.careers-view
+  padding 155px 0
+  width 100vw
+
+.careers-view__title
+  color #3b84af
+  font-size remify(44)
+  text-align center
+
+.careers-view__carousel-wrapper
+  max-width 700px
+  margin 100px auto 130px auto
+  position relative
+  .careers-view__carousel-item
+    width 700px
+    height 555px
+    background-color #f5f5f5
+    padding 75px 0 75px 40px
+    margin-left -40px
+    position relative
+    .careers-view__carousel-bullet-point
+      display flex
+      flex-direction row
+      align-items center
+      .careers-view__carousel-hyphen
+        height 1px
+        width 32px
+        background-color #000
+      .careers-view__carousel-letter
+        font-size remify(30)
+        margin-left 15px
+    .careers-view__carousel-item-heading
+      font-size remify(50)
+      text-align left
+      margin 50px 40px 40px 75px
+    .careers-view__carousel-item-description
+      font-size remify(15)
+      line-height 34px
+      letter-spacing 5.5px
+      margin 50px 170px 0 75px
+    &:after
+      content ''
+      width 464px
+      height 310px
+      position absolute
+      background-position top right
+      background-size cover
+      background-repeat no-repeat
+      bottom calc(-464px / 3)
+      right calc(-310px / 2)
+  
+  .careers-view__carousel-item.itemA
+    &:after
+      background-image url('../img/career_A.jpg')
+  .careers-view__carousel-item.itemB
+    &:after
+      background-image url('../img/career_B.jpg')
+  .careers-view__carousel-item.itemC
+    &:after
+      background-image url('../img/career_C.jpg')
+  .careers-view__carousel-item.itemD
+    &:after
+      background-image url('../img/career_D.jpg')
+  .careers-view__carousel-item.itemE
+    &:after
+      background-image url('../img/career_E.jpg')
+  
+.slick-list
+  overflow visible !important
+
+.careers-view__carousel-arrow
+  width 42px
+  height 42px
+  background-color $blueStandar
+  border-radius 100%
+  display flex
+  align-items center
+  justify-content center
+  -webkit-box-shadow 0px 2px 5px 0px rgba(0,0,0,0.65)
+  -moz-box-shadow 0px 2px 5px 0px rgba(0,0,0,0.65)
+  box-shadow 0px 2px 5px 0px rgba(0,0,0,0.65)
+  z-index 1
+  position absolute
+  top 45%
+  img
+    width 11px
+    height 9px
+.careers-view__nextArrow
+  right -12px
+  
+.careers-view__prevArrow
+  left -52px
+
+  img
+    transform rotate(180deg)
+
+.careers-view__carousel-dots
+  display flex
+  flex-direction row
+  position absolute
+  bottom 65px
+  left 75px
+  li
+    list-style none
+    button
+      color transparent
+      overflow hidden
+      border-radius 50%
+      border none
+      background-color #d8d8d8
+      margin-right 5px
+      width 6px
+      height 6px
+  li.slick-active
+    button
+      background-color $blueStandar
 
 // Apply Now Title
-.careers-view__apply {
-  background-image: url(../img/backgrounds/projects-bgd.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 27.5em;
-  total-center();
-    .careers-view__apply-title {
-      color: #3b84af;
-      font-size: remify(44px);
-    }
-}
+.career-view_apply-now-section
+  background-image url("../img/backgrounds/projects-bgd.png")
+  background-size 100% 50%
+  background-position top right
+  background-repeat no-repeat
+  width 100vw
+  padding 155px 0
+  position relative
+  &:after
+    content ''
+    background-color #2e7bac
+    width 100%
+    height 50%
+    bottom 0
+    position absolute
+    z-index -1
+
+.careers-view_apply-now-title
+  color #3b84af
+  font-size remify(44)
+  text-align center
+  
+
 
 // Form Container
-.careers-view__form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -90px;
-}
+.careers-view__main-form
+  display flex
+  align-items center
+  justify-content center
+  margin-top 90px
 
-.cv-form__box1 {
-  width: 37em;
-  height: 32.75em;
-  background-color:#f5f5f5;
-  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.25);
-    form {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-        label {
-          color: #c4c4c4;
-          font-size: remify(15px);
-          letter-spacing: -0.2px;
-        }
-        input {
-          width: 100%;
-          border: none;
-          background-color: transparent;
-        }
-        .cv-send__button {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          align-self: flex-end;
-          background-color: #223a48;
-          padding: 0 12px;
-          width: 96px;
-          height: 42px;
-          cursor: pointer;
-            img {
-              width: 1rem;
-            }
-            p {
-              color: #ffffff;
-              font-size: remify(13px);
-              margin-top: 3px;
-            }
-        }
-    }
-}
+.careers-view__main-form__col1
+  width 592px
+  height 524px
+  background-color #f5f5f5
+  box-shadow 0 2px 7px 0 rgba(0, 0, 0, 0.25)
+  padding 70px 30px 30px 0
+  form
+    display flex
+    flex-direction column
+    position relative
+    height 100%
+    .careers-view__main-form-group
+      margin-bottom 30px
+      display flex
+      flex-direction column-reverse
 
-.cv-form__box2 {
-  img {
-    width: 26.87em;
-    height: 28.75em;
-  }
-}
+      label
+        padding 5px 70px
+        color #c4c4c4
+        font-size remify(15px)
+        letter-spacing -0.2px
+      
+      input
+        margin 0 70px
+        padding 0 0 5px 10px
+        border none
+        background-color transparent
+
+        &:focus
+          outline none
+          border-bottom 2px solid #d3d3d3
+          margin 20px 70px
+          padding 0 0 5px 10px
+          color #878787
+      
+        &:focus + label
+          font-size remify(29)
+          color #172a37
+          font-weight bold
+          border-left 4px solid #408ab7
+
+    .careers-view__main-form-group:nth-child(4)
+      margin-bottom 55px
+      select
+        color #c4c4c4
+        margin 0 65px
+        border none
+        font-size remify(15px)
+        background-color transparent
+
+    .careers-view__main-form-send__button
+      display flex
+      justify-content space-around
+      align-items center
+      border none
+      background-color #223a48
+      padding 0 12px
+      width 96px
+      height 42px
+      cursor pointer
+      position absolute
+      right 0
+      bottom 0
+      img
+        width 1rem
+      
+      p
+        color #ffffff
+        font-size remify(13px)
+        margin-top 3px
+
+
+.cv-form__box2
+  img
+    width 26.87em
+    height 28.75em
+
+.careers-view__optional-form
+  padding-top 85px
+  .careers-view__optional-form-title
+    font-size remify(30)
+    text-align center
+    color #172a37
+  form
+    margin 55px auto 0 auto
+    width 537px
+    height 482px
+    background-color #f5f5f5
+    box-shadow 0 2px 7px 0 rgba(0, 0, 0, 0.25)
+    padding 70px 30px 30px 0
+    display flex
+    flex-direction column
+    position relative
+
+    .careers-view__optional-form-group
+      margin-bottom 30px
+      display flex
+      flex-direction column-reverse
+
+      label
+        padding 5px 70px
+        color #c4c4c4
+        font-size remify(15px)
+        letter-spacing -0.2px
+      
+      input, textarea
+        margin 0 70px
+        padding 0 0 5px 10px
+        border none
+        background-color transparent
+
+        &:focus
+          outline none
+          border-bottom 2px solid #d3d3d3
+          margin 20px 70px
+          padding 0 0 5px 10px
+          color #878787
+      
+        &:focus + label
+          font-size remify(29)
+          color #172a37
+          font-weight bold
+          border-left 4px solid #408ab7
+
+      textarea:focus + label
+        padding 5px 0px 5px 70px
+        font-size 24px
+        color #172a37
+        font-weight bold
+        border-left 4px solid #408ab7
+    
+    .careers-view__optional-form-send__button
+      display flex
+      justify-content space-around
+      align-items center
+      border none
+      background-color #223a48
+      padding 0 12px
+      width 96px
+      height 42px
+      cursor pointer
+      position absolute
+      right 30px
+      bottom 30px
+      img
+        width 1rem
+      
+      p
+        color #ffffff
+        font-size remify(13px)
+        margin-top 3px
+
+@media screen and (max-width: 768px)
+  .careers-view
+    padding 155px 0 0 0
+  .careers-view__title
+    text-align left
+    padding 0 35px
+  .careers-view__carousel-item
+    padding 75px 40px 75px 80px !important
+    height 455px !important
+  .careers-view__carousel-item-heading
+    margin 50px 0 40px 0 !important
+    font-size remify(34) !important
+  .careers-view__carousel-item-description
+    margin 0 !important
+  .careers-view__carousel-item:after
+      content ''
+      width 70% !important
+      height 208px !important
+      position absolute
+      background-position top right
+      background-size cover
+      background-repeat no-repeat
+      bottom calc(-208px / 2) !important
+      right 0 !important
+  
+  .careers-view__carousel-dots
+    bottom -150px!important
+    left 50% !important
+    transform translateX(-50%) !important
+  .careers-view__carousel-arrow
+    justify-content flex-start
+    img
+      margin-left 10px
+  .careers-view__nextArrow
+    right -18px !important
+
+  .career-view_apply-now-section   
+    background-size 100% 15%
+    background-position-y 3%
+    padding 200px 0 100px 0
+    &:after
+      height 25%
+  
+  .cv-form__box2 
+    display none
+  
+  .careers-view__main-form__col1
+    width 80%
+    padding 35px 25px 25px 0px
+    height 450px
+    form
+      margin 0
+      margin-left 0
+      width 100%
+  
+  .careers-view__main-form-group 
+    input
+      margin 0 45px !important
+      width 80% !important
+
+      &:focus + label
+        font-size remify(20) !important
+    
+    label
+      padding 5px 0 5px 45px !important
+      margin-left 0
+    
+    select
+      margin 0 40px !important
+
+  .careers-view__optional-form
+    display none
+  

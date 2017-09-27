@@ -1,0 +1,292 @@
+.services_view
+  background-image url('../img/backgrounds/services-bgd1.jpg')
+  background-repeat no-repeat
+  background-size 100% 50%
+  background-position top right
+  padding 155px 0
+  width 100vw
+
+.services_view-wrapper
+  margin 0 auto
+  max-width 1280px
+  width 90%
+
+.services_view-title
+  font-size remify(44)
+  color $blueStandar
+  text-align center
+
+.services_view-options-wrapper
+  total-center()
+  flex-direction row
+  margin 60px 0 100px
+
+.services_view-options-container
+  total-center()
+  flex-direction row
+  width 211px
+  height 61px
+  margin 0 15px
+  background-color #fff
+  -webkit-box-shadow 0px 3px 8px 0px rgba(0,0,0,0.30)
+  -moz-box-shadow 0px 3px 8px 0px rgba(0,0,0,0.30)
+  box-shadow 0px 3px 8px 0px rgba(0,0,0,0.30)
+  a
+    text-decoration none
+  p
+    color #000
+    margin-left 15px
+
+  img[alt="website icon"]
+    width 18px
+    height 16px
+  img[alt="eCommerce icon"]
+    width 21px
+    height 21px
+  img[alt="software icon"]
+    width 25px
+    height 15px
+
+.services_view-item
+  total-center()
+  flex-direction row
+
+  .services_view-item-img
+    width 530px
+    height 386px
+    img 
+      width 100%
+
+  .services_view-item-details
+    width 609px
+    height 386px 
+    padding 5px 150px 20px 55px
+    display flex
+    flex-direction column
+    justify-content space-around
+    position relative
+
+    .services_logo_more
+      position absolute
+      right -17px 
+      bottom 160px
+      width 35px
+
+    p.services_view-item-subtitle
+      padding 3px 14px
+      border-left 1px solid #000
+      letter-spacing 5.5px
+
+    h1
+      font-size 35px
+      line-height 42px
+    
+    p.service_view-item-details-description
+      font-size 15px
+      line-height 19px
+
+    .services_view-item-details-projects
+      display flex
+      flex-direction row
+      justify-content flex-start
+      img
+        width 98px
+        height 62px
+        -webkit-transition all .2s ease-in
+        -ms-transition all .2s ease-in
+        -moz-transition all .2s ease-in
+        transition all .2s ease-in
+
+      .services_view-item-details-project2
+        margin 0 10px
+
+      img:hover
+        -webkit-transition all .2s ease-in
+        -webkit-transform scale(1.1)
+        -ms-transition all .2s ease-in
+        -ms-transform scale(1.1)  
+        -moz-transition all .2s ease-in
+        -moz-transform scale(1.1)
+        transition all .2s ease-in
+        transform scale(1.1)
+
+    div.services_view-item-subtitle
+      total-center()
+      flex-direction row
+      img
+        width 83px
+        margin-right 15px
+      p
+        border-right 1px solid #000
+        border-left 1px solid #000
+        padding 3px 14px
+        letter-spacing 5.5px
+
+  .services_view-item-details.details1:after
+    position absolute
+    content ''
+    right 0
+    bottom 50%
+    width 1px
+    height 60px
+    background-color #000        
+
+.services_view-item:nth-child(2)
+  margin 120px 0 200px 0
+  flex-direction row-reverse
+  .services_view-item-details
+    padding 0px 55px 55px 150px
+    align-items flex-end
+  h1,p.service_view-item-details-description
+    text-align right
+  
+.services_view-item:nth-child(3)
+  position relative
+  &:after
+    content ''
+    position absolute
+    background-color #f5f5f5
+    width 604px
+    height 530px
+    right 135px
+    top -60px
+    z-index -1
+
+.services_view
+  position relative
+  z-index 0
+  &:after
+    content ''
+    position absolute
+    width 400px
+    height 760px
+    background-color #f5f5f5
+    left 0
+    top 470px
+    z-index -1
+
+@keyframes more_logo_animation 
+  0% { transform: scale(1) }
+  25% { transform:scale(.8) rotate(-8deg) }
+  75% { transform:scale(1.2) rotate(8deg) }
+  100% { transform:scale(1) rotate(0) }
+
+
+.services_logo_more
+  animation: more_logo_animation 8s ease infinite;
+  transform-origin: 50% 50%;
+
+@media screen and (max-width: 768px)
+  .services_view
+    padding 120px 0
+    background-size 200% 25%
+    &:after
+      content ''
+      position absolute
+      width 400px
+      height 760px
+      background-color #f5f5f5
+      left 0
+      top calc(100% - 760px) !important
+      z-index -1
+  
+  .services_logo_more
+    display none
+
+  .services_view-wrapper
+    width 100%
+
+  .services_view-title
+    text-align left
+    margin-left 40px
+  
+  .services_view-options-container
+    width 65px
+    height 60px
+    position relative
+    .services_view-options-title
+      width 70px
+      position absolute
+      bottom -30px
+      font-size 11px
+      margin 0 auto
+      text-align center
+      left 50%
+      -webkit-transform translateX(-50%)
+      transform translateX(-50%)
+
+  .services_view-item
+    flex-wrap wrap
+
+    .services_view-item-img
+      width 100%
+      height auto
+  
+    .services_view-item-details
+      padding 75px 30px 0 40px
+      width 100%
+      height auto
+
+      .services_view-item-subtitle
+        margin-bottom 30px
+        padding 3px 0 3px 14px !important
+      
+      .subEcommerce
+          padding 3px 0px 3px 0
+          p
+            padding 3px 6px !important
+
+      h1
+        font-size remify(30)
+        margin-bottom 30px
+      
+      .service_view-item-details-description
+        margin-bottom 30px
+      
+      .services_view-item-details-projects
+        display flex
+        flex-direction row
+        margin-left -40px
+        margin-right -30px
+        margin-bottom 30px
+
+        a
+          width calc(33.3333% - 5px)
+
+        img
+          width 100%
+          height auto
+          transition all 0.2s ease-in
+
+        a:nth-child(2)
+          width calc(33.3333% - 5px)
+          margin 0 10px
+          .services_view-item-details-project2
+            margin 0
+  
+  .services_view-item-details.details1:after
+    position absolute
+    content ''
+    width 0 !important
+    height 0 !important
+    background-color transparent
+  
+  .services_view-item:nth-child(2)
+    margin 40px 0
+    flex-direction row-reverse
+    .services_view-item-details
+      padding 75px 40px 0 30px
+      .services_view-item-details-projects
+        margin-left -30px !important
+        margin-right -40px !important
+  
+  .services_view-item:nth-child(3)
+    &:after
+      content: '';
+      position: absolute;
+      background-color: #f5f5f5;
+      width: 198px;
+      height: 530px;
+      right: 0;
+      top: -125px;
+      z-index: -1;

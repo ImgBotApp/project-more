@@ -6,6 +6,10 @@
 a 
   text-decoration none 
 
+// overwriting the log success color
+.alertify-logs>.success
+  background: #408ab7
+
 .section_one
   height 100vh
   background-image url('../img/backgrounds/section_1.jpg')
@@ -422,6 +426,13 @@ a
 //----------------------fin section_services-------------------------
 
 // ========== section_ Form ========== //
+
+.section_form .slick-list
+  padding-bottom 13px !important 
+
+label.error
+  font-size .8em !important
+
 .section_form
   background-color $blueStandar
   total-center()
@@ -485,6 +496,7 @@ a
 .section_form-btn
   @extends .section_services-btn
   width 115px
+  border none
   justify-content space-around
   padding 0 15px
   margin-left auto
@@ -620,6 +632,7 @@ a
   
   .section_form_mobile-btn
     @extends .section_services-btn
+    border none
     position absolute
     right 30px
     bottom 30px

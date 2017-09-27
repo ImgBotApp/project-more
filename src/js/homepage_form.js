@@ -49,7 +49,6 @@ $('form[name="form-contact-more_desktop"]').validate({
   },
   submitHandler: function(form) {
     var data = $('form[name="form-contact-more_desktop"]').serialize();
-    console.log(data);
     $.ajax({
       url: 'http://integrations.blick.mx/more/contact/',
       method: 'POST',
@@ -88,7 +87,6 @@ $('form[name="form-contact-more_mobile"]').validate({
   },
   submitHandler: function(form) {
     var data = $('form[name="form-contact-more_mobile"]').serialize();
-    console.log(data);
     $.ajax({
       url: 'http://integrations.blick.mx/more/contact/',
       method: 'POST',
@@ -103,7 +101,6 @@ $('form[name="form-contact-more_mobile"]').validate({
   },
   invalidHandler: function(event, validator) {
     var data = $('form[name="form-contact-more_mobile"]').serialize();
-    console.log(data);
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
     alertify.error("Verifica tu información tienes " + errors + " errores.");
@@ -129,7 +126,6 @@ $('form[name="form-contact-more_contact"]').validate({
   },
   submitHandler: function(form) {
     var data = $('form[name="form-contact-more_contact"]').serialize();
-    console.log(data);
     $.ajax({
       url: 'http://integrations.blick.mx/more/contact/',
       method: 'POST',
@@ -144,7 +140,6 @@ $('form[name="form-contact-more_contact"]').validate({
   },
   invalidHandler: function(event, validator) {
     var data = $('form[name="form-contact-more_contact"]').serialize();
-    console.log(data);
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
     alertify.error("Verifica tu información tienes " + errors + " errores.");

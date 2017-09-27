@@ -22,7 +22,6 @@
         }
 
         inputs.map(function(index, elem) {
-          console.log(elem.id);
           labelChange(elem.id);
         });
       }

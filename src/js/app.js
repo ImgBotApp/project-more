@@ -30,18 +30,22 @@
         method: 'POST',
         data: $form
       })
-        .done(function (data) {
-          setMessage(parseInt(data) === 1);
-          form.reset();
-        })
-        .fail(function () {
-          setMessage(false);
-        })
-        .always(function () {
-          fields.removeAttr('disabled');
-          $(form).find('.button-wrapper').removeClass('disabled');
-        });
+      .done(function (data) {
+        setMessage(parseInt(data) === 1);
+        form.reset();
+      })
+      .fail(function () {
+        setMessage(false);
+      })
+      .always(function () {
+        fields.removeAttr('disabled');
+        $(form).find('.button-wrapper').removeClass('disabled');
+      });
     }
+<<<<<<< Updated upstream
   }); 
   
+=======
+  }
+>>>>>>> Stashed changes
 })();

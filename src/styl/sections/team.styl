@@ -1,12 +1,13 @@
+
+* 
+  box-sizing border-box
+
 .view_team
   padding 155px 0
   width 100vw
 
 .view_team-container
   width 100vw
-  display flex
-  flex-direction column
-  align-content center
 
 .view_team-title-container
   center-block()
@@ -24,61 +25,67 @@
   font-size remify(20)
   text-align center
 
-.view_team-photos-wrapper
-  background-color #eae9ea
+.view_team-items-wrapper
   margin-top 100px
-  padding-top 60px
-  width 100%
-  display flex
-  .view_team-team-member-photo
-    padding 0px 30px
-    display flex
-    align-items flex-end
-    justify-content center
-    width 20%
-    height 208px
-    img
-      width 90%
+  display grid
+  grid-template-columns repeat(auto-fit,minmax(230px, 1fr))
+  grid-auto-rows minmax(465px, auto)
 
-  .view_team-team-member-photo.join-us-wrapper
+.view_team-member-item.join-us-wrapper
+  grid-column-end span 2
+  img
     width 40%
-    img 
-      width 40%
-      center-block()
 
-.view_team-team_member_description
-  width 100%
+.view_team-member-photo
   display flex
+  justify-content center
+  align-items flex-end
+  background-color #edebed
+  height 60%
+  img
+    width 85%
 
-  .view_team-team_member-item
-    width 20%
-    height 208px
-    padding 0 45px
-    display flex
-    flex-direction column
-    align-content center
-    justify-content center
+.view_team-member-description
+  padding 0 40px
 
-    .view_team-team_member-name
-      font-size remify(15)
-      line-height 3.13
-      text-align center
-      letter-spacing 0.3px
-      color #172a37
+.view_team-member-name
+  font-size remify(15)
+  line-height 3.13
+  text-align center
+  letter-spacing 0.3px
+  color #172a37
 
-    .view_team-team_member-position
-      font-size remify(10)
-      line-height 4.2
-      letter-spacing 2.6px
-      text-align center
-      color #141414
+.view_team-member-position
+  font-size remify(10)
+  line-height 4.2
+  letter-spacing 2.6px
+  text-align center
+  color #141414
 
-    .view_team-team_member-phrase
-      font-size remify(8)
-      line-height 1.63
-      letter-spacing 0.2px
-      text-align center
-      color #172a37
-    
+.view_team-member-phrase
+  font-size remify(8)
+  line-height 1.63
+  letter-spacing 0.2px
+  text-align center
+  color #172a37
+
+@media screen and (max-width: 768px)
+  .view_team-items-wrapper
+    grid-template-columns repeat(auto-fit,minmax(185px, 1fr))
+    grid-auto-rows minmax(385px, auto)
+
+  .view_team-member-item.join-us-wrapper
+    grid-column-end span 1
+  
+  .view_team-member-photo
+    height 50%
+
+  .join-us-wrapper
+    .view_team-member-photo
+      img
+        width 85%
+  
+  .view_team-member-description
+    padding 0 30px
 
 

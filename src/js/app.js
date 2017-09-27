@@ -42,5 +42,4 @@
           $(form).find('.button-wrapper').removeClass('disabled');
         });
     }
-  });  
 })();

@@ -42,10 +42,5 @@
         $(form).find('.button-wrapper').removeClass('disabled');
       });
     }
-<<<<<<< Updated upstream
-  }); 
-  
-=======
-  }
->>>>>>> Stashed changes
+  });
 })();

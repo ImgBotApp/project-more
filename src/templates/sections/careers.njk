@@ -73,19 +73,19 @@ Careers
             </div>
             <div class="careers-view__main-form-group">
               <select type="text" name="openingCareers" id="openingCareers" class="font-metropolis-medium" required>
-                <option class="font-metropolis-medium" value="Selec an openning">Selec an openning</option>
-                <option class="font-metropolis-medium" value="UI Designer">UI Designer</option>
-                <option class="font-metropolis-medium" value="UX Designer">UX Designer</option>
-                <option class="font-metropolis-medium" value="Tech Lead">Tech Lead</option>
-                <option class="font-metropolis-medium" value="Tech Lead">Tech Lead</option>
-                <option class="font-metropolis-medium" value="Front-End Developer">Front-End Developer</option>
-                <option class="font-metropolis-medium" value="Back-End Developer">Back-End Developer</option>
-                <option class="font-metropolis-medium" value="Growth Hacker">Growth Hacker</option>
-                <option class="font-metropolis-medium" value="Project Manager">Project Manager</option>
-                <option class="font-metropolis-medium" value="Sales">Sales</option>
-                <option class="font-metropolis-medium" value="Graphic Designer">Graphic Designer</option>
-                <option class="font-metropolis-medium" value="Finance and Administration">Finance and Administration</option>
-                <option class="font-metropolis-medium" value="Human resources">Human resources</option>
+                <option class="font-metropolis-medium select-option" value="Selec an openning">Selec an openning</option>
+                <option class="font-metropolis-medium select-option" value="UI Designer">UI Designer</option>
+                <option class="font-metropolis-medium select-option" value="UX Designer">UX Designer</option>
+                <option class="font-metropolis-medium select-option" value="Tech Lead">Tech Lead</option>
+                <option class="font-metropolis-medium select-option" value="Tech Lead">Tech Lead</option>
+                <option class="font-metropolis-medium select-option" value="Front-End Developer">Front-End Developer</option>
+                <option class="font-metropolis-medium select-option" value="Back-End Developer">Back-End Developer</option>
+                <option class="font-metropolis-medium select-option" value="Growth Hacker">Growth Hacker</option>
+                <option class="font-metropolis-medium select-option" value="Project Manager">Project Manager</option>
+                <option class="font-metropolis-medium select-option" value="Sales">Sales</option>
+                <option class="font-metropolis-medium select-option" value="Graphic Designer">Graphic Designer</option>
+                <option class="font-metropolis-medium select-option" value="Finance and Administration">Finance and Administration</option>
+                <option class="font-metropolis-medium select-option" value="Human resources">Human resources</option>
               </select>
             </div>
             <div class="careers-view__main-form-group">
@@ -107,6 +107,10 @@ Careers
       <p class="careers-view__optional-form-title font-metropolis-bold">Go the extra mile <span class="font-athelas-bold">(Optionals)</span></p>
       <form action="" method="post">
         <div class="careers-view__optional-form-group">
+          <input type="text" name="LiCareers" id="LiCareers" required>
+          <label for="LiCareers" class="font-metropolis-medium">Linkedin profile</label>
+        </div>
+        <div class="careers-view__optional-form-group">
           <input type="text" name="portfolioCareers" id="portfolioCareers" required>
           <label for="portfolioCareers" class="font-metropolis-medium">Behance Portfolio</label>
         </div>
@@ -119,7 +123,7 @@ Careers
           <label for="urlCareers" class="font-metropolis-medium">Portolio URL</label>
         </div>
         <div class="careers-view__optional-form-group">
-          <textarea cols="24" rows="1" type="text" name="whyMoreCareers" id="whyMoreCareers" required></textarea>
+          <textarea cols="24" rows="2" type="text" name="whyMoreCareers" id="whyMoreCareers" required></textarea>
           <label for="whyMoreCareers" class="font-metropolis-medium">Why would you like to work with us?</label>
         </div>
         <button type="submit" class="careers-view__optional-form-send__button">

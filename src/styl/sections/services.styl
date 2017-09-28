@@ -165,16 +165,15 @@
     top 470px
     z-index -1
 
-@keyframes more_logo_animation 
-  0% { transform: scale(1) }
-  25% { transform:scale(.8) rotate(-8deg) }
-  75% { transform:scale(1.2) rotate(8deg) }
-  100% { transform:scale(1) rotate(0) }
-
+@keyframes tada_more_logo
+  0% { transform:  rotate(0deg) scaleX(1.00) scaleY(1.00)}
+  10%, 20% { transform:  rotate(-8deg) scaleX(0.80) scaleY(0.80)}
+  30%, 50%, 100% { transform:  rotate(8deg) scaleX(1.20) scaleY(1.20)}
+  40%, 60% { transform:  rotate(-8deg) scaleX(1.20) scaleY(1.20)}
 
 .services_logo_more
-  animation: more_logo_animation 8s ease infinite;
-  transform-origin: 50% 50%;
+  animation tada_more_logo linear 1s infinite
+  transform-origin 20% 100%
 
 @media screen and (max-width: 768px)
   .services_view

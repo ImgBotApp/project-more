@@ -70,8 +70,20 @@
   color #172a37
 
 @media screen and (max-width: 768px)
+  .view_team
+    padding 155px 0 0 0 
+  
+  .view_team-title-container,
+  .view_team-description-container
+    padding 0 20px 0 30px 
+  .view_team-title
+    font-size remify(33)
+  .view_team-title, 
+  .view_team-description
+    text-align left
+
   .view_team-items-wrapper
-    grid-template-columns repeat(auto-fit,minmax(185px, 1fr))
+    grid-template-columns repeat(auto-fit,minmax(160px, 1fr))
     grid-auto-rows minmax(385px, auto)
 
   .view_team-member-item.join-us-wrapper
@@ -86,6 +98,7 @@
         width 85%
   
   .view_team-member-description
-    padding 0 30px
+    padding 0 15px
+
 
 

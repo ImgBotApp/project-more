@@ -149,7 +149,7 @@
 
 .careers-view__main-form__col1
   width 592px
-  height 524px
+  height 580px
   background-color #f5f5f5
   box-shadow 0 2px 7px 0 rgba(0, 0, 0, 0.25)
   padding 70px 30px 30px 0
@@ -178,7 +178,7 @@
         &:focus
           outline none
           border-bottom 2px solid #d3d3d3
-          margin 20px 70px
+          margin 20px 40px 20px 70px
           padding 0 0 5px 10px
           color #878787
       
@@ -190,12 +190,32 @@
 
     .careers-view__main-form-group:nth-child(4)
       margin-bottom 55px
+      position relative
       select
         color #c4c4c4
         margin 0 65px
+        width 170px
         border none
         font-size remify(15px)
         background-color transparent
+        -webkit-appearance none
+        outline none
+        position relative
+        .select-option
+          background-color transparent
+          padding 5px 0
+      &:after
+        content ' '
+        position absolute
+        top 5px
+        left 40%
+        width 0px
+        height 0px
+        border-left 4px solid transparent
+        border-right 4px solid transparent
+        border-top 6px solid #223a48
+        z-index 1
+
 
     .careers-view__main-form-send__button
       display flex
@@ -221,8 +241,9 @@
 
 .cv-form__box2
   img
-    width 26.87em
-    height 28.75em
+    width 28.87em
+    height 31.75em
+
 
 .careers-view__optional-form
   padding-top 85px
@@ -233,7 +254,7 @@
   form
     margin 55px auto 0 auto
     width 537px
-    height 482px
+    height 593px
     background-color #f5f5f5
     box-shadow 0 2px 7px 0 rgba(0, 0, 0, 0.25)
     padding 70px 30px 30px 0
@@ -251,9 +272,11 @@
         color #c4c4c4
         font-size remify(15px)
         letter-spacing -0.2px
+
       
+
       input, textarea
-        margin 0 70px
+        margin 0 40px 0 70px
         padding 0 0 5px 10px
         border none
         background-color transparent
@@ -263,7 +286,7 @@
         &:focus
           outline none
           border-bottom 2px solid #d3d3d3
-          margin 20px 70px
+          margin 20px 40px 20px 70px
           padding 0 0 5px 10px
           color #878787
       
@@ -279,7 +302,7 @@
         color #172a37
         font-weight bold
         border-left 4px solid #408ab7
-    
+
     .careers-view__optional-form-send__button
       display flex
       justify-content space-around
@@ -301,6 +324,22 @@
         font-size remify(13px)
         margin-top 3px
 
+textarea
+  padding 5px 10px 0 10px !important
+  text-align justify
+  &::-webkit-scrollbar
+    width 5px
+
+  &::-webkit-scrollbar-thumb
+    border-radius 50px
+    max-height 5px
+    background-color rgba(64,138,183, 0.5)
+
+  &::-webkit-scrollbar-track 
+    border-radius 50px
+    background-color rgba(	196, 196, 196,0.3)
+
+      
 @media screen and (max-width: 768px)
   .careers-view
     padding 155px 0 0 0

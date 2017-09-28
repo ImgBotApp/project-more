@@ -21,11 +21,22 @@
 
 .contacto-view__more-logo 
   position relative
+  &::after
+    position absolute
+    content ''
+    right 4.29rem
+    bottom 50px
+    width 1px
+    height 60px
+    background-color #000
   
   img 
     position absolute
     right 3.12em
     bottom 0
+    width 35px
+    animation tada_more_logo linear 1s infinite
+    transform-origin 20% 100%
     
 
 
@@ -45,6 +56,7 @@
   padding 4.56em 20.12em 0 6.25em
   box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.19)
   background-color #ffffff
+  
   
   form 
     label 
@@ -150,6 +162,8 @@
     padding 0
     box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.22)
     z-index 1
+    
+
   
     form 
       margin 37px 0 0
@@ -221,7 +235,7 @@
   
 
   // Name, e-mail, mesage
-  .contacto-view__form-box1 
+  .contacto-view__form-box1
     display flex
     flex-direction column
     align-items center
@@ -231,7 +245,7 @@
     box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.19)
     center-block()
     z-index 1
-  
+    
 
     form 
       margin 37px 0 0

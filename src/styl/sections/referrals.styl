@@ -52,6 +52,8 @@ hr
 .referrals-view-form
   @extends .careers-view__optional-form
   padding-top 0
+  form
+    height 525px
 
 @media screen and (max-width: 768px)
   .referrals-view
@@ -102,11 +104,13 @@ hr
           padding 5px 0 5px 40px
           margin 0
         input, textarea
+          border-radius 0px
           margin 0 40px
           width calc(100% - 80px)
           color #c4c4c4
           &:focus
             margin 20px 40px
             padding-bottom 5px
+            border-radius 0px
           &:focus + label
             padding 5px 0 5px 36px

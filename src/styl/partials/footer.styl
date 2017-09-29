@@ -8,9 +8,10 @@ footer
   flex-direction column
 
 .site-footer__menu
-  display flex
-  color black
-  margin 2rem 0 3rem 0
+  .site-footer__menu-wrapper
+    display flex
+    color black
+    margin 2rem 0 3rem 0
 
 .site-footer__menu-link
   font-size remify(14)
@@ -22,7 +23,7 @@ footer
     font-weight bold
     color $darkBlue
   
-  &:hover
+  &hove
     color $blueStandar
 
 .site-footer-menu-col2
@@ -34,8 +35,11 @@ footer
 
 @media screen and (max-width: 768px) // Change
   .site-footer__menu
-    margin 40px 0 60px calc(50% - 15px) !important
-    width 100%
+    .site-footer__menu-wrapper
+      display flex
+      justify-content center
+      color #000
+      width calc(100% - (-40px))
 
   .site-footer-menu-col2, .site-footer-menu-col1
     display flex

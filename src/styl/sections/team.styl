@@ -3,12 +3,12 @@
   box-sizing border-box
 
 .view_team
-  padding 155px 0
+  padding 155px 0 70px 0
   width 100vw
 
 .view_team-container
   width 100vw
-
+  
 .view_team-title-container
   center-block()
   margin-bottom 35px
@@ -20,33 +20,32 @@
 
 .view_team-description-container
   center-block()
+  margin-bottom 70px
 
 .view_team-description
   font-size remify(20)
   text-align center
 
-.view_team-items-wrapper
-  margin-top 100px
-  display grid
-  grid-template-columns repeat(auto-fit,minmax(230px, 1fr))
-  grid-auto-rows minmax(465px, auto)
-
-.view_team-member-item.join-us-wrapper
-  grid-column-end span 2
-  img
+.view_team-items-wrapper-row
+  display flex
+  flex-flow wrap row
+  width 100%
+  .view_team-member-item
+    width 20%
+  .view_team-member-item.join-us-wrapper
     width 40%
 
-.view_team-member-photo
-  display flex
-  justify-content center
-  align-items flex-end
-  background-color #edebed
-  height 60%
-  img
-    width 85%
+ .view_team-member-photo
+    display flex
+    justify-content center
+    align-items flex-end
+    background-color #edebed
+    height 13.875rem
+    img
+      height 90%
 
 .view_team-member-description
-  padding 0 40px
+  padding 20px 40px 40px 40px
 
 .view_team-member-name
   font-size remify(15)
@@ -57,10 +56,16 @@
 
 .view_team-member-position
   font-size remify(10)
-  line-height 4.2
   letter-spacing 2.6px
   text-align center
   color #141414
+
+.view_team-member-divider
+  width 18px
+  height 1px
+  background-color #e6e6e6
+  margin 15px auto
+
 
 .view_team-member-phrase
   font-size remify(8)
@@ -71,34 +76,35 @@
 
 @media screen and (max-width: 768px)
   .view_team
-    padding 155px 0 0 0 
+    padding 110px 0
   
   .view_team-title-container,
   .view_team-description-container
     padding 0 20px 0 30px 
   .view_team-title
-    font-size remify(33)
+    font-size remify(38)
   .view_team-title, 
   .view_team-description
     text-align left
 
-  .view_team-items-wrapper
-    grid-template-columns repeat(auto-fit,minmax(160px, 1fr))
-    grid-auto-rows minmax(385px, auto)
-
+  .view_team-member-item
+    width 100% !important
   .view_team-member-item.join-us-wrapper
-    grid-column-end span 1
-  
-  .view_team-member-photo
-    height 50%
+    width 100% !important
 
-  .join-us-wrapper
-    .view_team-member-photo
-      img
-        width 85%
+  .view_team-member-photo
+      height 15.5rem
   
   .view_team-member-description
-    padding 0 15px
+    padding 15px 30px 45px 30px
+  
+  .view_team-member-name
+    font-size remify(22)
+  .view_team-member-position
+    font-size remify(16)
+  .view_team-member-phrase
+    font-size remify(12)
+
 
 
 

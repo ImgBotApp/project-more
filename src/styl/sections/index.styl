@@ -469,6 +469,7 @@ label.error
     color #FFF
     appearance none
     border none
+    border-radius 0px
     box-shadow none
     outline none
     background transparent
@@ -534,9 +535,6 @@ label.error
 .section_form_mobile
   display none
 
-  
-
-
 
 // MOBILE
 
@@ -588,9 +586,13 @@ label.error
   
   .section_services-tabcontent-wrapper
     flex-wrap wrap
+    .section_services-tabcontent-img
+      width 100%
+      height auto
   
   .section_services-tabcontent
     padding 70px 30px 70px 35px
+    width 100%
 
   .section_services-container
     padding-bottom 0
@@ -599,7 +601,7 @@ label.error
     position relative
     display flex
     background-color #f0f0f0
-    padding 30px
+    padding 50px 30px 30px 30px
     height 400px
     flex-direction column
     justify-content flex-start
@@ -617,12 +619,14 @@ label.error
     input, textarea
       @extends .section_form-carousel-item input
       width 100%
+      border-radius 0px
       color #4d4d4d
       border none
 
       &:focus
         outline none
         border-bottom 2px solid $darkBlue
+        border-radius 0px
         margin-bottom 35px
 
       &:focus + label

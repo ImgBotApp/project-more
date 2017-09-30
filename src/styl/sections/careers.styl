@@ -173,6 +173,7 @@
         margin 0 70px
         padding 0 0 5px 10px
         border none
+        border-radius 0px
         background-color transparent
 
         &:focus
@@ -203,12 +204,12 @@
         position relative
         .select-option
           background-color transparent
-          padding 5px 0
+          padding 2px 0
       &:after
         content ' '
         position absolute
         top 5px
-        left 40%
+        left 220px
         width 0px
         height 0px
         border-left 4px solid transparent
@@ -279,6 +280,7 @@
         margin 0 40px 0 70px
         padding 0 0 5px 10px
         border none
+        border-radius 0px
         background-color transparent
         color #c4c4c4
 
@@ -286,6 +288,7 @@
         &:focus
           outline none
           border-bottom 2px solid #d3d3d3
+          border-radius 0px
           margin 20px 40px 20px 70px
           padding 0 0 5px 10px
           color #878787
@@ -342,17 +345,22 @@ textarea
       
 @media screen and (max-width: 768px)
   .careers-view
-    padding 155px 0 0 0
+    padding 120px 0 0 0
+  .careers-view__carousel-wrapper
+    margin 60px auto 130px auto
   .careers-view__title
     text-align left
     padding 0 35px
   .careers-view__carousel-item
-    padding 75px 40px 75px 80px !important
-    height 455px !important
+    padding 45px 40px 75px 80px !important
+    height 410px !important
   .careers-view__carousel-item-heading
-    margin 50px 0 40px 0 !important
-    font-size remify(34) !important
+    margin 30px 0 25px 0 !important
+    font-size remify(25) !important
   .careers-view__carousel-item-description
+    font-size remify(12) !important
+    line-height 25px !important
+    letter-spacing 5.5px !important
     margin 0 !important
   .careers-view__carousel-item:after
       content ''
@@ -362,11 +370,11 @@ textarea
       background-position top right
       background-size cover
       background-repeat no-repeat
-      bottom calc(-208px / 2) !important
+      bottom calc(-208px / 4) !important
       right 0 !important
   
   .careers-view__carousel-dots
-    bottom -150px!important
+    bottom -100px!important
     left 50% !important
     transform translateX(-50%) !important
   .careers-view__carousel-arrow
@@ -375,11 +383,12 @@ textarea
       margin-left 10px
   .careers-view__nextArrow
     right -18px !important
+    top 25% !important
 
   .career-view_apply-now-section   
     background-size 100% 15%
-    background-position-y 3%
-    padding 200px 0 100px 0
+    background-position-y 0
+    padding 130px 0 100px 0
     &:after
       height 25%
   
@@ -399,6 +408,7 @@ textarea
     input
       margin 0 45px !important
       width 80% !important
+      border-radius 0px
 
       &:focus + label
         font-size remify(20) !important

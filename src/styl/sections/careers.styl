@@ -190,34 +190,45 @@
           border-left 4px solid #408ab7
 
     .careers-view__main-form-group:nth-child(4)
-      margin-bottom 55px
+      margin 0 65px 55px 65px
       position relative
+      width 235px
+      height 35px
+      overflow hidden
       select
-        color #c4c4c4
-        margin 0 65px
-        width 170px
-        border none
-        font-size remify(15px)
-        background-color transparent
-        -webkit-appearance none
+        appearance none
         outline none
-        position relative
-        .select-option
-          background-color transparent
-          padding 2px 0
+        box-shadow none
+        border none
+        background-color #f5f5f5
+        background-image none
+        width 100%
+        height 100%
+        padding 0 0 0 .5em
+        color #c4c4c4
+        cursor pointer
+        font-size remify(15px)
+        &::-ms-expand 
+          display none
+        option
+          font-size 12px
+          color rgba(34,58,72,0.75)
+
       &:after
-        content ' '
+        content ''
         position absolute
-        top 5px
-        left 220px
-        width 0px
-        height 0px
-        border-left 4px solid transparent
-        border-right 4px solid transparent
-        border-top 6px solid #223a48
-        z-index 1
-
-
+        top 10px
+        right 2px
+        border solid rgba(34,58,72,0.75)
+        border-width 0 2px 2px 0
+        display inline-block
+        padding 4px
+        transform rotate(45deg)
+        transition: .25s all ease;
+   
+      &:hover:after 
+        transform translateY(5px)rotate(-135deg)
+      
     .careers-view__main-form-send__button
       display flex
       justify-content space-around
@@ -340,10 +351,10 @@ textarea
 
   &::-webkit-scrollbar-track 
     border-radius 50px
-    background-color rgba(	196, 196, 196,0.3)
+    background-color rgba(196, 196, 196,0.3)
 
       
-@media screen and (max-width: 768px)
+@media screen and (max-width: 40em)
   .careers-view
     padding 120px 0 0 0
   .careers-view__carousel-wrapper

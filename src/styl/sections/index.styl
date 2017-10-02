@@ -31,20 +31,28 @@ a
   justify-content flex-end
   flex-direction column
 
+.section_one-text-wrapper
+  position absolute
+  width 100%
+  display flex
+  flex-flow column wrap
+  top 50%
+  transform translateY(-50%)
 .section_one-title-wrapper
   display flex
-  margin-left 20px
+  // margin-left 20px
 
 .section_one-title-container
   max-width 522px
   margin-right auto
-  margin-bottom 50px
+  margin-bottom 35px
 
 .section_one-title
-  font-size remify(82)
+  font-size remify(72)
   color #fff
   letter-spacing -1.7px
   line-height 1.14
+  text-align right
   margin 0
 
 .blue-text
@@ -59,12 +67,12 @@ a
 .section_one-description-container
   max-width 496px
   margin-left auto
-  margin-bottom 50px
 
 .section_one-description
   font-size remify(22)
   color #fff
   line-height 1.14
+  text-align left
   margin 0
 
 .section_one-blue-divider
@@ -72,7 +80,10 @@ a
   height 6rem
   margin-top 20px
   background-color $blueStandar
-  center-block()
+  position absolute
+  bottom 0
+  left 50%
+  transform translateX(-50%)
 
 .section_one-blue-box
   width 100%
@@ -195,13 +206,13 @@ a
     width 11rem
 
 .item_project-bgd-4
-  background-image url('../img/c_dondinero.png')
+  background-image url('../img/c_dondinero.jpg')
 
   img
     width 8rem
 
 .item_project-bgd-5
-  background-image url('../img/c_florella.png')
+  background-image url('../img/c_florella.jpg')
 
   img
     width 6.5rem
@@ -538,7 +549,7 @@ label.error
 
 // MOBILE
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 40em)
 
   .section_one-wrapper
     display block
@@ -560,6 +571,7 @@ label.error
 
   .section_one-title
     font-size 3.5rem
+    text-align left
   
   .section_one-description-wrapper
     @extends .section_one-title-wrapper
@@ -568,6 +580,7 @@ label.error
   .section_one-description
     font-size 1.5rem
     margin-top 30px
+    text-align right
   
   .section_one-blue-divider
     height 9rem
@@ -653,3 +666,4 @@ label.error
     background-position 0 14%
     background-size 100% 14%
     background-repeat no-repeat
+

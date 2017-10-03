@@ -1,399 +1,290 @@
-// card-margin
-.card-bottom-margin {
-  margin: 0 0 12px 0;
-}
+.portfolio-logo-transform 
+  transition all 0.2s ease-in
 
-// Logo size
-.portfolio-logo-transform {
-  transition: all 0.2s ease-in;
-}
+.portfolio-logo-transformhover 
+  transition all 0.2s ease-in
+  transform scale(1.2)
 
-.portfolio-logo-transform:hover {
-  transition: all 0.2s ease-in;
-  transform: scale(1.2);
-}
-//////// Title ///////
-.portfolio-view__background {
-  background-image: url(../img/backgrounds/projects-bgd.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  margin: 82px 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.80; 
-}
+.portfolio-view__background 
+  background-image url(../img/backgrounds/projects-bgd.png)
+  background-size cover
+  background-repeat no-repeat
+  width 100%
+  margin 82px 0 0
+  total-center()
+  flex-direction column
+  opacity 0.80 
 
-.portfolio-view__background-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 89px 0 0;
-    p {
-      color: #3b84af;
-      font-size: remify(44px);
-    }
-    span {
-      color: #131b21;
-      font-size: remify(20px);
-      width: 33.75em;
-      line-height: 1.35;
-      text-align: center;
-      margin: 41px 0 88px;
-    }  
-}
+.portfolio-view__background-title 
+  total-center()
+  flex-direction column
+  margin 89px 0 0
+  p 
+    color #3b84af
+    font-size remify(44px)
+  span 
+    color #131b21
+    font-size remify(20px)
+    width 33.75em
+    line-height 1.35
+    text-align center
+    margin 41px 0 88px
 
-///////// Portfolio Container ////////
+.portfolio-view__container 
+  display flex
+  justify-content center
+  flex-wrap wrap
+  max-width 1030px
+  margin 15px auto 
 
-.portfolio-view__container {
-  display: flex;
-  justify-content: space-between;
-  center-block();
-  max-width: 1010px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
+.col-1, .col-2, .col-3
+  width 33.33%
+  padding 0 6px
 
-////// Card size /////
-.card-lg {
-  width: 20.37em;
-  height: 28.31em;
-}
+.card-lg,.card-md, .card-sm
+  width 100%
+  margin-bottom 12px
+  total-center()
+  background-repeat no-repeat
+  background-position top center
+  background-size cover
 
-.card-md {  
-  width: 20.37em;
-  height: 24.5em;
-}
+.card-lg 
+  height 28.31em
 
-.card-sm {
-  width: 20.37em;
-  height: 21.68em;  
-}
+.card-md   
+  height 24.5em
 
-////// backgrouns //////
+.card-sm 
+  height 21.68em 
 
-// lg
-.card-lg-bg1 {
-  background-image: url(../img/portfolio/portfolio_financiero.png)
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-lg-bg1 
+  background-image url(../img/portfolio/portfolio_financiero.png)
+  img 
+    width 9.66em
 
-.card-lg-bg2 {
-  background-image: url(../img/portfolio/portfolio_rgv.png)
-  total-center();
-    img {
-      width: 6.18em; 
-    } 
-}
+.card-lg-bg2 
+  background-image url(../img/portfolio/portfolio_rgv.png)
+  img 
+    width 6.18em 
 
-.card-lg-bg3 {
-  background-image: url(../img/portfolio/portfolio_nutrologa.png)
-  total-center();
-    img {
-      width: 7.31em;
-    } 
-}
+.card-lg-bg3 
+  background-image url(../img/portfolio/portfolio_nutrologa.png)
+  img 
+    width 7.31em
 
-.card-lg-bg4 {
-  background-image: url(../img/portfolio/porfolio_98-coast.png)
-  total-center();
-    img {
-      width: 9.66em; 
-    } 
-}
+.card-lg-bg4 
+  background-image url(../img/portfolio/porfolio_98-coast.png)
+  img 
+    width 9.66em 
 
-.card-lg-bg5 {
-  background-image: url(../img/portfolio/porfolio_debisa.png)
-  total-center();
-    img {
-      width: 7em;
-    } 
-}
+.card-lg-bg5 
+  background-image url(../img/portfolio/porfolio_debisa.png)
+  img 
+    width 7em
 
-.card-lg-bg6 {
-  background-image: url(../img/portfolio/porfolio_dondinero.png)
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-lg-bg6 
+  background-image url(../img/portfolio/porfolio_dondinero.png)
+  img 
+    width 9.66em
 
-.card-lg-bg7 {
-  background-image: url(../img/portfolio/portfolio_dreamwater.png)
-  total-center();
-    img {
-      width: 7em;
-    } 
-}
+.card-lg-bg7 
+  background-image url(../img/portfolio/portfolio_dreamwater.png)
+  img 
+    width 7em
 
-.card-lg-bg8 {
-  background-image: url(../img/portfolio/porfolio_emma.png)
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-lg-bg8 
+  background-image url(../img/portfolio/porfolio_emma.png)
+  img 
+    width 9.66em
 
 // md
-.card-md-bg1 {
-  background-image: url(../img/portfolio/portfolio_local-e.png);
-  total-center();
-    img {
-      width: 6.68em;
-    } 
-}
+.card-md-bg1 
+  background-image url(../img/portfolio/portfolio_local-e.png)
+  img 
+    width 6.68em
 
-.card-md-bg2 {
-  background-image: url(../img/portfolio/portfolio_workingch.png);
-  total-center();
-    img {
-      width: 7.43em;
-    } 
-}
+.card-md-bg2 
+  background-image url(../img/portfolio/portfolio_workingch.png)
+  img 
+    width 7.43em
 
-.card-md-bg3 {
-  background-image: url(../img/portfolio/portfolio_aguaviento.png);
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-md-bg3 
+  background-image url(../img/portfolio/portfolio_aguaviento.png)
+  img 
+    width 9.66em
 
-.card-md-bg4 {
-  background-image: url(../img/portfolio/porfolio_opia.png);
-  total-center();
-    img {
-      width: 6.68em;
-    } 
-}
+.card-md-bg4 
+  background-image url(../img/portfolio/porfolio_opia.png)
+  img 
+    width 6.68em
 
-.card-md-bg5 {
-  background-image: url(../img/portfolio/porfolio_rancho.png);
-  total-center();
-    img {
-      width: 8em; 
-    } 
-}
+.card-md-bg5 
+  background-image url(../img/portfolio/porfolio_rancho.png)
+  img 
+    width 8em 
 
-.card-md-bg6 {
-  background-image: url(../img/portfolio/portfolio_vre.png);
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-md-bg6 
+  background-image url(../img/portfolio/portfolio_vre.png)
+  img 
+    width 9.66em
 
-.card-md-bg7 {
-  background-image: url(../img/portfolio/porfolio_wellness.png);
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-md-bg7 
+  background-image url(../img/portfolio/porfolio_wellness.png)
+  img 
+    width 9.66em
 
-.card-md-bg8 {
-  background-image: url(../img/portfolio/portafolio_pacer.png);
-  total-center();
-    img {
-      width: 8em;
-    } 
-}
+.card-md-bg8 
+  background-image url(../img/portfolio/portafolio_pacer.png)
+  img 
+    width 8em
 
-.card-md-bg9 {
-  background-image: url(../img/portfolio/portoflio_rocha.png);
-  total-center();
-    img {
-      width: 4em;
-    } 
-}
+.card-md-bg9 
+  background-image url(../img/portfolio/portoflio_rocha.png)
+  img 
+    width 4em
 
 // sm
-.card-sm-bg1 {
-  background-image: url(../img/portfolio/portfolio_neopraxis.png)
-  total-center();
-    img {
-      width: 9.12em;
-    } 
-}
+.card-sm-bg1 
+  background-image url(../img/portfolio/portfolio_neopraxis.png)
+  img 
+    width 9.12em
 
-.card-sm-bg2 {
-  background-image: url(../img/portfolio/porfolio_brick.png)
-  total-center();
-    img {
-      width: 5.87em;
-    } 
-}
+.card-sm-bg2 
+  background-image url(../img/portfolio/porfolio_brick.png)
+  img 
+    width 5.87em
 
-.card-sm-bg3 {
-  background-image: url(../img/portfolio/porfolio_jb.png)
-  total-center();
-    img {
-      width: 5.5em
-    } 
-}
+.card-sm-bg3 
+  background-image url(../img/portfolio/porfolio_jb.png)
+  img 
+    width 5.5em
 
-.card-sm-bg4 {
-  background-image: url(../img/portfolio/portfolio_aerial.png)
-  total-center();
-    img {
-      width: 7em;
-    } 
-}
+.card-sm-bg4 
+  background-image url(../img/portfolio/portfolio_aerial.png)
+  img 
+    width 7em
 
-.card-sm-bg5 {
-  background-image: url(../img/portfolio/portfolio_begona.png)
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-sm-bg5 
+  background-image url(../img/portfolio/portfolio_begona.png)
+  img 
+    width 9.66em
 
-.card-sm-bg6 {
-  background-image: url(../img/portfolio/porfolio_florella.png)
-  total-center();
-    img {
-      width: 8em;
-    } 
-}
+.card-sm-bg6 
+  background-image url(../img/portfolio/porfolio_florella.png)
+  img 
+    width 8em
 
-.card-sm-bg7 {
-  background-image: url(../img/portfolio/portfolio_gemo.png)
-  total-center();
-    img {
-      width: 9.66em;
-    } 
-}
+.card-sm-bg7 
+  background-image url(../img/portfolio/portfolio_gemo.png)
+  img 
+    width 9.66em
 
-.card-sm-bg8 {
-  background-image: url(../img/portfolio/porfolio_Indots.png)
-  total-center();
-    img {
-      width: 9.77em;
-    } 
-}
+.card-sm-bg8 
+  background-image url(../img/portfolio/porfolio_Indots.png)
+  img 
+    width 9.77em
 
-.card-sm-bg9 {
-  background-image: url(../img/portfolio/portfolio_mccosmetics.png)
-  total-center();
-    img {
-      width: 7em;
-    } 
-}
+.card-sm-bg9 
+  background-image url(../img/portfolio/portfolio_mccosmetics.png)
+  img 
+    width 7em
 
-.card-sm-bg10 {
-  background-image: url(../img/portfolio/porfolio_florella.jpg)
-  total-center();
-    img {
-      width: 9.77em;
-    } 
-}
+.card-sm-bg10 
+  background-image url(../img/portfolio/porfolio_florella.jpg)
+  img 
+    width 9.77em
 
-///////// More Logo ////////
-
-.portfolio-view__more-log {
-  total-center();
-  margin: 0 0 138px 0;
-  display: none;
-}
-
-//////////////// Mobile small devices ////////////////////
-
-@media screen and (max-width: 39.9375em) {
-   
-  .card-bottom-margin {
-    margin: 0 0 7px 0;
-  }    
-  // Card size
-  .card-lg {
-    width: 49%;
-    height: 18.31em;
-  }
-
-  .card-md {  
-    width: 49%;
-    height: 18.31em;
-  }
-
-  .card-sm {
-    width: 49%;
-    height: 18.31em;  
-  }
-
-  // Title
-  .portfolio-view__background {
-    background-size: contain;
-    height: 15.5em;
-    margin: 78px 0 0;
-  }
-  .portfolio-view__background-title {
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 0;
-    padding: 0 0 0 2.06em ;
-      span {
-        width: 16.43em;
-        text-align: left;
-        margin: 32px 0 0;
-      }
-  }
-
-  // Portfolio 
-  .portfolio-view__container {
-    margin: 50px 0 30px;
-  }
-  // Columns size
-  .col-1, .col-2, .col-3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  // More Logo
-  .portfolio-view__more-log {
-    margin: 68px 0 81px 0;
-  }
-}
+.portfolio-view__more-log 
+  margin 0 0 138px 0
+  display none
 
 //////////////// Mobile medium devices ////////////////////
+@media screen and (min-width 40.063em) and (max-width 64em)   
+  .card-lg 
+    height 16.5em
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {  
-  // Card size
-  .card-lg {
-    width: 125%;
-    height: 16.5em;
-  }
+  .card-md   
+    height 16.5em
 
-  .card-md {  
-    width: 125%;
-    height: 16.5em;
-  }
+  .card-sm 
+    height 14.68em  
+  
+  .portfolio-view__background 
+    margin 50px 0 0
 
-  .card-sm {
-    width: 125%;
-    height: 14.68em;  
-  }
-  // Title
-  .portfolio-view__background {
-    margin: 50px 0 0;
-  }
+  .portfolio-view__background-title 
+    span 
+      margin 41px 0 55px
 
-  .portfolio-view__background-title {
-    span {
-      margin: 41px 0 55px;
-    }
-  }
+  .portfolio-view__container 
+    display flex
+    justify-content center
+    max-width 641px
+    margin 0 auto 30px auto
 
-  .portfolio-view__container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 520px;
-    margin: 0 auto 30px auto;
-  }  
-}
+//////////////// Mobile small devices ////////////////////
+@media screen and (max-width 40em) 
+  .col-1, .col-2, .col-3
+    display flex
+    flex-wrap wrap
+    justify-content center
+    width 100%
+    padding 0
+   
+  .card-lg, .card-md, .card-sm
+    width calc(50% - 7px)
+    height 18.31em
+
+  .card-sm-bg10,
+  .card-sm-bg8,
+  .card-sm-bg6,
+  .card-sm-bg4,
+  .card-sm-bg2,
+  .card-md-bg8,
+  .card-md-bg6,
+  .card-md-bg4,
+  .card-md-bg2,
+  .card-lg-bg8,
+  .card-lg-bg6,
+  .card-lg-bg4,
+  .card-lg-bg2
+    margin 7px 0 7px 7px
+
+  .card-sm-bg9,
+  .card-sm-bg7,
+  .card-sm-bg5,
+  .card-sm-bg3,
+  .card-sm-bg1,
+  .card-md-bg9,
+  .card-md-bg7,
+  .card-md-bg5,
+  .card-md-bg3,
+  .card-md-bg1,
+  .card-lg-bg7,
+  .card-lg-bg5,
+  .card-lg-bg3,
+  .card-lg-bg1
+    margin 7px 7px 7px 0
+
+  .portfolio-view__background 
+    background-size contain
+    height 15.5em
+    margin 78px 0 0
+  
+  .portfolio-view__background-title 
+    align-items flex-start
+    justify-content flex-start
+    width 100%
+    margin 0
+    padding 0 0 0 2.06em 
+    span 
+      width 16.43em
+      text-align left
+      margin 32px 0 0
+
+  .portfolio-view__container 
+    margin 50px 0 30px
+
+  .portfolio-view__more-log 
+    margin 68px 0 81px 0

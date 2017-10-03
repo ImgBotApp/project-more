@@ -137,7 +137,6 @@ a
 .section_projects-title-wrapper
   total-center()
   margin-bottom 100px
-  
 
 .section-blue-font
   color $blueStandar
@@ -187,13 +186,11 @@ a
 
 .item_project-bgd-1
   background-image url('../img/c_aerial.png')
-
   img
     width 4rem
 
 .item_project-bgd-2
   background-image url('../img/c_aguaviento.png')
-
   img
     width 7rem
 
@@ -201,19 +198,16 @@ a
   background-image url('../img/g_neopraxis.png')
   width 21.5rem
   height 13.5625rem
-
   img
     width 11rem
 
 .item_project-bgd-4
   background-image url('../img/c_dondinero.jpg')
-
   img
     width 8rem
 
 .item_project-bgd-5
   background-image url('../img/c_florella.jpg')
-
   img
     width 6.5rem
 
@@ -221,19 +215,16 @@ a
   background-image url('../img/g_brick.png')
   width 21.5rem
   height 13.5625rem
-
   img
     width 8rem
 
 .item_project-bgd-7
   background-image url('../img/c_jb.png')
-
   img
     width 3.7rem
 
 .item_project-bgd-8
   background-image url('../img/c_vre.png')
-
   img
     width 7rem
 
@@ -241,19 +232,16 @@ a
   background-image url('../img/g_nutriologa.png')
   width 21.5rem
   height 13.5625rem
-
   img
     width 8.5rem
 
 .item_project-bgd-10
   background-image url('../img/c_workingch.png')
-
   img
     width 5.5rem
 
 .item_project-bgd-11
   background-image url('../img/g_rgv.png')
-  
   img
     width 6rem
 
@@ -261,7 +249,6 @@ a
   background-image url('../img/g_rochalandero.png')
   width 21.5rem
   height 13.5625rem
-
   img
     width 5.5rem
 
@@ -303,11 +290,9 @@ a
   background-color $blueStandar
   width 171px
   height 51px
-
   p 
     font-size remify(15)
     color #fff
-
   &:hover
     background-color #336e91
     color #fff
@@ -346,10 +331,8 @@ a
     transition 0.3s
     outline none
     cursor pointer
-
     &:hover
       background-color #d6d6d6
-
     .section_services-tablink-title
       color #9d9d9d
 
@@ -365,29 +348,25 @@ a
   height 5px
   background-color $blueStandar
   position absolute
-  bottom -7px
+  bottom -5px
   left 0
 
 .section_services-tabcontent-wrapper
+  width 100%
   total-center()
-  -webkit-animation fade 1s
-  -moz-animation fade 1s
-  animation fade 1s
-  
   .section_services-tabcontent-img
-    width 488px
-    height 329px
+    width 50%
+    height auto
 
 .section_services-tabcontent
   padding 0 25px 0 30px !important
-  width 512px
+  width 50%
   height 412px
   background-color $blueStandar
   color #fff 
   display flex
   flex-direction column
   justify-content center
-
   img
     width 70px
     margin-top 15px
@@ -413,24 +392,11 @@ a
   height 50px
   margin-top 30px
   total-center()
-
   &:hover
     background-color #102c3e
-    
   p
     color #fff
     font-size remify(15)
-
--webkit-keyframes fade
-    from opacity 0
-    to opacity 1
-
-@keyframes fade
-    from opacity 0
-    to opacity 1
-
-
-  
 
 
 
@@ -546,9 +512,10 @@ label.error
 .section_form_mobile
   display none
 
-
-// MOBILE
-
+@media screen and (min-width 40.063em) and (max-width 64em) 
+  .section_form-carousel-item 
+    p
+      display none
 @media screen and (max-width: 40em)
 
   .section_one-wrapper
@@ -558,7 +525,6 @@ label.error
   .section_one-text-wrapper
     padding-left 25px
     padding-right 25px
-    padding-top calc(50vh / 2.5) 
 
   .section_one-container
     justify-content space-between

@@ -204,7 +204,7 @@
         background-image none
         width 100%
         height 100%
-        padding 0 0 0 .5em
+        padding 0 0 0 5px
         color #c4c4c4
         cursor pointer
         font-size remify(15px)
@@ -353,6 +353,46 @@ textarea
     border-radius 50px
     background-color rgba(196, 196, 196,0.3)
 
+@media screen and (min-width 40.063em) and (max-width 64em) 
+  .career-view_apply-now-section   
+    background-size 100% 15%
+    background-position-y 0
+    padding 130px 0 100px 0
+    &:after
+      height 25%
+  
+  .cv-form__box2 
+    display none
+  
+  .careers-view__main-form__col1
+    width 80%
+    padding 35px 25px 25px 0px
+    height 450px
+    form
+      margin 0
+      margin-left 0
+      width 100%
+  
+  .careers-view__main-form-group
+    margin-bottom 20px !important
+    input
+      margin 0 45px !important
+      width 80% !important
+      border-radius 0px
+
+      &:focus + label
+        font-size remify(20) !important
+    
+    label
+      padding 5px 0 5px 45px !important
+      margin-left 0
+    
+    select
+      margin 0 40px !important
+  
+  .careers-view__main-form-group:nth-child(4)
+    margin 0 65px 40px 0 !important
+  
       
 @media screen and (max-width: 40em)
   .careers-view
@@ -415,7 +455,8 @@ textarea
       margin-left 0
       width 100%
   
-  .careers-view__main-form-group 
+  .careers-view__main-form-group
+    margin-bottom 20px !important
     input
       margin 0 45px !important
       width 80% !important
@@ -430,6 +471,9 @@ textarea
     
     select
       margin 0 40px !important
+  
+  .careers-view__main-form-group:nth-child(4)
+    margin 0 65px 40px 0 !important
 
   .careers-view__optional-form
     display none

@@ -57,12 +57,12 @@
   position relative
   
   label
-    font-size 17px
+    font-size remify(17)
     line-height 13px
     padding-left 10px
     transition .2s all ease
     position absolute
-    top -5px
+    top -10px
 
   input, textarea
     font-size 14px
@@ -79,9 +79,9 @@
       border-radius 0px
 
     &:focus + label
-      font-size 15px
+      font-size remify(15)
       color #2f76a1
-      top -12px     
+      top -20px     
 
   input
     border-bottom 1px solid #e5e5e5
@@ -129,6 +129,15 @@
     font-size remify(13px)
     margin-top 3px
 
+@media screen and (min-width 40.063em) and (max-width 64em)
+  .quotation-view__form-group 
+    label
+      top -20px
+      line-height 16px
+    input
+      &:focus + label
+        top -30px     
+
 @media screen and (max-width: 40em)
   .quotation-view 
     padding 155px 0
@@ -170,7 +179,7 @@
     
     label
       padding-left 0
-      font-size 15px
+      font-size remify(15)
 
   .quotation-view__form-send__button
     right 25px

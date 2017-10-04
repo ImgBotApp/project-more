@@ -19,9 +19,6 @@
 .quotation-view__second-title
   @extends .careers-view__title
 
-.quotation-view__second-title
-  display none
-
 .quotation_view__description
   text-align center
   font-size remify(20)
@@ -134,13 +131,13 @@
     label
       top -20px
       line-height 16px
-    input
+    input, textarea
       &:focus + label
         top -30px     
 
 @media screen and (max-width: 40em)
   .quotation-view 
-    padding 155px 0
+    padding 65px 0 100px 0
     background-image url('../img/backgrounds/services-bgd1.jpg')
     background-position 100% 0
     background-size 150% 30%
@@ -149,17 +146,16 @@
     &:after
       width 65%
       height 30%
-
-  .quotation-view__second-title
-    display block
-    font-size remify(39)
-
+      
   .quotation_view-wrapper
     .quotation-view__main-title,
     .quotation_view__description,
-    .quotation_view-comision-text,
+    .quotation_view-comision-text
+      padding 0 35px 
+      text-align left
+      margin 35px 0
     hr
-      display none
+      width calc(100% - 70px)
     
 
   .quotation_view-container

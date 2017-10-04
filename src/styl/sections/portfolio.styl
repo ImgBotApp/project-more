@@ -13,7 +13,6 @@
   margin 82px 0 0
   total-center()
   flex-direction column
-  opacity 0.80 
 
 .portfolio-view__background-title 
   total-center()
@@ -36,6 +35,13 @@
   flex-wrap wrap
   max-width 1030px
   margin 15px auto 
+
+  img
+    transition all .2s ease-in
+  
+  img:hover
+    transition all .2s ease-in
+    transform scale(1.2)
 
 .col-1, .col-2, .col-3
   width 33.33%
@@ -220,7 +226,6 @@
   .portfolio-view__container 
     display flex
     justify-content center
-    max-width 641px
     margin 0 auto 30px auto
 
 //////////////// Mobile small devices ////////////////////
@@ -228,7 +233,6 @@
   .col-1, .col-2, .col-3
     display flex
     flex-wrap wrap
-    justify-content center
     width 100%
     padding 0
    

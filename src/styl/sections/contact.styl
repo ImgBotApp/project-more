@@ -29,6 +29,8 @@
     width 1px
     height 60px
     background-color #000
+    animation tada_more_logo linear 1s infinite
+    transform-origin 20% 100%
   
   img 
     position absolute
@@ -56,13 +58,18 @@
   padding 4.56em 20.12em 0 6.25em
   box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.19)
   background-color #ffffff
-  
-  
   form 
+    .contacto-view__form-group
+      display flex
+      flex-direction column-reverse
+      position relative
     label 
       color #141414
       font-size remify(15px)
       margin 0 0 0 13px
+      transition .2s all ease
+      position absolute
+      top -15px
     
     input 
       margin 0 0 3.12em
@@ -84,6 +91,12 @@
     textarea:placeholder 
       color #ababab
       font-size remify(13px)
+
+    input, textarea
+      &:focus + label
+        font-size remify(12px)
+        color #2f76a1
+        top -20px
 
 // Gray box //
 .contacto-view__form-box2 
@@ -163,11 +176,8 @@
     padding 0
     box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.22)
     z-index 1
-    
-
-  
     form 
-      margin 37px 0 0
+      margin 50px 0 0
       margin-left 5%
       width 90%
       
@@ -243,7 +253,7 @@
     align-items center
     justify-content center
     width 100%
-    padding 0
+    padding 20px 0 0 0
     box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.19)
     center-block()
     z-index 1

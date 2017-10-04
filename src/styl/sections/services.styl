@@ -131,13 +131,15 @@
     bottom 50%
     width 1px
     height 60px
-    background-color #000        
+    background-color #000
+    animation tada_more_logo linear 1s infinite
+    transform-origin 20% 100%        
 
 .services_view-item:nth-child(2)
   margin 120px 0 200px 0
   flex-direction row-reverse
   .services_view-item-details
-    padding 0px 55px 55px 150px
+    padding 0px 55px 0 150px
     align-items flex-end
   h1,p.service_view-item-details-description
     text-align right
@@ -179,16 +181,16 @@
 
 @media screen and (max-width: 40em)
   .services_view
-    padding 120px 0
+    padding 120px 0 45px 0
     background-size 200% 25%
     &:after
       content ''
       position absolute
       width 400px
-      height 760px
+      height 700px
       background-color #f5f5f5
       left 0
-      top calc(100% - 760px) !important
+      top calc(100% - 700px) !important
       z-index -1
   
   .services_logo_more
@@ -239,7 +241,7 @@
 
       h1
         font-size remify(30)
-        margin-bottom 30px
+        margin-bottom 10px
       
       .service_view-item-details-description
         margin-bottom 30px

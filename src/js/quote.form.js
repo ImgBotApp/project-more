@@ -18,7 +18,6 @@ $('form[name="form-quote"]').validate({
   },
   submitHandler: function(form) {
     var data = $('form[name="form-quote"]').serialize();
-    console.log(data);
     // $.ajax({
     //   url: 'http://integrations.blick.mx/more/contact/',
     //   method: 'POST',

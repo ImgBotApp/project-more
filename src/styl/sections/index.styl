@@ -6,9 +6,18 @@
 a 
   text-decoration none 
 
-// overwriting the log success color
-.alertify-logs>.success
-  background: #408ab7
+// overwriting the log success color and typo.
+
+.alertify-logs
+  & > .show
+    font-family "Metropolis"
+    border-radius 2px
+
+  & > .success
+    background: #408ab7
+
+  & > .error
+    background: #3780AB
 
 .section_one
   height 100vh

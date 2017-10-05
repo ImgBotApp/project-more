@@ -14,17 +14,17 @@ $('form[name="form-referrals"]').validate({
   },
   submitHandler: function(form) {
     var data = $('form[name="form-referrals"]').serialize();
-    // $.ajax({
-    //   url: 'http://integrations.blick.mx/more/contact/',
-    //   method: 'POST',
-    //   data: data
-    // }).done(function(data) {
-    //   if (parseInt(data) === 1) {
-    //     alertify.logPosition("bottom right");
-    //     alertify.success("Correo enviado, gracias por contactarte con nosotros.");
-    //     $('form[name="form-careers-1"]')[0].reset();
-    //   }
-    // });
+    $.ajax({
+      url: 'http://integrations.blick.mx/more/contact/referrals/',
+      method: 'POST',
+      data: data
+    }).done(function(data) {
+      if (parseInt(data) === 1) {
+        alertify.logPosition("bottom right");
+        alertify.success("Correo enviado, gracias por contactarte con nosotros.");
+        $('form[name="form-careers-1"]')[0].reset();
+      }
+    });
   },
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();

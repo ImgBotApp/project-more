@@ -18,17 +18,17 @@ $('form[name="form-quote"]').validate({
   },
   submitHandler: function(form) {
     var data = $('form[name="form-quote"]').serialize();
-    // $.ajax({
-    //   url: 'http://integrations.blick.mx/more/contact/',
-    //   method: 'POST',
-    //   data: data
-    // }).done(function(data) {
-    //   if (parseInt(data) === 1) {
-    //     alertify.logPosition("bottom right");
-    //     alertify.success("Correo enviado, gracias por contactarte con nosotros.");
-    //     $('form[name="form-quote"]')[0].reset();
-    //   }
-    // });
+    $.ajax({
+      url: 'http://integrations.blick.mx/more/contact/quote/',
+      method: 'POST',
+      data: data
+    }).done(function(data) {
+      if (parseInt(data) === 1) {
+        alertify.logPosition("bottom right");
+        alertify.success("Correo enviado, gracias por contactarte con nosotros.");
+        $('form[name="form-quote"]')[0].reset();
+      }
+    });
   },
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();

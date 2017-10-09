@@ -162,13 +162,20 @@
       margin-bottom 30px
       display flex
       flex-direction column-reverse
+      position relative
 
       label
         padding 5px 70px
         color #c4c4c4
         font-size remify(15px)
         letter-spacing -0.2px
-      
+      label.error
+        font-weight normal
+        color red
+        border-left none 
+        position absolute
+        right 0
+        top 0
       input
         margin 0 70px
         padding 0 0 5px 10px
@@ -188,6 +195,14 @@
           color #172a37
           font-weight bold
           border-left 4px solid #408ab7
+        
+        &:focus + label.error
+          font-weight normal
+          color red
+          border-left none 
+          position absolute
+          right 0
+          top 0
 
     .careers-view__main-form-group:nth-child(4)
       margin 0 65px 55px 65px
@@ -414,15 +429,15 @@ textarea
     letter-spacing 5.5px !important
     margin 0 !important
   .careers-view__carousel-item:after
-      content ''
-      width 70% !important
-      height 208px !important
-      position absolute
-      background-position top right
-      background-size cover
-      background-repeat no-repeat
-      bottom calc(-208px / 4) !important
-      right 0 !important
+    content ''
+    width 70% !important
+    height 208px !important
+    position absolute
+    background-position top right
+    background-size cover
+    background-repeat no-repeat
+    bottom calc(-208px / 4) !important
+    right 0 !important
   
   .careers-view__carousel-dots
     bottom -100px!important
@@ -464,10 +479,22 @@ textarea
 
       &:focus + label
         font-size remify(20) !important
+
+      &:focus + label.error
+        font-size remify(12px)!important
+        font-weight normal!important
+        color red!important
+        border-left none !important
+        position absolute!important
+        right 0!important
+        top -15px !important
     
     label
       padding 5px 0 5px 45px !important
       margin-left 0
+
+    label.error
+      top -15px !important
     
     select
       margin 0 40px !important

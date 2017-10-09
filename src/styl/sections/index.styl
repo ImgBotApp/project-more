@@ -87,7 +87,6 @@ a
 .section_one-blue-divider
   width 1px
   height 6rem
-  margin-top 20px
   background-color $blueStandar
   position absolute
   bottom 0
@@ -522,6 +521,16 @@ label.error
   .section_form-carousel-item 
     p
       display none
+@media screen and (max-height: 40em)
+  .section_one-title-container
+    margin-bottom 20px
+
+  .section_one-title
+    font-size remify(63)
+  
+  .section_one-description
+    font-size remify(18)
+  
 @media screen and (max-width: 40em)
 
   .section_one-wrapper
@@ -555,7 +564,6 @@ label.error
   
   .section_one-blue-divider
     height 10rem
-    margin-top 0
 
   .section_one-description-container
     margin-bottom 30px

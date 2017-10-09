@@ -73,6 +73,7 @@
     
     label.error
       right 0
+      color red
     
     input 
       margin 0 0 3.12em
@@ -100,6 +101,9 @@
         font-size remify(12px)
         color #2f76a1
         top -20px
+      &:focus + label.error
+        color red
+        top -15px
 
 // Gray box //
 .contacto-view__form-box2 

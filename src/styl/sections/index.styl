@@ -608,9 +608,16 @@ label.error
     align-items flex-start
     justify-content flex-end
     margin 15px 0 
+    position relative
 
     label
       color #c9c9c9
+    label.error
+      color red
+      position absolute
+      top -20px
+      right 0
+           
 
     input, textarea
       @extends .section_form-carousel-item input
@@ -629,6 +636,12 @@ label.error
         font-size remify(26)
         color $darkBlue
         font-weight bold
+        
+      &:focus + label.error
+        color red
+        position absolute
+        top -20px
+        right 0
   
   .section_form_mobile-btn
     @extends .section_services-btn

@@ -54,6 +54,23 @@ hr
   form
     height 525px
     width 100%
+    .careers-view__optional-form-group
+      position relative
+    label.error
+      font-weight normal
+      color red
+      border-left none 
+      position absolute
+      right 0
+      top 0
+    input, textarea
+      &:focus + label.error
+        font-weight normal
+        color red
+        border-left none 
+        position absolute
+        right 0
+        top 0
 
 @media screen and (min-width 40.063em) and (max-width 64em) 
   .referrals_view-container
@@ -108,6 +125,10 @@ hr
           width 100%
           padding 5px 0 5px 40px
           margin 0
+        label.error
+          top -20px
+          font-size 0.7rem !important
+        
         input, textarea
           border-radius 0px
           margin 0 40px
@@ -119,3 +140,7 @@ hr
             border-radius 0px
           &:focus + label
             padding 5px 0 5px 36px
+
+          &:focus + label.error
+            top -20px
+            font-size 0.7rem !important

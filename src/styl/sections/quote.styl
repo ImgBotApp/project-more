@@ -62,7 +62,7 @@
     top -10px
   label.error
     right 0
-    top -35px
+    top -50px
 
   input, textarea
     font-size 14px
@@ -81,7 +81,11 @@
     &:focus + label
       font-size remify(15)
       color #2f76a1
-      top -20px     
+      top -20px 
+    &:focus + label.error
+      right 0
+      top -50px 
+      color red
 
   input
     border-bottom 1px solid #e5e5e5
@@ -159,7 +163,6 @@
       margin 35px 0
     hr
       width calc(100% - 70px)
-    
 
   .quotation_view-container
     form

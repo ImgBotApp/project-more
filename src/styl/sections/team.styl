@@ -36,15 +36,16 @@
   .view_team-member-item.join-us-wrapper
     width 40%
     .view_team-member-photo
-      background-size 50% 100%
-      background-repeat repeat-x
+      background-size contain
+      background-repeat repeat
 
  .view_team-member-photo
     display flex
     justify-content center
     align-items flex-end
     background-image url('../img/team/bgd_team.jpg')
-    background-size 100% 100%
+    background-repeat repeat
+    background-size contain
     height 13.875rem
     img
       height 90%
@@ -72,19 +73,23 @@
   margin 15px auto
 
 .view_team-member-phrase
-  font-size remify(8)
+  font-size remify(10)
   line-height 1.63
   letter-spacing 0.2px
   text-align center
   color #172a37
 
-@media screen and (min-width 40.063em) and (max-width 64em) 
+@media screen and (min-width 641px) and (max-width 992px) 
   .view_team-member-item
     width 33.33% !important
   .view_team-member-item.join-us-wrapper
     width 66.66% !important
-
-@media screen and (max-width: 40em)
+@media screen and (min-width 481px) and (max-width 640px) 
+  .view_team-member-item
+    width 50% !important
+  .view_team-member-item.join-us-wrapper
+    width 50% !important
+@media screen and (max-width: 480px)
   .view_team
     padding 110px 0
   
@@ -103,14 +108,9 @@
     width 100% !important
     .view_team-member-photo
       background-size 50% 100%
-      background-repeat repeat-x
 
   .view_team-member-photo
       height 15.5rem
-      
-  
-  .view_team-member-description
-    padding 15px 30px 45px 30px
   
   .view_team-member-name
     font-size remify(22)

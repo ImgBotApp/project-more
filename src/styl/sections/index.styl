@@ -34,25 +34,27 @@ a
 .section_one-text-wrapper
   position absolute
   width 100%
+  height 300px
   display flex
   flex-flow column wrap
   top 50%
-  transform translateY(-50%)
+  left 50%
+  transform translate(-50%, -50%)
 .section_one-title-wrapper
   display flex
   // margin-left 20px
 
 .section_one-title-container
   max-width 522px
-  margin-right auto
-  margin-bottom 35px
+  position absolute
+  top 0
+  left 6rem
 
 .section_one-title
   font-size remify(72)
   color #fff
   letter-spacing -1.7px
   line-height 1.14
-  text-align right
   margin 0
 
 .blue-text
@@ -66,12 +68,14 @@ a
 
 .section_one-description-container
   max-width 496px
-  margin-left auto
+  position absolute
+  bottom 0
+  right 0
 
 .section_one-description
   font-size remify(22)
   color #fff
-  line-height 1.14
+  line-height 1.35
   text-align left
   margin 0
 
@@ -116,6 +120,8 @@ a
   -webkit-box-shadow 0px 10px 18px -8px rgba(0,0,0,1)
   -moz-box-shadow 0px 10px 18px -8px rgba(0,0,0,1)
   box-shadow 0px 10px 18px -8px rgba(0,0,0,1)
+  img
+    width 40%  
 //----------------------fin section_one-----------------------------
 
 
@@ -218,7 +224,7 @@ a
     width 8rem
 
 .item_project-bgd-7
-  background-image url('../img/c_jb.png')
+  background-image url('../img/c_jb.jpg')
   img
     width 3.7rem
 
@@ -402,7 +408,6 @@ a
 //----------------------fin section_services-------------------------
 
 // ========== section_ Form ========== //
-
 .section_form .slick-list
   padding-bottom 13px !important 
 
@@ -426,6 +431,7 @@ label.error
     right 0 
 
 .section_form-carousel-item
+  height 111.59px !important
   position relative
   outline none
   display flex !important
@@ -456,7 +462,7 @@ label.error
 
 .carousel-arrow
   position absolute
-  bottom -55px
+  bottom 0
   width 20px
   cursor pointer
 
@@ -514,8 +520,8 @@ label.error
       display none
 @media screen and (max-height: 40em)
   .section_one-title-container
-    margin-bottom 20px
-
+    left 9rem
+    top 12.5%
   .section_one-title
     font-size remify(63)
   

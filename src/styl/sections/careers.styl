@@ -293,6 +293,7 @@
       margin-bottom 30px
       display flex
       flex-direction column-reverse
+      position relative
 
       label
         padding 5px 70px
@@ -300,7 +301,13 @@
         font-size remify(15px)
         letter-spacing -0.2px
 
-      
+      label.error
+        font-weight normal
+        color red
+        border-left none 
+        position absolute
+        right 0
+        top -15px
 
       input, textarea
         margin 0 40px 0 70px
@@ -324,6 +331,14 @@
           color #172a37
           font-weight bold
           border-left 4px solid #408ab7
+
+        &:focus + label.error
+          font-weight normal
+          color red
+          border-left none 
+          position absolute
+          right 0
+          top -15px
 
       textarea:focus + label
         padding 5px 0px 5px 70px

@@ -24,7 +24,8 @@ a
   background-image url('../img/backgrounds/section_1.jpg')
   background-size cover
   background-position center
-
+.br-show-m
+  display none
 .section_one-wrapper
   height 100vh
   max-width 1030px
@@ -90,7 +91,7 @@ a
 
 .section_one-blue-divider
   width 1px
-  height 6rem
+  height 7rem
   background-color $blueStandar
   position absolute
   bottom 0
@@ -103,21 +104,27 @@ a
   background-color $blueStandar
   bottom calc(-152px / 2)
   position absolute
-  display flex
-  flex-direction column
-  justify-content flex-start
-  align-items center
+  left 50%
+  transform translateX(-50%)!important
+  
 
 .section_one-white-divider-blue-box
   height calc(50% - 31px)
   width 1px
   background-color #fff
+  position absolute
+  left 50%
+  transform translateX(-50%) !important
 
 .section_one-cicle-circle
   width 51px
   height 51px
   border-radius 50%
   background-color #2c7094
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -65%)
   total-center()
 
 .section_one-cicle-arrow
@@ -146,11 +153,11 @@ a
   position relative
   width 100vw
   padding-top 11rem
-  padding-bottom 11rem
+  padding-bottom 5rem
   
 .section_projects-title-wrapper
   total-center()
-  margin-bottom 100px
+  margin-bottom 70px
 
 .section-blue-font
   color $blueStandar
@@ -159,7 +166,7 @@ a
   font-size remify(45)
 
 .section_projects-carousel-container
-  margin 75px 0
+  margin 0 0 50px 0
 
 .section_projects-slick-firstrow
   margin 0 0 30px -45px
@@ -257,7 +264,7 @@ a
 .item_project-bgd-11
   background-image url('../img/g_rgv.png')
   img
-    width 6rem
+    width 7rem
 
 .item_project-bgd-12
   background-image url('../img/g_rochalandero.png')
@@ -297,7 +304,6 @@ a
 
 .section_projects-btn-wrapper
   total-center()
-  margin-top 100px
 
 .section_projects-blue-btn
   total-center()
@@ -333,7 +339,7 @@ a
 
 .section_services-tabs
   display flex
-  margin-bottom 100px
+  margin-bottom 60px
 
   .section_services-tablink
     position relative
@@ -359,10 +365,10 @@ a
 .section_services-tablink.open-tab::after
   content ''
   width 100%
-  height 5px
+  height 8px
   background-color $blueStandar
   position absolute
-  bottom -5px
+  bottom -8px
   left 0
 
 .section_services-tabcontent-wrapper
@@ -507,7 +513,7 @@ label.error
   background-position center
   background-repeat no-repeat
   background-size cover
-  height 80vh
+  height 70vh
   total-center()
   flex-direction column
 
@@ -538,17 +544,21 @@ label.error
     font-size remify(18)
   
 @media screen and (max-width: 40em)
-
+  .br-show-m
+    display block
+  .section_one
+    height 100%
+  
   .section_one-wrapper
     display block
-    padding-top 30px
-
+    height 100%
   .section_one-text-wrapper
     padding-left 25px
     padding-right 25px
 
   .section_one-container
     justify-content space-between
+    height 80vh
     
   .hide-onMobile
     display none
@@ -557,7 +567,7 @@ label.error
     margin 0 0 0 25px
 
   .section_one-title
-    font-size remify(45)
+    font-size remify(48)
     text-align left
   
   .section_one-description-wrapper
@@ -594,6 +604,7 @@ label.error
   .section_services-tabcontent
     padding 70px 30px 70px 35px
     width 100%
+    height 360px
 
   .section_services-container
     padding-bottom 0
@@ -607,7 +618,7 @@ label.error
     display flex
     background-color #f0f0f0
     padding 50px 30px 30px 30px
-    height 400px
+    height 365px
     flex-direction column
     justify-content flex-start
 

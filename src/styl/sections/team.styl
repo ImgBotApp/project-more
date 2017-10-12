@@ -1,7 +1,10 @@
 
 * 
   box-sizing border-box
-
+.hide-on-mobile
+  display flex
+.show-on-mobile
+  display none
 .view_team
   padding 155px 0 70px 0
   width 100vw
@@ -58,7 +61,7 @@
     
 
 .view_team-member-description
-  padding 20px 40px 40px 40px
+  padding 20px 60px 40px 60px
 
 .view_team-member-name
   font-size remify(16)
@@ -86,7 +89,7 @@
   text-align center
   color #172a37
 
-@media screen and (min-width 641px) and (max-width 992px) 
+@media screen and (min-width 641px) and (max-width 1024px) 
   .view_team-member-item
     width 33.33% !important
   .view_team-member-item.join-us-wrapper
@@ -97,6 +100,10 @@
   .view_team-member-item.join-us-wrapper
     width 50% !important
 @media screen and (max-width: 480px)
+  .hide-on-mobile
+    display none 
+  .show-on-mobile
+    display flex
   .view_team
     padding 100px 0 80px 0
   

@@ -58,10 +58,11 @@ a
   max-width 522px
   position absolute
   top 0
-  left 6rem
+  left 50%
+  transform translateX(-26rem)
 
 .section_one-title
-  font-size remify(72)
+  font-size remify(70)
   color #fff
   letter-spacing -1.7px
   line-height 1.14
@@ -80,7 +81,7 @@ a
   max-width 496px
   position absolute
   bottom 0
-  right 0
+  left 50%
 
 .section_one-description
   font-size remify(22)
@@ -446,7 +447,7 @@ label.error
     right 0 
 
 .section_form-carousel-item
-  height 111.59px !important
+  height 7rem !important
   position relative
   outline none
   display flex !important
@@ -529,23 +530,80 @@ label.error
 .section_form_mobile
   display none
 
-@media screen and (min-width 40.063em) and (max-width 64em) 
+@media screen and (min-width 640px) and (max-width 1024px) 
   .section_form-carousel-item 
     p
       display none
-@media screen and (max-height: 40em)
+
+@media screen and (max-width: 1030px)
+  .section_one-blue-box
+    width 80%
+  
+@media screen and (max-height: 480px)
+  .section_projects-container
+    padding-top 5rem
+  
   .section_one-title-container
-    left 9rem
-    top 12.5%
+    top 25%
   .section_one-title
     font-size remify(63)
-  
+  .section_one-description-container
+    bottom 10% !important
   .section_one-description
     font-size remify(18)
+  .section_one-blue-divider
+    height 2.3rem !important
   
-@media screen and (max-width: 40em)
+  .section_one-blue-box
+    height 50px
+    bottom calc(-50px / 2)
+  .section_one-white-divider-blue-box
+    height calc(50% - 5px)
+  
+  .section_one-cicle-circle
+    width 30px
+    height 30px
+    transform translate(-50%, -50%)
+    .section_one-cicle-arrow
+      width 20px
+      height 20px
+@media screen and (max-width 992px)
+  .cv-form__box2 
+      display none
+@media screen and (min-width 768px) and (max-width 992px)
+  .header-wrapper
+    max-width 708px
+  .site-navbar.active .site-navbar__desktop-logo-container
+    transform translate(289px, -122px)
+  .section_one-title
+    font-size remify(52)
+  
+  .section_one-blue-divider
+    height 7rem
+
+  .section_one-title-container
+    transform translateX(-75%)
+  
+  .section_one-description-container
+    bottom 10%
+    p
+      padding-right 80px
+  
+  .section_form-carousel-item
+    height 11rem !important
+    label
+      font-size remify(38)
+  .section_form-btn
+    margin-top 14vh
+
+  
+@media screen and (max-width: 768px)
   .br-show-m
     display block
+  
+  .hide-onMobile
+    display none
+
   .section_one
     height 100%
   
@@ -556,16 +614,10 @@ label.error
     padding-left 25px
     padding-right 25px
 
-  .section_one-container
-    justify-content space-between
-    height 80vh
-    
-  .hide-onMobile
-    display none
-
   .section_one-title-wrapper
     margin 0 0 0 25px
-
+  .section_one-title-container
+    transform translateX(-90%)
   .section_one-title
     font-size remify(48)
     text-align left
@@ -580,18 +632,8 @@ label.error
   
   .section_one-blue-divider
     height 10rem
-
-  .section_one-description-container
-    margin-bottom 30px
-    left 30px
-    bottom 20%
-
-  .section_one-title-container
-    margin-bottom 0
-    left 30px
   
   .section_one-blue-box
-    width 80%
     left 50%
     transform translateX(-50%) !important
   
@@ -605,7 +647,8 @@ label.error
     padding 70px 30px 70px 35px
     width 100%
     height 360px
-
+  .section_services-tabs .section_services-tablink:hover 
+    background-color transparent
   .section_services-container
     padding-bottom 0
     padding-top 5.5rem
@@ -682,3 +725,30 @@ label.error
     background-position 0 14%
     background-size 100% 14%
     background-repeat no-repeat
+
+@media screen and (min-width 481px) and (max-width 640px)
+  .section_one-container
+    height 100vh
+  .section_one-description-container
+    left 50%
+    bottom 10%
+  .section_one-title-container
+    left 50%
+    transform translateX(-95%)
+  
+  .section_one-blue-divider 
+    height 7rem
+
+@media screen and (max-width: 480px)
+  .section_one-blue-divider 
+    height 7rem
+  .section_one-container
+    height 80vh
+  
+  .section_one-description-container
+    left 30px
+    bottom 20%
+
+  .section_one-title-container
+    left 30px
+    transform translateX(0)

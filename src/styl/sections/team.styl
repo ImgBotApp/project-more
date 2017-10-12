@@ -1,7 +1,10 @@
 
 * 
   box-sizing border-box
-
+.hide-on-mobile
+  display flex
+.show-on-mobile
+  display none
 .view_team
   padding 155px 0 70px 0
   width 100vw
@@ -50,20 +53,25 @@
     img
       height 90%
     img[src="img/team/lili.png"]
+      height 82%
+    img[src="img/team/mariana.png"]
       height 86%
+    img[src="img/team/alex.png"]
+      height 92%
+    
 
 .view_team-member-description
-  padding 20px 40px 40px 40px
+  padding 20px 60px 40px 60px
 
 .view_team-member-name
-  font-size remify(15)
+  font-size remify(16)
   line-height 3.13
   text-align center
   letter-spacing 0.3px
   color #172a37
 
 .view_team-member-position
-  font-size remify(10)
+  font-size remify(11)
   letter-spacing 2.6px
   text-align center
   color #141414
@@ -75,13 +83,13 @@
   margin 15px auto
 
 .view_team-member-phrase
-  font-size remify(10)
+  font-size remify(11)
   line-height 1.63
   letter-spacing 0.2px
   text-align center
   color #172a37
 
-@media screen and (min-width 641px) and (max-width 992px) 
+@media screen and (min-width 641px) and (max-width 1024px) 
   .view_team-member-item
     width 33.33% !important
   .view_team-member-item.join-us-wrapper
@@ -92,8 +100,12 @@
   .view_team-member-item.join-us-wrapper
     width 50% !important
 @media screen and (max-width: 480px)
+  .hide-on-mobile
+    display none 
+  .show-on-mobile
+    display flex
   .view_team
-    padding 110px 0
+    padding 100px 0 80px 0
   
   .view_team-title-container,
   .view_team-description-container
@@ -115,11 +127,11 @@
       height 15.5rem
   
   .view_team-member-name
-    font-size remify(22)
+    font-size remify(23)
   .view_team-member-position
-    font-size remify(16)
+    font-size remify(17)
   .view_team-member-phrase
-    font-size remify(12)
+    font-size remify(13)
 
 
 

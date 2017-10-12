@@ -58,6 +58,15 @@
     align-items center
     img 
       width 100%
+    img[src="img/services-websites.jpg"],
+    img[src="img/services-eCommerce.jpg"],
+    img[src="img/services-software.jpg"]
+      display block
+    img[src="img/services-websites-m.jpg"],
+    img[src="img/services-eCommerce-m.jpg"],
+    img[src="img/services-software-m.jpg"]
+        display none
+    
 
   .services_view-item-details
     width 609px
@@ -181,7 +190,7 @@
 
 @media screen and (max-width: 40em)
   .services_view
-    padding 120px 0 45px 0
+    padding 100px 0 45px 0
     background-size 200% 25%
     &:after
       content ''
@@ -224,33 +233,44 @@
     .services_view-item-img
       width 100%
       height auto
-  
+      img[src="img/services-websites-m.jpg"],
+      img[src="img/services-eCommerce-m.jpg"],
+      img[src="img/services-software-m.jpg"]
+        display block
+      img[src="img/services-websites.jpg"],
+      img[src="img/services-eCommerce.jpg"],
+      img[src="img/services-software.jpg"]
+        display none
+    
     .services_view-item-details
-      padding 75px 30px 0 40px
+      padding 55px 30px 0 35px
       width 100%
       height auto
 
       .services_view-item-subtitle
-        margin-bottom 30px
+        margin-bottom 20px
         padding 3px 0 3px 14px !important
       
       .subEcommerce
           padding 3px 0px 3px 0
+          
           p
             padding 3px 6px !important
 
       h1
         font-size remify(30)
-        margin-bottom 10px
+        margin-bottom 15px
+        padding-right 110px
+        line-height 34px
       
       .service_view-item-details-description
         margin-bottom 30px
-      
+        padding-right 15px
       .services_view-item-details-projects
         display flex
         flex-direction row
-        margin-left -40px
-        margin-right -30px
+        margin-left -35px
+        margin-right -35px
         margin-bottom 30px
 
         a
@@ -275,13 +295,16 @@
     background-color transparent
   
   .services_view-item:nth-child(2)
-    margin 40px 0
+    margin 25px 0
     flex-direction row-reverse
     .services_view-item-details
-      padding 75px 40px 0 30px
+      padding 55px 35px 0 40px
+      h1, p.service_view-item-details-description
+        padding-right 0
+      
       .services_view-item-details-projects
-        margin-left -30px !important
-        margin-right -40px !important
+        margin-left -40px !important
+        margin-right -35px !important
   
   .services_view-item:nth-child(3)
     &:after

@@ -39,26 +39,28 @@
     width 35px
     animation tada_more_logo linear 1s infinite
     transform-origin 20% 100%
-    
-
 
 //////// Form Container /////////
-.contacto-view__form 
+.contacto-view__form
+  width 100%
+  position relative
+  padding 0 0 0 15%
   display flex
-  justify-content space-around
+  justify-content flex-start
   align-items center
-  margin 0 0 141px
-  max-width 1450px
+  margin-bottom 141px
   center-block()
 
 // Name, e-mail, mesage //
-.contacto-view__form-box1 
+.contacto-view__form-box1
+  width 67%
   display flex
   flex-direction column
-  padding 4.56em 20.12em 0 6.25em
+  padding 4.5em 0 0 5em
   box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.19)
   background-color #ffffff
   form 
+    width 54%
     .contacto-view__form-group
       display flex
       flex-direction column-reverse
@@ -107,13 +109,16 @@
 
 // Gray box //
 .contacto-view__form-box2 
+  position absolute
+  right 10%
   display flex
   flex-direction column
   justify-content center
+  align-items center
   background-color #f6f6f6
-  width 22.62em
-  padding 5.81em 1em 5.75em 4em
-  margin 0 0 70px -500px
+  width 33%
+  padding 4.5em 0
+  
   
   .cw-mail,
   .cw-map 
@@ -145,32 +150,98 @@
   border-radius 1px
   width 96px
   height 43px
-  margin 26px 0 89px auto
+  margin 26px 0 4.5em auto
   border none
 
   span 
     margin 0 auto
   
 ////////////////// Mobile section ////////////////////
+@media screen and (min-width 640px) and (max-width 992px)
+  .contacto-view__form-box1
+    padding 4.5em 0 0 3em
+    form
+      width 60%  
+      input, textarea
+        &:focus + label.error
+          top -30px
+      label.error
+        top -30px
+        font-size 9px!important
+
+      
+
+// Medium devices
+@media screen and (min-width 480px) and (max-width 640px) 
+  .contacto-view__title
+    font-size remify(39px)
+    font-size 2.4375rem
+    padding 100px 0 50px 40px
+    width 9em
+
+  .contacto-view__more-logo 
+    display none
+  
+  // Form Container
+  .contacto-view__form 
+    padding 0 0 0 0
+    margin 0
+    height 700px
+    align-items flex-start
+
+  // Name, e-mail, mesage
+  .contacto-view__form-box1
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    width 100%
+    padding 20px 0 0 0
+    box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.19)
+    center-block()
+    z-index 1
+    form
+      width 75%
+      margin 37px 0 0
+      label.error
+        top -30px
+      input,textarea
+        &:focus +label.error
+          top -30px
+    
+  // Submit button 
+  .contact-form__button 
+    margin 26px 0 31px auto
+  
+  // Gray box
+  .contacto-view__form-box2 
+    width 100%
+    bottom 0
+    right 0
+    padding 4.5em 0
+    .contacto-view__form-box2-container
+      width auto
+      margin 0 auto
+    
 
 // Small devices
-@media screen and (max-width 39.9375em)
+@media screen and (max-width 480px)
   
   .contacto-view__title 
     font-size remify(39px)
-    padding 133px 0 61px
-    margin-left 5%
-    width 8.31em
+    font-size 2.4375rem
+    padding 100px 0 50px 40px
+    width 9em
   
 
   .contacto-view__more-logo 
     display none
   
   .contacto-view__form 
-    flex-direction column
+    padding 0 0 0 0
     margin 0
-    justify-content center
-    align-items center
+    height 650px
+    align-items flex-start
   
   // Name, e-mail, mesage
   .contacto-view__form-box1 
@@ -181,14 +252,15 @@
     box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.22)
     z-index 1
     form 
-      margin 50px 0 0
-      margin-left 5%
-      width 90%
+      margin 50px auto 0 auto
+      width 75%
       
       label 
         color #141414
         font-size remify(15px)
         margin 0 0 0 13px
+      label.error
+        top -30px
       
       input 
         margin 0 0 3.12em
@@ -206,6 +278,12 @@
         font-size remify(13px)
         color #ababab
         width 100%
+
+      input,textarea
+        &:focus + label.error
+          top -30px
+        
+      
       
       textarea:placeholder 
         color #ababab
@@ -216,65 +294,12 @@
     margin 26px 0 31px auto
     
 
-    // Gray box
   .contacto-view__form-box2 
     width 100%
-    margin 0
-    padding 0
+    bottom 0
+    right 0
+    padding 4.5em 0
+    .contacto-view__form-box2-container
+      width auto
+      margin 0 auto
         
-  .contacto-view__form-box2-container 
-    display flex
-    flex-direction column
-    justify-content center
-    margin 61px 0 65px
-    margin-left 5%
-        
-
-// Medium devices
-@media screen and (min-width 40em) and (max-width 63.9375em) 
-
-  .contacto-view__title 
-    font-size remify(39px)
-    padding 133px 0 61px
-    center-block()
-  
-  
-  .contacto-view__more-logo 
-    display none
-  
-  // Form Container
-  .contacto-view__form 
-    flex-direction column
-    justify-content center
-    align-items center
-    margin 0
-  
-
-  // Name, e-mail, mesage
-  .contacto-view__form-box1
-    display flex
-    flex-direction column
-    align-items center
-    justify-content center
-    width 100%
-    padding 20px 0 0 0
-    box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.19)
-    center-block()
-    z-index 1
-    
-
-    form 
-      margin 37px 0 0
-    
-  
-  // Submit button 
-  .contact-form__button 
-    margin 26px 0 31px auto
-  
-
-  // Gray box
-  .contacto-view__form-box2 
-    width 100%
-    margin 0
-    padding auto
-    padding-left 220px

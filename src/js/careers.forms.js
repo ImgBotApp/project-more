@@ -11,7 +11,7 @@ $('form[name="form-careers-1"]').validate({
     email: true
   },
   messages: {
-    emailCareers: "Por favor introduce un correo valido."
+    emailCareers: "Por favor introduce un correo válido."
   },
   submitHandler: function(form) {
     var data = $('form[name="form-careers-1"]').serialize();
@@ -30,7 +30,7 @@ $('form[name="form-careers-1"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
+    alertify.error("Verifica tu información, tienes " + errors + " errores.");
   }
 });
 
@@ -58,6 +58,6 @@ $('form[name="form-careers-2"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
+    alertify.error("Verifica tu información, tienes " + errors + " errores.");
   }
 });

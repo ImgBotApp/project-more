@@ -45,7 +45,7 @@ $('form[name="form-contact-more_desktop"]').validate({
   messages: {
     name: "Por favor introduce tu nombre.",
     message: "Por favor introduce tu mensaje.",
-    email: "Por favor introduce un correo valido."
+    email: "Por favor introduce un correo válido."
   },
   submitHandler: function(form) {
     var data = $('form[name="form-contact-more_desktop"]').serialize();
@@ -64,7 +64,7 @@ $('form[name="form-contact-more_desktop"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
+    alertify.error("Verifica tu información, tienes " + errors + " errores.");
   }
 });
 

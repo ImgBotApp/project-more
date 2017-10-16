@@ -14,7 +14,7 @@ $('form[name="form-quote"]').validate({
     email: true
   },
   messages: {
-    emailQuote: "Por favor introduce un correo valido."
+    emailQuote: "Por favor introduce un correo válido."
   },
   submitHandler: function(form) {
     var data = $('form[name="form-quote"]').serialize();
@@ -33,6 +33,6 @@ $('form[name="form-quote"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
+    alertify.error("Verifica tu información, tienes " + errors + " errores.");
   }
 });

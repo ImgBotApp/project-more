@@ -29,7 +29,7 @@
     width 1px
     height 60px
     background-color #000
-    animation tada_more_logo linear 1s infinite
+    animation tada_more_logo linear 1s 2 forwards
     transform-origin 20% 100%
   
   img 
@@ -37,7 +37,7 @@
     right 3.12em
     bottom 0
     width 35px
-    animation tada_more_logo linear 1s infinite
+    animation tada_more_logo linear 1s 2 forwards
     transform-origin 20% 100%
 
 //////// Form Container /////////
@@ -157,7 +157,7 @@
     margin 0 auto
   
 ////////////////// Mobile section ////////////////////
-@media screen and (min-width 640px) and (max-width 992px)
+@media screen and (min-width 768px) and (max-width 1024px)
   .contacto-view__form-box1
     padding 4.5em 0 0 3em
     form
@@ -169,10 +169,8 @@
         top -30px
         font-size 9px!important
 
-      
-
 // Medium devices
-@media screen and (min-width 480px) and (max-width 640px) 
+@media screen and (min-width 480px) and (max-width 767px) 
   .contacto-view__title
     font-size remify(39px)
     font-size 2.4375rem

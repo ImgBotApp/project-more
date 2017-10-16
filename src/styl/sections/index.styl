@@ -5,6 +5,9 @@
 
 a 
   text-decoration none 
+label.error
+  font-family 'Metropolis'
+  font-weight $normal
 
 // overwriting the log success color and typo.
 
@@ -328,8 +331,8 @@ a
 .section_services-container
   position relative
   max-width 1030px
-  padding-top 11rem
-  padding-bottom 11rem
+  padding-top 4.5rem
+  padding-bottom 5rem
   center-block()
   display flex
   justify-content space-around
@@ -353,7 +356,14 @@ a
     outline none
     cursor pointer
     &:hover
-      background-color #d6d6d6
+      &:after
+        content ''
+        width 100%
+        height 8px
+        background-color $blueStandar
+        position absolute
+        bottom -8px
+        left 0
     .section_services-tablink-title
       color #9d9d9d
 
@@ -389,7 +399,7 @@ a
   flex-direction column
   justify-content center
   img
-    width 70px
+    width 95px
     margin-top 15px
 
 .section_services-tabcontent-title
@@ -457,9 +467,12 @@ label.error
 
   .section_form-input-wrapper
     center-block()
+    cursor pointer
   label
     color #fff
     font-size remify(44)
+  label.error
+    color #ff3636
   
   input
     padding 10px
@@ -647,12 +660,10 @@ label.error
     padding 70px 30px 70px 35px
     width 100%
     height 360px
-  .section_services-tabs .section_services-tablink:hover 
-    background-color transparent
   .section_services-container
     padding-bottom 0
     padding-top 5.5rem
-
+  
   .section_services-title-wrapper
     margin-bottom 4rem
 
@@ -751,4 +762,5 @@ label.error
 
   .section_one-title-container
     left 30px
+    top 3.5rem
     transform translateX(0)

@@ -241,9 +241,6 @@
         padding 4px
         transform rotate(45deg)
         transition: .25s all ease;
-   
-      &:hover:after 
-        transform translateY(5px)rotate(-135deg)
       
     .careers-view__main-form-send__button
       display flex
@@ -424,7 +421,7 @@ textarea
     margin 0 65px 40px 0 !important
   
       
-@media screen and (max-width: 40em)
+@media screen and (max-width: 767px)
   .careers-view
     padding 100px 0 0 0
   .careers-view__carousel-wrapper
@@ -472,9 +469,10 @@ textarea
     padding 20px 0 100px 0
     &:after
       height 25%
-
+  .careers-view__main-form
+    width 90%
   .careers-view__main-form__col1
-    width 80%
+    width 100%
     padding 35px 25px 25px 0px
     height 380px
     form

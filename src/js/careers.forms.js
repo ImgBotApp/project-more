@@ -11,7 +11,7 @@ $('form[name="form-careers-1"]').validate({
     email: true
   },
   messages: {
-    emailCareers: "Por favor introduce un correo válidoSSSSS.",
+    emailCareers: "Por favor introduce un correo válido.",
     openingCareers: "Selecciona una opción"
   },
   submitHandler: function(form) {

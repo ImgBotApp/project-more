@@ -11,7 +11,8 @@ $('form[name="form-careers-1"]').validate({
     email: true
   },
   messages: {
-    emailCareers: "Por favor introduce un correo válido."
+    emailCareers: "Por favor introduce un correo válidoSSSSS.",
+    openingCareers: "Selecciona una opción"
   },
   submitHandler: function(form) {
     var data = $('form[name="form-careers-1"]').serialize();

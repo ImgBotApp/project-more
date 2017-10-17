@@ -76,7 +76,6 @@ $('form[name="form-contact-more_desktop"]').validate({
   
 });
 
-//------------------ getmore.mx - @soycamis
 // added function to capture TAB and ENTER to make the field change
 // in the form of the homepage as it, is a slider.
 // -----------------------------------------------------------------

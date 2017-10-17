@@ -79,12 +79,22 @@ input, textarea, button, select, label
   cursor pointer
   font-family inherit
 
-  &, &:hover, &:active &:focus
+  &, &:hover, &:active, &:focus
     box-shadow none
     outline none
-
+input, textarea
+  &:focus
+    opacity 1 !important
+    
+.turn-on{
+  opacity 1
+}
+.turn-off{
+  opacity 0
+}
 textarea
   resize none
+
 // END FORMS //
 
 @import 'partials/navbar'

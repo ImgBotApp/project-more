@@ -20,7 +20,7 @@
       <div class="section_one-blue-box" data-aos="fade-up" data-aos-duration="250">
         <div class="section_one-white-divider-blue-box" data-aos="fade-up" data-aos-delay="150"></div>
         <div class="section_one-cicle-circle">
-          <div class="section_one-cicle-arrow" data-aos="fade-up" data-aos-offset="85">
+          <div class="section_one-cicle-arrow">
             <img src="img/icons/np-down-arrow3.png" alt="ARROW">
           </div>
         </div class="section_one-cicle-circle">
@@ -65,7 +65,7 @@
                 <a href="https://vre.com.mx/" target="_blanck"><img src="img/logos/vre.png" alt="vre logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-9">
-                <a href="http://alegpaez.com/" target="_blanck"><img src="img/logos/nutriologa.png" alt="nutriologa logo"></a>
+                <a href="http://alegpaez.com/" target="_blanck"><img src="img/logos/alegpaez.png" alt="Ale Paez logo"></a>
               </div>
               <div class="section_projects-slick-item item_project-bgd-10">
                 <a href="http://workingch.com/" target="_blanck"><img src="img/logos/workingch.png" alt="workingch logo"></a>
@@ -175,7 +175,7 @@
         <div class="section_form-carousel-item">
           <div class="section_form-input-wrapper">
             <label for="inputName" class="font-metropolis-bold">Your name</label>
-            <input id="inputName" class="font-metropolis-light" type="text" name="name" required>
+            <input id="inputName" class="font-metropolis-light" type="text" name="name" minlength="2" required autocomplete="off">
           </div>
           <p class="font-metropolis-bold">Your email</p>
           <img class="section_form-carousel-next carousel-arrow" src="img/icons/np-right-arrow.png" alt="next arrow">
@@ -185,7 +185,7 @@
           <p id="nameText" class="font-metropolis-bold section_form-fild-nameInput"></p>
           <div class="section_form-input-wrapper">
             <label for="inputEmail" class="font-metropolis-bold">Your e-mail</label>
-            <input id="inputEmail" class="font-metropolis-light" type="email" name="email" required>
+            <input id="inputEmail" class="font-metropolis-light" type="email" name="email" required autocomplete="off">
           </div>
           <p class="font-metropolis-bold">Your message</p>
           <img class="section_form-carousel-next carousel-arrow" src="img/icons/np-right-arrow.png" alt="next arrow">
@@ -195,7 +195,7 @@
           <p id="emailText"  class="font-metropolis-bold section_form-fild-emailInput"></p>
           <div class="section_form-input-wrapper">
             <label for="inputMessage" class="font-metropolis-bold">Your message</label>
-            <input id="inputMessage" class="font-metropolis-light" type="text" name="message" required>
+            <input id="inputMessage" class="font-metropolis-light" type="text" name="message" required autocomplete="off">
           </div>
           <button type="submit" class="section_form-btn">
             <img src="img/icons/np-right-arrow.png" alt="Send Arrow">
@@ -204,16 +204,16 @@
         </div>
       </div>
     </form>
-    {#  #}
+    {# FORM ON MOBILE#}
   </div>
   <div class="section_form_mobile">
     <form name="form-contact-more_mobile">
       <div class="section_form_mobile-item">
-        <input id="nameInputMobile" class="font-metropolis-light" type="text" name="name" required>
+        <input id="nameInputMobile"  class="font-metropolis-light" type="text" name="name" autocomplete="off" regex="[a-zA-Z]{2,1}" required>
         <label for="nameInputMobile" class="font-metropolis-bold">Your name</label>
       </div>
       <div class="section_form_mobile-item">
-        <input id="emailInputMobile" class="font-metropolis-light" type="email" name="email" required>
+        <input id="emailInputMobile" class="font-metropolis-light" type="email" name="email" required autocomplete="off">
         <label for="emailInputMobile" class="font-metropolis-bold">Your e-mail</label>
       </div>
       <div class="section_form_mobile-item">

@@ -1,21 +1,5 @@
 $('form[name="form-quote"]').validate({
-  // required fields
-  nameQuote: 'required',
-  phoneQuote: 'required',
-  projectTypeQuote: 'required',
-  linkedinCareers: 'required',
-  projectNameQuote: 'required',
-  budgetQuote: 'required',
-  detailsQuote: 'required',
-  emailQuote: {
-    required: true,
-    // Specify that email should be validated
-    // by the built-in "email" rule
-    email: true
-  },
-  messages: {
-    emailQuote: "Por favor introduce un correo valido."
-  },
+  
   submitHandler: function(form) {
     var data = $('form[name="form-quote"]').serialize();
     $.ajax({
@@ -33,6 +17,44 @@ $('form[name="form-quote"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
-  }
+    alertify.error("Verifica tu información, tienes " + errors + " errores.");
+  },
+
+  rules:('add', {
+    nameQuote: {
+      required: true,
+      regex: /^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$/
+    },
+    phoneQuote: {
+      required: true
+    },
+    projectTypeQuote: {
+      required: true
+    },
+    linkedinCareers: {
+      required: true
+    },
+    projectNameQuote: {
+      required: true
+    },
+    budgetQuote: {
+      required: true
+    },
+    detailsQuote: {
+      required: true
+    },
+    emailQuote: {
+      required: true,
+      // Specify that email should be validated
+      // by the built-in "email" rule
+      email: true
+    },
+    messages: {
+      name: {
+        required: "Por favor introduce tu nombre ",
+        regex: "Por favor introduce un nombre válido"
+      },
+      email: "Por favor introduce un correo valido."
+    }
+  })
 });

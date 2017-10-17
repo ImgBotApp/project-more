@@ -1,17 +1,4 @@
 $('form[name="form-referrals"]').validate({
-  // required fields
-  nameReferrals: 'required',
-  phoneReferrals: 'required',
-  messageReferrals: 'required',
-  mailReferrals: {
-    required: true,
-    // Specify that email should be validated
-    // by the built-in "email" rule
-    email: true
-  },
-  messages: {
-    emailCareers: "Por favor introduce un correo valido."
-  },
   submitHandler: function(form) {
     var data = $('form[name="form-referrals"]').serialize();
     $.ajax({
@@ -29,6 +16,27 @@ $('form[name="form-referrals"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
-  }
+    alertify.error("Verifica tu información, tienes " + errors + " errores.");
+  },
+  rules:('add', {
+    nameReferrals: {
+      required: true,
+      regex: /^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$/
+    },
+    messageReferrals: {
+      required: true
+    },
+    mailReferrals: {
+      required: true,
+      // Specify that email should be validated
+      // by the built-in "email" rule
+      email: true
+    },
+    phoneReferrals: {
+      required: true
+    },
+    messages: {
+      mailReferrals: "Por favor introduce un correo valido."
+    }
+  })
 });

@@ -17,7 +17,7 @@
         labelChange = function(idElement) {
           $('#' + idElement).change(function () {
             $('label[for="' + idElement + '"]').text($('#' + idElement).val());
-            $('#' + idElement).css('visibility', 'hidden');
+            $('#' + idElement).addClass('turn-off');
           });
         }
 

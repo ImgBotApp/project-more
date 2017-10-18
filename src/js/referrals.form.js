@@ -6,10 +6,11 @@ $('form[name="form-referrals"]').validate({
       method: 'POST',
       data: data
     }).done(function(data) {
+      
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
         alertify.success("Correo enviado, gracias por contactarte con nosotros.");
-        $('form[name="form-careers-1"]')[0].reset();
+        $('form[name="form-referrals"]')[0].reset();
       }
     });
   },

@@ -55,4 +55,9 @@
     },
     "Por favor escribe un campo válido"
   );
+  // --------- INPUT MASKS
+  jQuery(function($){
+    $('input[type="tel"]').mask("(9?9)\xa09999\xa09999", {placeholder:""});
+    // $('input[name="budgetQuote"]').mask("$ 99?9,9?99,999.99", {placeholder:""});
+ });
 })();

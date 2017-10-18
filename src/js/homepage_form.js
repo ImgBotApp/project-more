@@ -73,7 +73,6 @@ $('form[name="form-contact-more_desktop"]').validate({
       email: "Por favor introduce un correo valido."
     }
   })
-  
 });
 
 // added function to capture TAB and ENTER to make the field change

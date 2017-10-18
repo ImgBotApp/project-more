@@ -58,7 +58,25 @@
   display flex
   flex-direction column-reverse
   position relative
-  
+
+  select
+    appearance none
+    outline none
+    box-shadow none
+    border none
+    background-color #fff
+    background-image none
+    width 100%
+    height 100%
+    padding 10px
+    cursor pointer
+    font-size remify(17)
+    display flex 
+    align-items center
+    justify-content center
+    option
+      font-size remify(13)
+      color #bfbfbf         
   label
     font-size remify(17)
     line-height 13px
@@ -107,7 +125,20 @@
 
 .quotation-view_form-col2
   padding-left 35px
-
+  .quotation-view__form-group:nth-child(2)
+    margin-bottom 35px
+  .quotation-view__form-group:nth-child(3)
+    &:after
+      content ''
+      position absolute
+      top 14px
+      right 125px
+      border solid #000
+      border-width 0 2px 2px 0
+      display inline-block
+      padding 3px
+      transform rotate(45deg)
+      transition: .25s all ease;
 .quotation-view_form-col1, 
 .quotation-view_form-col2
   width 50%
@@ -139,16 +170,22 @@
     font-size remify(13px)
     margin-top 3px
 
-@media screen and (min-width 40.063em) and (max-width 64em)
+@media screen and (min-width 768px) and (max-width 1024px)
+  .quotation-view_form-col2 
+    .quotation-view__form-group:nth-child(3)
+      &:after
+        top 11px
+        right 25px
   .quotation-view__form-group 
     label
       top -20px
       line-height 16px
     input, textarea
       &:focus + label
-        top -30px     
+        top -30px 
 
-@media screen and (max-width: 40em)
+@media screen and (max-width: 767px)
+
   .quotation-view 
     padding 65px 0 100px 0
     background-image url('../img/backgrounds/services-bgd1.jpg')
@@ -182,6 +219,7 @@
     .quotation-view_form-col2
       width 100%
       padding 0
+      
   
   .quotation-view__form-group 
     
@@ -190,6 +228,15 @@
       font-size remify(15)
     label.error
       top -50px
+    select
+      padding 10px 10px 10px 0
+      font-size remify(15)
+
+  .quotation-view_form-col2     
+    .quotation-view__form-group:nth-child(3)
+      &:after
+        top 11px
+        right 25px
 
   .quotation-view__form-send__button
     right 25px

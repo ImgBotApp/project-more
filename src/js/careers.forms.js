@@ -1,19 +1,5 @@
 $('form[name="form-careers-1"]').validate({
-  // required fields
-  nameCareers: 'required',
-  phoneCareers: 'required',
-  openingCareers: 'required',
-  linkedinCareers: 'required',
-  emailCareers: {
-    required: true,
-    // Specify that email should be validated
-    // by the built-in "email" rule
-    email: true
-  },
-  messages: {
-    emailCareers: "Por favor introduce un correo válido.",
-    openingCareers: "Selecciona una opción"
-  },
+  
   submitHandler: function(form) {
     var data = $('form[name="form-careers-1"]').serialize();
     $.ajax({
@@ -32,7 +18,29 @@ $('form[name="form-careers-1"]').validate({
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
     alertify.error("Verifica tu información, tienes " + errors + " errores.");
-  }
+  },
+  rules:('add', {
+    nameCareers: {
+      required: true,
+      regex: /^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$/
+    },
+    openingCareers: {
+      required: true
+    },
+    emailCareers: {
+      required: true,
+      // Specify that email should be validated
+      // by the built-in "email" rule
+      email: true
+    },
+    phoneCareers: {
+      required: true
+    },
+    messages: {
+      emailCareers: "Por favor introduce un correo valido.",
+      openingCareers: "Selecciona una opción"
+    }
+  })
 });
 
 $('form[name="form-careers-2"]').validate({

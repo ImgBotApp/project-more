@@ -7,6 +7,23 @@
 .quotation-view
   @extends .careers-view
   position relative
+  .quotation_logo_more
+    position absolute 
+    right 7.8%
+    top 26%
+    width 35px
+    animation tada_more_logo linear 1s 2 forwards
+    transform-origin 20% 100%
+  &:before
+    position absolute
+    content ''
+    right 9%
+    top 20%
+    width 1px
+    height 60px
+    background-color #000
+    animation tada_more_logo linear 1s 2 forwards
+    transform-origin 20% 100%
   &:after
     content ''
     width 992px
@@ -185,13 +202,17 @@
         top -30px 
 
 @media screen and (max-width: 767px)
-
+  .quotation_logo_more
+    display none
   .quotation-view 
     padding 65px 0 100px 0
     background-image url('../img/backgrounds/services-bgd1.jpg')
     background-position 100% 0
     background-size 150% 30%
     background-repeat no-repeat
+    &:before
+      width 0
+      height 0
 
     &:after
       width 65%

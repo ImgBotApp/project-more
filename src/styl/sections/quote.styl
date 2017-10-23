@@ -87,15 +87,15 @@
     height 100%
     padding 10px
     cursor pointer
-    font-size remify(17)
+    font-size remify(18)
     display flex 
     align-items center
     justify-content center
     option
-      font-size remify(13)
+      font-size remify(16)
       color #bfbfbf         
   label
-    font-size remify(17)
+    font-size remify(18)
     line-height 13px
     padding-left 10px
     transition .2s all ease
@@ -106,7 +106,7 @@
     top -57px
 
   input, textarea
-    font-size 14px
+    font-size remify(16)
     width 100%
     border none
     border-radius 0px
@@ -120,7 +120,7 @@
       border-radius 0px
 
     &:focus + label
-      font-size remify(15)
+      font-size remify(16)
       color #2f76a1
       top -20px 
     &:focus + label.error
@@ -184,7 +184,7 @@
     width 1rem
   p
     color #ffffff
-    font-size remify(13px)
+    font-size remify(15)
     margin-top 3px
 
 @media screen and (min-width 768px) and (max-width 1024px)
@@ -246,12 +246,10 @@
     
     label
       padding-left 0
-      font-size remify(15)
     label.error
       top -50px
     select
       padding 10px 10px 10px 0
-      font-size remify(15)
 
   .quotation-view_form-col2     
     .quotation-view__form-group:nth-child(3)

@@ -1,3 +1,7 @@
+.turnOff-on-mobile
+  display block
+.turnOn-on-mobile
+  display none
 .portfolio-view
   padding 155px 0
   background-image url(../img/backgrounds/projects-bgd.png)
@@ -66,14 +70,16 @@
   height 21.68em 
 
 .card-lg-bg1 
-  background-image url(../img/portfolio/portfolio_financiero.png)
+  background-image url(../img/portfolio/portfolio_higia.png)
   img 
     width 9.66em
 
 .card-lg-bg2 
   background-image url(../img/portfolio/portfolio_rgv.png)
-  img 
-    width 6.18em 
+  img[src="img/logos/rgv.png"]
+    width 6.18em
+  img[src="img/logos/dreamwater.png"]
+    width 9.12em
 
 .card-lg-bg3 
   background-image url(../img/portfolio/portfolio_nutrologa.png)
@@ -96,7 +102,7 @@
     width 9.66em
 
 .card-lg-bg7 
-  background-image url(../img/portfolio/portfolio_dreamwater.png)
+  background-image url(../img/portfolio/portfolio_local-e.png)
   img 
     width 7em
 
@@ -104,10 +110,14 @@
   background-image url(../img/portfolio/portfolio_emma.png)
   img 
     width 9.66em
+.card-lg-bg9
+  background-image url(../img/portfolio/portfolio_finacero.png)
+  img 
+    width 9.66em
 
 // md
 .card-md-bg1 
-  background-image url(../img/portfolio/portfolio_local-e.png)
+  background-image url(../img/portfolio/portfolio_rer.png)
   img 
     width 6.68em
 
@@ -137,7 +147,7 @@
     width 9.66em
 
 .card-md-bg7 
-  background-image url(../img/portfolio/portfolio_wellness.jpg)
+  background-image url(../img/portfolio/portfolio_iidea.png)
   img 
     width 9.66em
 
@@ -151,11 +161,20 @@
   img 
     width 4em
 
+.card-md-bg10
+  background-image url(../img/portfolio/portfolio_finacero.png)
+  img 
+    width 7em
+
 // sm
 .card-sm-bg1 
-  background-image url(../img/portfolio/portfolio_neopraxis.png)
-  img 
-    width 9.12em
+  background-image url(../img/portfolio/portfolio_dreamwater.png)
+  a[class="turnOff-on-mobile"]
+    img 
+      width 9.12em
+  a[class="turnOn-on-mobile"]
+    img
+      width 6.18em
 
 .card-sm-bg2 
   background-image url(../img/portfolio/portfolio_brick.png)
@@ -168,9 +187,9 @@
     width 5.5em
 
 .card-sm-bg4 
-  background-image url(../img/portfolio/portfolio_aerial.png)
+  background-image url(../img/portfolio/portfolio_neopraxis.png)
   img 
-    width 7em
+    width 9.12em
 
 .card-sm-bg5 
   background-image url(../img/portfolio/portfolio_begona.png)
@@ -245,6 +264,7 @@
   .card-sm-bg6,
   .card-sm-bg4,
   .card-sm-bg2,
+  .card-md-bg10,
   .card-md-bg8,
   .card-md-bg6,
   .card-md-bg4,

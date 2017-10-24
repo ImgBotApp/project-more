@@ -16,6 +16,9 @@ $(function () {
   $('.section_form-carousel-prev').on('click', function () {
     $('.section_form-carousel').slick('slickPrev');
   });
+  $('.section-form-title').on('click', function () {
+    $('.section_form-carousel').slick('slickNext');
+  });
 });
 
 $('.section_form-carousel-next').eq(0).on("click", function() {

@@ -51,7 +51,23 @@
       display none
       
     .site-lang__menu-link
+      background-color $blueStandar
       color #fff
+    
+    .site-navbar__menu-link
+      &:hover
+        background-color $blueStandar
+        color #fff
+        &:after
+          width 0 
+          height 0
+      
+    .site-navbar__menu-link.active
+      background-color $blueStandar
+      color #fff
+      &:after
+        width 0
+        height 0
 
 .header-wrapper
   display flex
@@ -104,15 +120,31 @@
   transition .6s background-color linear
   border-radius 1px
   letter-spacing .2px
-  
 
   &:hover
-    background-color #2D698F
-    color #fff
+    position relative
+    &:after
+      content ''
+      background-color #2D698F
+      width 100%
+      height 5px
+      position absolute
+      bottom 0
+      left 0
     
   &.active
-    background-color $blueStandar
-    color #fff
+    position relative
+    &:after
+      content ''
+      background-color #2D698F
+      width 100%
+      height 5px
+      position absolute
+      bottom 0
+      left 0
+
+    // background-color $blueStandar
+    // color #fff
 
 .second_menu
   height 55px

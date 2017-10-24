@@ -248,7 +248,11 @@
     margin 0 auto 30px auto
 
 //////////////// Mobile small devices ////////////////////
-@media screen and (max-width 40em) 
+@media screen and (max-width 40em)
+  .turnOff-on-mobile
+    display none
+  .turnOn-on-mobile
+    display block
   .col-1, .col-2, .col-3
     display flex
     flex-wrap wrap
@@ -258,6 +262,15 @@
   .card-lg, .card-md, .card-sm
     width calc(50% - 7px)
     height 18.31em
+  
+  .card-lg-bg2
+    background-image url(../img/portfolio/portfolio_dreamwater.png)
+  .card-sm-bg1 
+    background-image url(../img/portfolio/portfolio_rgv.png)
+  .card-md-bg1 
+    background-image url(../img/portfolio/portfolio_nutrologa.png)
+  .card-lg-bg3
+    background-image url(../img/portfolio/portfolio_rer.png)
 
   .card-sm-bg10,
   .card-sm-bg8,

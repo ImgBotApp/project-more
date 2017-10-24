@@ -4,29 +4,36 @@
   $('.section_projects-slick-firstrow').slick({
     dots: false,
     infinite: true,
-    // cssEase: 'linear',
-    // autoplaySpeed: 0,
-    // speed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
-    // adaptiveHeight: true,
     arrows: false,
     autoplay: false,
   });
   $('.section_projects-slick-secondrow').slick({
     dots: false,
     infinite: true,
-    // cssEase: 'linear',
-    // autoplaySpeed: 0,
-    // speed: 6000,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
-    // adaptiveHeight: true,
     arrows: false,
     autoplay: false,
   });
 })();
+
+$(function () {
+  $('.section_projects-carousel-next').on('click', function () {
+    $('.section_projects-slick-firstrow').slick('slickNext');
+  });
+  $('.section_projects-carousel-prev').on('click', function () {
+    $('.section_projects-slick-firstrow').slick('slickPrev');
+  });
+  $('.section_projects-carousel-next').on('click', function () {
+    setTimeout(function(){$('.section_projects-slick-secondrow').slick('slickNext')}, 80);
+  });
+  $('.section_projects-carousel-prev').on('click', function () {
+    setTimeout(function(){$('.section_projects-slick-secondrow').slick('slickPrev')}, 80);
+  });
+});

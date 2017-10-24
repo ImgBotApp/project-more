@@ -210,58 +210,59 @@ label.error
     transform scale(1.2)
 
 .item_project-bgd-1
-  background-image url('../img/c_aerial.png')
+  background-image url('../img/c_dreamwater.png')
   img
     width 4rem
 
 .item_project-bgd-2
-  background-image url('../img/c_aguaviento.png')
+  background-image url('../img/c_rer.png')
   img
     width 7rem
 
 .item_project-bgd-3
-  background-image url('../img/g_neopraxis.png')
+  background-image url('../img/g_rochalandero.png')
+  
   width 21.5rem !important
   height 13.5625rem
   img
-    width 11rem
+    width 6rem
 
 .item_project-bgd-4
-  background-image url('../img/c_dondinero.jpg')
+  background-image url('../img/c_dondinero.png')
   img
     width 8rem
 
 .item_project-bgd-5
-  background-image url('../img/c_florella.jpg')
+  background-image url('../img/c_florella.png')
   img
     width 6.5rem
 
 .item_project-bgd-6
-  background-image url('../img/g_brick.png')
+  background-image url('../img/g_higia.png')
   width 21.5rem !important
   height 13.5625rem
   img
-    width 8rem
+    width 6rem
 
 .item_project-bgd-7
-  background-image url('../img/c_jb.png')
-  img
-    width 3.7rem
-
-.item_project-bgd-8
   background-image url('../img/c_vre.png')
   img
     width 7rem
 
+.item_project-bgd-8
+  background-image url('../img/c_jb.png')
+  img
+    width 3.5rem
+
 .item_project-bgd-9
-  background-image url('../img/g_nutriologa.png')
+  background-image url('../img/g_neopraxis.png')
   width 21.5rem !important
   height 13.5625rem
   img
     width 8.5rem
 
 .item_project-bgd-10
-  background-image url('../img/c_workingch.jpg')
+  background-image url('../img/c_workingch.png')
   img
     width 5.5rem
 
@@ -271,33 +272,47 @@ label.error
     width 7rem
 
 .item_project-bgd-12
-  background-image url('../img/g_rochalandero.png')
+  background-image url('../img/c_aguaviento.png')
+  
   width 21.5rem !important
   height 13.5625rem
   img
-    width 5.5rem
+    width 7.5rem
 
 .item_project-bgd-13
   img
-    width 6rem
+    width 4.5rem
   background-image url('../img/c_iidea.png')
 
 .item_project-bgd-14
   img
     width 6rem
-  background-image url('../img/c_rer.png')
+  background-image url('../img/g_nutriologa.png')
   
 
 .item_project-bgd-15
   img
     width 6rem
-  background-image url('../img/g_higia.png')
+  background-image url('../img/g_brick.png')
   width 21.5rem !important
   height 13.5625rem
 
 
 .section_projects-btn-wrapper
   total-center()
+  flex-direction column
+.section-projects-carousel-arrows
+  width 100px
+  height 25px
+  margin-bottom 20px
+  display flex
+  flex-direction row
+  align-items center
+  justify-content space-around
+  img
+    width 20%
+  .section_projects-carousel-prev
+    transform rotate(180deg)
 
 .section_projects-blue-btn
   total-center()
@@ -389,7 +404,7 @@ label.error
   flex-direction column
   justify-content center
   img
-    width 95px
+    width 145px
     margin-top 15px
 
 .section_services-tabcontent-title
@@ -426,11 +441,9 @@ label.error
 // ========== section_ Form ========== //
 .section-form-title
   color #fff
-  font-size remify(22)
+  font-size remify(44)
   text-align center
-  position absolute
-  top 30px
-  left 30px
+  cursor pointer
 
 .section_form .slick-list
   padding-bottom 13px !important 
@@ -454,7 +467,8 @@ label.error
 
   .slick-right
     right 0 
-
+.section_form-carousel-item:first-child
+  justify-content center
 .section_form-carousel-item
   height 7rem !important
   position relative

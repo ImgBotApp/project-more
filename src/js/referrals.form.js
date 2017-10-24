@@ -9,7 +9,7 @@ $('form[name="form-referrals"]').validate({
       
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        alertify.success("Correo enviado, gracias por contactarte con nosotros.");
+        alertify.success("Thanks for contacting us!");
         $('form[name="form-referrals"]')[0].reset();
       }
     });
@@ -17,7 +17,7 @@ $('form[name="form-referrals"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información, tienes " + errors + " errores.");
+    alertify.error("Verify your information, you have " + errors + " errors.");
   },
   rules:('add', {
     nameReferrals: {
@@ -35,9 +35,6 @@ $('form[name="form-referrals"]').validate({
     },
     phoneReferrals: {
       required: true
-    },
-    messages: {
-      mailReferrals: "Por favor introduce un correo valido."
     }
   })
 });

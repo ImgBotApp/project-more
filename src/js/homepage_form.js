@@ -40,7 +40,7 @@ $('form[name="form-contact-more_desktop"]').validate({
     }).done(function(data) {
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        alertify.success("Correo enviado, gracias por contactarte con nosotros.");
+        alertify.success("Thanks for contacting us!");
         $('form[name="form-contact-more_desktop"]')[0].reset();
       }
     });
@@ -48,7 +48,7 @@ $('form[name="form-contact-more_desktop"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información, tienes " + errors + " errores.");
+    alertify.error("Verify your information, you have " + errors + " errors.");
   },
   rules:('add', {
     name: {
@@ -63,14 +63,6 @@ $('form[name="form-contact-more_desktop"]').validate({
       // Specify that email should be validated
       // by the built-in "email" rule
       email: true
-    },
-    messages: {
-      name: {
-        required: "Por favor introduce tu nombre ",
-        regex: "Por favor introduce un nombre válido"
-      },
-      message: "Por favor introduce tu mensaje.",
-      email: "Por favor introduce un correo valido."
     }
   })
 });
@@ -105,7 +97,7 @@ $('form[name="form-contact-more_mobile"]').validate({
     }).done(function(data) {
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        alertify.success("Correo enviado, gracias por contactarte con nosotros.");
+        alertify.success("Thanks for contacting us!");
         $('form[name="form-contact-more_mobile"]')[0].reset();
       }
     });
@@ -114,7 +106,7 @@ $('form[name="form-contact-more_mobile"]').validate({
     var data = $('form[name="form-contact-more_mobile"]').serialize();
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
+    alertify.error("Verify your information, you have " + errors + " errors.");
   },
   // required fields
   rules:('add', {
@@ -130,14 +122,6 @@ $('form[name="form-contact-more_mobile"]').validate({
       // Specify that email should be validated
       // by the built-in "email" rule
       email: true
-    },
-    messages: {
-      name: {
-        required: "Por favor introduce tu nombre ",
-        regex: "Por favor introduce un nombre válido"
-      },
-      message: "Por favor introduce tu mensaje.",
-      email: "Por favor introduce un correo valido."
     }
   })
 });
@@ -155,7 +139,7 @@ $('form[name="form-contact-more_contact"]').validate({
     }).done(function(data) {
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        alertify.success("Correo enviado, gracias por contactarte con nosotros.");
+        alertify.success("Thanks for contacting us!");
         $('form[name="form-contact-more_contact"]')[0].reset();
       }
     });
@@ -164,7 +148,7 @@ $('form[name="form-contact-more_contact"]').validate({
     var data = $('form[name="form-contact-more_contact"]').serialize();
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información tienes " + errors + " errores.");
+    alertify.error("Verify your information, you have " + errors + " errors.");
   },
   rules:('add', {
     name: {
@@ -179,14 +163,7 @@ $('form[name="form-contact-more_contact"]').validate({
       // Specify that email should be validated
       // by the built-in "email" rule
       email: true
-    },
-    messages: {
-      name: {
-        required: "Por favor introduce tu nombre ",
-        regex: "Por favor introduce un nombre válido"
-      },
-      message: "Por favor introduce tu mensaje.",
-      email: "Por favor introduce un correo valido."
     }
   })
 });
+

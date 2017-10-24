@@ -31,9 +31,13 @@ $(function () {
     $('.section_projects-slick-firstrow').slick('slickPrev');
   });
   $('.section_projects-carousel-next').on('click', function () {
-    setTimeout(function(){$('.section_projects-slick-secondrow').slick('slickNext')}, 80);
+    // 
+    $('.section_projects-slick-secondrow').slick('slickNext')
+  // }, 0);
   });
   $('.section_projects-carousel-prev').on('click', function () {
-    setTimeout(function(){$('.section_projects-slick-secondrow').slick('slickPrev')}, 80);
+    // 
+    $('.section_projects-slick-secondrow').slick('slickPrev')
+  // }, 0);
   });
 });

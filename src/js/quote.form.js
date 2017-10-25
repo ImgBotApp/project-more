@@ -1,5 +1,5 @@
 $('form[name="form-quote"]').validate({
-  
+  budgetQuote:'required',
   submitHandler: function(form) {
     var data = $('form[name="form-quote"]').serialize();
     $.ajax({
@@ -9,7 +9,7 @@ $('form[name="form-quote"]').validate({
     }).done(function(data) {
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        alertify.success("Correo enviado, gracias por contactarte con nosotros.");
+        alertify.success("Thanks for contacting us!");
         $('form[name="form-quote"]')[0].reset();
       }
     });
@@ -17,7 +17,7 @@ $('form[name="form-quote"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verifica tu información, tienes " + errors + " errores.");
+    alertify.error("Verify your information, you have " + errors + " errors.");
   },
 
   rules:('add', {
@@ -48,13 +48,6 @@ $('form[name="form-quote"]').validate({
       // Specify that email should be validated
       // by the built-in "email" rule
       email: true
-    },
-    messages: {
-      name: {
-        required: "Por favor introduce tu nombre ",
-        regex: "Por favor introduce un nombre válido"
-      },
-      email: "Por favor introduce un correo valido."
     }
   })
 });

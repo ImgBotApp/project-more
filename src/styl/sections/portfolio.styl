@@ -1,3 +1,7 @@
+.turnOff-on-mobile
+  display block
+.turnOn-on-mobile
+  display none
 .portfolio-view
   padding 155px 0
   background-image url(../img/backgrounds/projects-bgd.png)
@@ -21,7 +25,7 @@
   flex-direction column
   p 
     color #3b84af
-    font-size remify(44px)
+    font-size remify(46px)
   span 
     color #131b21
     font-size remify(20px)
@@ -66,14 +70,17 @@
   height 21.68em 
 
 .card-lg-bg1 
-  background-image url(../img/portfolio/portfolio_financiero.png)
+  background-image url(../img/portfolio/portfolio_higia.png)
   img 
-    width 9.66em
+    width 7.66em
+    margin-top 50px
 
 .card-lg-bg2 
   background-image url(../img/portfolio/portfolio_rgv.png)
-  img 
-    width 6.18em 
+  img[src="img/logos/rgv.png"]
+    width 6.18em
+  img[src="img/logos/dreamwater.png"]
+    width 9.12em
 
 .card-lg-bg3 
   background-image url(../img/portfolio/portfolio_nutrologa.png)
@@ -91,55 +98,59 @@
     width 7em
 
 .card-lg-bg6 
-  background-image url(../img/portfolio/portfolio_dondinero.png)
+  background-image url(../img/portfolio/portfolio_workingch.png)
   img 
     width 9.66em
 
 .card-lg-bg7 
-  background-image url(../img/portfolio/portfolio_dreamwater.png)
+  background-image url(../img/portfolio/portfolio_local-e.png)
   img 
-    width 7em
+    width 8.9em
 
 .card-lg-bg8 
   background-image url(../img/portfolio/portfolio_emma.png)
   img 
     width 9.66em
+.card-lg-bg9  
+  background-image url(../img/portfolio/portfolio_rancho.png)
+  img 
+    width 9.66em
 
 // md
 .card-md-bg1 
-  background-image url(../img/portfolio/portfolio_local-e.png)
+  background-image url(../img/portfolio/portfolio_rer.png)
   img 
-    width 6.68em
+    width 9em
 
 .card-md-bg2 
-  background-image url(../img/portfolio/portfolio_workingch.png)
+  background-image url(../img/portfolio/portfolio_dondinero.png)
   img 
-    width 7.43em
+    width 9em
 
 .card-md-bg3 
-  background-image url(../img/portfolio/portfolio_aguaviento.png)
+  background-image url(../img/portfolio/portfolio_brick.png)
   img 
-    width 9.66em
+    width 7em
 
 .card-md-bg4 
   background-image url(../img/portfolio/portfolio_opia.png)
   img 
-    width 6.68em
+    width 9.68em
 
 .card-md-bg5 
-  background-image url(../img/portfolio/portfolio_rancho.png)
+  background-image url(../img/portfolio/portfolio_finacero.png)
   img 
     width 8em 
 
 .card-md-bg6 
-  background-image url(../img/portfolio/portfolio_vre.png)
+  background-image url(../img/portfolio/portfolio_aguaviento.png)
   img 
     width 9.66em
 
 .card-md-bg7 
-  background-image url(../img/portfolio/portfolio_wellness.jpg)
+  background-image url(../img/portfolio/portfolio_iidea.png)
   img 
-    width 9.66em
+    width 6.66em
 
 .card-md-bg8 
   background-image url(../img/portfolio/portfolio_pacer.png)
@@ -147,30 +158,39 @@
     width 8em
 
 .card-md-bg9 
-  background-image url(../img/portfolio/portfolio_rocha.png)
+  background-image url(../img/portfolio/portfolio_gemo.png)
   img 
-    width 4em
+    width 8.5em
+
+.card-md-bg10
+  background-image url(../img/portfolio/portfolio_rancho.png)
+  img 
+    width 7em
 
 // sm
 .card-sm-bg1 
-  background-image url(../img/portfolio/portfolio_neopraxis.png)
-  img 
-    width 9.12em
+  background-image url(../img/portfolio/portfolio_dreamwater.png)
+  a[class="turnOff-on-mobile"]
+    img 
+      width 6.12em
+  a[class="turnOn-on-mobile"]
+    img
+      width 6.18em
 
 .card-sm-bg2 
-  background-image url(../img/portfolio/portfolio_brick.png)
+  background-image url(../img/portfolio/portfolio_vre.png)
   img 
-    width 5.87em
+    width 9.87em
 
 .card-sm-bg3 
-  background-image url(../img/portfolio/portfolio_jb.jpg)
+  background-image url(../img/portfolio/portfolio_jb.png)
   img 
     width 5.5em
 
 .card-sm-bg4 
-  background-image url(../img/portfolio/portfolio_aerial.png)
+  background-image url(../img/portfolio/portfolio_neopraxis.png)
   img 
-    width 7em
+    width 9.12em
 
 .card-sm-bg5 
   background-image url(../img/portfolio/portfolio_begona.png)
@@ -178,14 +198,14 @@
     width 9.66em
 
 .card-sm-bg6 
-  background-image url(../img/portfolio/portfolio_florella.png)
+  background-image url(../img/portfolio/portfolio_beltrami.png)
   img 
     width 8em
 
 .card-sm-bg7 
-  background-image url(../img/portfolio/portfolio_gemo.jpg)
+  background-image url(../img/portfolio/portfolio_rocha.png)
   img 
-    width 9.66em
+    width 4em
 
 .card-sm-bg8 
   background-image url(../img/portfolio/portfolio_Indots.jpg)
@@ -198,7 +218,7 @@
     width 7em
 
 .card-sm-bg10 
-  background-image url(../img/portfolio/portfolio_florella.jpg)
+  background-image url(../img/portfolio/portfolio_florella.png)
   img 
     width 9.77em
 
@@ -229,7 +249,11 @@
     margin 0 auto 30px auto
 
 //////////////// Mobile small devices ////////////////////
-@media screen and (max-width 40em) 
+@media screen and (max-width 40em)
+  .turnOff-on-mobile
+    display none
+  .turnOn-on-mobile
+    display block
   .col-1, .col-2, .col-3
     display flex
     flex-wrap wrap
@@ -239,12 +263,22 @@
   .card-lg, .card-md, .card-sm
     width calc(50% - 7px)
     height 18.31em
+  
+  .card-lg-bg2
+    background-image url(../img/portfolio/portfolio_dreamwater.png)
+  .card-sm-bg1 
+    background-image url(../img/portfolio/portfolio_rgv.png)
+  .card-md-bg1 
+    background-image url(../img/portfolio/portfolio_nutrologa.png)
+  .card-lg-bg3
+    background-image url(../img/portfolio/portfolio_rer.png)
 
   .card-sm-bg10,
   .card-sm-bg8,
   .card-sm-bg6,
   .card-sm-bg4,
   .card-sm-bg2,
+  .card-md-bg10,
   .card-md-bg8,
   .card-md-bg6,
   .card-md-bg4,
@@ -304,3 +338,11 @@
         width 12%
         animation tada_more_logo linear 1s 2 forwards
         transform-origin 20% 100%
+
+  .card-lg-bg2 img[src="img/logos/dreamwater.png"] 
+    width 5.12em
+  .card-lg-bg1 img 
+    width 6.66em
+    margin-top 0
+  .card-lg-bg6 img 
+    width 7.66em

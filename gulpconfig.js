@@ -20,7 +20,8 @@ module.exports = {
       templates_dir: src + '/templates/',
       templates_partials: src + '/templates/partials/*.njk',
       templates_sections: src + '/templates/sections/*.njk',
-      root: src
+      root: src,
+      nginx: src + '/nginx/project-*'
     },
     build: {
       css: build + '/css/',

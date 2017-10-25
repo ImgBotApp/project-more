@@ -12,7 +12,7 @@
   width 90%
 
 .services_view-title
-  font-size remify(44)
+  font-size remify(46)
   color $blueStandar
   text-align center
 
@@ -74,8 +74,8 @@
 
     .services_logo_more
       position absolute
-      right -17px 
-      bottom 160px
+      right -22px 
+      top -5px
       width 35px
 
     p.services_view-item-subtitle
@@ -88,16 +88,16 @@
       line-height 42px
     
     p.service_view-item-details-description
-      font-size 15px
-      line-height 19px
+      font-size 17px
+      line-height 23px
 
     .services_view-item-details-projects
       display flex
       flex-direction row
       justify-content flex-start
       img
-        width 98px
-        height 62px
+        width 125px
+        height 75px
         -webkit-transition all .2s ease-in
         -ms-transition all .2s ease-in
         -moz-transition all .2s ease-in
@@ -118,21 +118,23 @@
 
     div.services_view-item-subtitle
       total-center()
-      flex-direction row
+      flex-direction row-reverse
       img
         width 115px
+      img:nth-child(1)
         margin-right 15px
       p
         border-right 1px solid #000
         border-left 1px solid #000
         padding 3px 14px
         letter-spacing 5.5px
+        margin-left 15px
 
   .services_view-item-details.details1:after
     position absolute
     content ''
     right 0
-    bottom 50%
+    top -75px
     width 1px
     height 60px
     background-color #000
@@ -143,7 +145,7 @@
   margin 120px 0 200px 0
   flex-direction row-reverse
   .services_view-item-details
-    padding 0px 55px 0 150px
+    padding 0px 55px 0 120px
     align-items flex-end
   h1,p.service_view-item-details-description
     text-align right
@@ -183,7 +185,7 @@
   animation tada_more_logo linear 1s 2 forwards
   transform-origin 20% 100%
 
-@media screen and (max-width: 40em)
+@media screen and (max-width: 768px)
   .services_view
     padding 100px 0 45px 0
     background-size 200% 25%
@@ -239,6 +241,7 @@
       height auto
 
       .services_view-item-subtitle
+        display block !important
         margin-bottom 25px
         padding 3px 0 3px 14px !important
       
@@ -249,6 +252,10 @@
           p
             padding 3px 6px !important
             letter-spacing 2.5px !important
+            margin-bottom 25px
+            margin-left auto !important
+            width 9.5rem
+            text-align center
 
       h1
         font-size remify(30)

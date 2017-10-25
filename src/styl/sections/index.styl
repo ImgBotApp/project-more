@@ -320,7 +320,7 @@ label.error
   width 171px
   height 51px
   p 
-    font-size remify(15)
+    font-size remify(18)
     color #fff
   &:hover
     background-color #336e91
@@ -393,7 +393,10 @@ label.error
   .section_services-tabcontent-img
     width 50%
     height auto
-
+.shopify-wrapper
+  display flex
+  align-items center
+  justify-content flex-start
 .section_services-tabcontent
   padding 0 25px 0 30px !important
   width 50%
@@ -406,6 +409,7 @@ label.error
   img
     width 145px
     margin-top 15px
+    margin-right 45px
 
 .section_services-tabcontent-title
   font-size remify(39)
@@ -432,7 +436,7 @@ label.error
     background-color #102c3e
   p
     color #fff
-    font-size remify(15)
+    font-size remify(18)
 
 
 
@@ -531,7 +535,7 @@ label.error
     width 1rem
   p
     color #fff
-    font-size 15px
+    font-size 18px
 //----------------------fin section_form-----------------
 
 // ========== section_Work With Us ========== //
@@ -629,6 +633,10 @@ label.error
   
   .hide-onMobile
     display none
+  .hide-on-mobile
+    display none 
+  .show-on-mobile
+    display flex
 
   .section_one
     height 100%
@@ -662,6 +670,8 @@ label.error
   .section_one-blue-box
     left 50%
     transform translateX(-50%) !important
+    height 100px
+    bottom calc(-100px / 2)
   
   .section_services-tabcontent-wrapper
     flex-wrap wrap
@@ -780,3 +790,7 @@ label.error
     left 30px
     top 3.5rem
     transform translateX(0)
+  
+  .section_services-tabcontent
+    img
+      width 110px

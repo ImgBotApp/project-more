@@ -8,6 +8,22 @@
 .referrals_view-wrapper
   max-width 1030px
   center-block()
+  position relative
+  img[class="services_logo_more"]
+    width 35px
+    position absolute
+    top 15%
+    right -11%
+  &:after
+    position absolute
+    content ''
+    right -8.8%
+    top 7.5%
+    width 1px
+    height 60px
+    background-color #000
+    animation tada_more_logo linear 1s 2 forwards
+    transform-origin 20% 100% 
   
 .referrals-view__title
   @extends .careers-view__title

@@ -31,7 +31,7 @@ label.error
   display none
 .section_one-wrapper
   height 100vh
-  max-width 1030px
+  max-width 1065px
   center-block()
   position relative
 
@@ -58,7 +58,8 @@ label.error
   // margin-left 20px
 
 .section_one-title-container
-  max-width 522px
+  // max-width 522px
+  width 50%
   position absolute
   top 0
   left 50%
@@ -81,13 +82,14 @@ label.error
   margin-top 1.8rem
 
 .section_one-description-container
-  max-width 496px
+  // max-width 496px
+  width 50%
   position absolute
   bottom 0
   left 50%
 
 .section_one-description
-  font-size remify(22)
+  font-size remify(21)
   color #fff
   line-height 1.35
   text-align left
@@ -413,7 +415,7 @@ label.error
     margin-right 45px
 
 .section_services-tabcontent-title
-  font-size remify(39)
+  font-size remify(30)
   position relative
 
 .section_services-tabcontent-divider
@@ -550,7 +552,7 @@ label.error
   flex-direction column
 
 .section_workWithUs_title
-  font-size remify(44)
+  font-size remify(40)
   text-align center
   margin-bottom 5%
   color #fff
@@ -626,6 +628,17 @@ label.error
       font-size remify(38)
   .section_form-btn
     margin-top 14vh
+  .site-navbar__menu-link
+    padding 34px 5px 35px
+    font-size remify(12)
+    &:hover
+      &:after
+        bottom -4px
+    &.active
+      &:after
+        bottom -4px
+
+  
 
   
 @media screen and (max-width: 768px)
@@ -652,7 +665,10 @@ label.error
   .section_one-title-wrapper
     margin 0 0 0 25px
   .section_one-title-container
-    transform translateX(-90%)
+    transform translateX(-32%)
+    width 100%
+  .section_one-description-container
+    width 50%
   .section_one-title
     font-size remify(48)
     text-align left
@@ -752,7 +768,7 @@ label.error
     bottom 30px
     width 100px
     justify-content space-around
-    padding 0 15px
+    padding 0 9px
     margin-left auto
     
     img
@@ -770,6 +786,7 @@ label.error
   .section_one-description-container
     left 50%
     bottom 10%
+    width 85%
   .section_one-title-container
     left 50%
     transform translateX(-95%)
@@ -785,7 +802,8 @@ label.error
   
   .section_one-description-container
     left 30px
-    bottom 20%
+    bottom 15%
+    width 85%
 
   .section_one-title-container
     left 30px

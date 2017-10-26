@@ -4,132 +4,67 @@
 {% endblock %}
 
 {% block title %}
-Portfolio
+Quote
 {% endblock %}
 
 {% block content %}
-<section class="portfolio-view">
-  {# Title #}
-  <div class="portfolio-view__background">
-    <div class="portfolio-view__background-title">
-      <p class="font-metropolis-bold">Portfolio</p>
-      <span class="font-athelas-regular">There are a thousand ways to present your company, but only one where technology meets design, and that is where we begin to work together.</span>  
+
+<section class="quotation-view">
+  <img class="quotation_logo_more" src="img/logos/more-black-mobile.png" alt="more logo">
+  <div class="quotation_view-wrapper">
+    <h1 class="quotation-view__main-title font-metropolis-bold">Cotización</h1>
+    <p class="quotation_view__description font-athelas-regular">Would you like to get a quote for your project?</p>
+    <p class="quotation_view-comision-text font-metropolis-regular">Please fill out this form and we'll contact you</p>
+    <div class="quotation_view-container">
+      <form name="form-quote" method="post">
+        <div class="quotation-view-form-wrapper">
+          <div class="quotation-view_form-col1">
+            <div class="quotation-view__form-group font-metropolis-medium">
+              <input class="font-metropolis-regular" type="text" name="nameQuote" id="nameQuote" required autocomplete="off">
+              <label for="nameQuote" class="font-metropolis-medium">Nombre completo</label>
+            </div>
+            <div class="quotation-view__form-group">
+              <input class="font-metropolis-regular" type="tel" name="phoneQuote" id="phoneQuote" required autocomplete="off">
+              <label for="phoneQuote" class="font-metropolis-medium">Teléfono</label>
+            </div>
+            <div class="quotation-view__form-group">
+              <input class="font-metropolis-regular" type="text" name="projectTypeQuote" id="projectTypeQuote" required autocomplete="off">
+              <label for="projectTypeQuote" class="font-metropolis-medium">¿Qué tipo de proyecto tienes?</label>
+            </div>
+          </div>
+          <div class="quotation-view_form-col2">
+            <div class="quotation-view__form-group">
+              <input class="font-metropolis-regular" type="email" name="emailQuote" id="emailQuote" required autocomplete="off">
+              <label for="emailQuote" class="font-metropolis-medium">Correo electrónico</label>
+            </div>
+            <div class="quotation-view__form-group">
+              <input class="font-metropolis-regular" type="text" name="projectNameQuote" id="projectNameQuote" required autocomplete="off">
+              <label for="projectNameQuote" class="font-metropolis-medium">Nombre de tu proyecto</label>
+            </div>
+            <div class="quotation-view__form-group">
+              <select class="font-metropolis-medium" name="budgetQuote" id="budgetQuote">
+                <option class="font-metropolis-medium" value="Choose a budget option">Elige una opción de presupuesto</option>
+                <option class="font-metropolis-medium" value="20,000 MXN - 40,000 MXN">20,000 MXN - 40,000 MXN</option>
+                <option class="font-metropolis-medium" value="40,000 MXN - 60,000 MXN">40,000 MXN - 60,000 MXN</option>
+                <option class="font-metropolis-medium" value="60,000 MXN - 80,000 MXN">60,000 MXN - 80,000 MXN</option>
+                <option class="font-metropolis-medium" value="80,000 MXN - 100,000 MXN">80,000 MXN - 100,000 MXN</option>
+                <option class="font-metropolis-medium" value="More than 100,000 MXN">More than 100,000 MXN</option>
+              </select>
+            </div>
+          </div>
+          <div class="quotation-view_form-col3">
+            <div class="quotation-view__form-group">
+              <textarea cols="30" rows="10" type="text" name="detailsQuote" id="detailsQuote" required></textarea>
+              <label for="detailsQuote" class="font-metropolis-medium">¿Algún detalle que te gustaría compartir?</label>
+            </div>
+          </div>
+          <button type="submit" class="quotation-view__form-send__button careers-view__optional-form-send__button">
+            <img src="img/icons/np-right-arrow.png">
+            <p class="font-metropolis-medium">Enviar</p>
+          </button>
+        </div>
+      </form>
     </div>
-  </div>
-  {# Portfolio Container #}
-  <div class="portfolio-view__container">
-    {# Large cards #}
-    <div class="col-1">
-      <div class="card-lg card-lg-bg1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://higia.tech/"><img src="img/logos/higia.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a class="turnOff-on-mobile" target="_blank" href="http://rgvsoluciones.com/"><img src="img/logos/rgv.png" class="portfolio-logo-transform"></a>
-        <a class="turnOn-on-mobile" target="_blank" href="https://drinkdreamwater.com/"><img src="img/logos/dreamwater.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a class="turnOff-on-mobile" target="_blank" href="http://alegpaez.com/"><img src="img/logos/alegpaez.png" class="portfolio-logo-transform"></a>
-        <a class="turnOn-on-mobile" target="_blank" href="http://rerenergygroup.com.mx/"><img src="img/logos/rer.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="https://www.98coastav.com/"><img src="img/logos/98-coast.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://debisasystems.com/"><img src="img/logos/debisasystems.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://workingch.com/"><img src="img/logos/workingch.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="https://local-e.mx/"><img src="img/logos/local-e.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg8" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="400">
-        <a target="_blank" href="http://miemma.com/"><img src="img/logos/emma.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-lg card-lg-bg9 hide-on-mobile" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://rancholucero.com/"><img src="img/logos/rancholucero.png" class="portfolio-logo-transform"></a>
-      </div>
-    </div>
-    {# Small cards #}
-    <div class="col-2">
-      <div class="card-sm card-sm-bg1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a class="turnOff-on-mobile" target="_blank" href="https://drinkdreamwater.com/"><img src="img/logos/dreamwater.png" class="portfolio-logo-transform"></a>
-        <a class="turnOn-on-mobile" target="_blank" href="http://rgvsoluciones.com/"><img src="img/logos/rgv.png" class="portfolio-logo-transform"></a>
-      </div>
-      {# switching divs for mobile and desktop view behavior #}
-      <div class="card-sm card-sm-bg2 hide-on-mobile"> {#data-aos="fade-up" data-aos-delay="100" data-aos-duration="400" #}
-        <a target="_blank" href="https://vre.com.mx/"><img src="img/logos/vre.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg2 show-on-mobile" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400"> {# #}
-        <a target="_blank" href="http://bricksa.mx/"><img src="img/logos/brick.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400"> {# #}
-        <a target="_blank" href="https://jbaccesorios.com/"><img src="img/logos/jb.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://neopraxis.mx/"><img src="img/logos/neopraxis.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://begonafernandez.com.mx/"><img src="img/logos/begona.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://casabeltrami.com/"><img src="img/logos/casabeltrami.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="http://rlabogados.mx/"><img src="img/logos/rochalandero.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="https://www.indots.com/"><img src="img/logos/indots.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg9" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="https://www.mccosmetics.mx/"><img src="img/logos/mccosmetics.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-sm card-sm-bg10" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <a target="_blank" href="https://florella.mx/"><img src="img/logos/florella.png" class="portfolio-logo-transform"></a>
-      </div>      
-    </div>
-    {# Medium cards #}
-    <div class="col-3"> 
-      <div class="card-md card-md-bg1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a class="turnOff-on-mobile" target="_blank" href="http://rerenergygroup.com.mx/"><img src="img/logos/rer.png" class="portfolio-logo-transform"></a>
-        <a class="turnOn-on-mobile" target="_blank" href="http://alegpaez.com/"><img src="img/logos/alegpaez.png" class="portfolio-logo-transform"></a>
-      </div>
-      {# switching divs for mobile and desktop view behavior #}
-      <div class="card-md card-md-bg2 hide-on-mobile">{#data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" #}
-        <a target="_blank" href="https://dondinero.mx/"><img src="img/logos/dondinero.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg2 show-on-mobile" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">{# #}
-        <a target="_blank" href="https://dondinero.mx/"><img src="img/logos/dondinero.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a target="_blank" href="http://bricksa.mx/"><img src="img/logos/brick.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a target="_blank" href="https://www.opiajewelry.com/"><img src="img/logos/opia.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a target="_blank" href="http://finacero.mx/"><img src="img/logos/finacero.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a target="_blank" href="http://aguaviento.com/"><img src="img/logos/aguaviento.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg7" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a target="_blank" href="http://iidea.org.mx/"><img src="img/logos/iidea.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg8" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a target="_blank" href="https://pacer.mx/"><img src="img/logos/pacer.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg9" data-aos="fade-up" data-aos-delay="300"  data-aos-duration="400">
-        <a target="_blank" href="https://gemo-mexico.myshopify.com/"><img src="img/logos/gemo.png" class="portfolio-logo-transform"></a>
-      </div>
-      <div class="card-md card-md-bg10 show-on-mobile" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-        <a target="_blank" href="http://rancholucero.com/"><img src="img/logos/rancholucero.png" class="portfolio-logo-transform"></a>
-      </div>
-    </div>
-  </div>
-  {# More Logo #}
-  <div class="portfolio-view__more-log">
-    <a href="index.html"><img src="img/logos/more-black-mobile.svg" alt="More logo"></a>
   </div>
 </section>
 {% endblock %}

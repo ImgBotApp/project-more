@@ -1,0 +1,132 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Careers
+{% endblock %}
+
+{% block content %}
+
+<section class="careers-view">
+  <div class="careers_view-wrapper">
+    <h1 class="careers-view__title font-metropolis-bold">Why work at More?</h1>
+    <div class="careers-view__carousel-wrapper">
+      <div class="careers-view__carousel-item itemA">
+        <div class="careers-view__carousel-bullet-point">
+          <div class="careers-view__carousel-hyphen"></div>
+          <p class="careers-view__carousel-letter font-athelas-bold">A</p>
+        </div>
+        <h2 class="careers-view__carousel-item-heading font-metropolis-bold">Only A players</h2>
+        <p class="careers-view__carousel-item-description font-athelas-bold">People who believe they can always achieve more</p>
+      </div>
+      <div class="careers-view__carousel-item itemB">
+        <div class="careers-view__carousel-bullet-point">
+          <div class="careers-view__carousel-hyphen"></div>
+          <p class="careers-view__carousel-letter font-athelas-bold">B</p>
+        </div>
+        <h2 class="careers-view__carousel-item-heading font-metropolis-bold">We are a family</h2>
+        <p class="careers-view__carousel-item-description font-athelas-bold">We always take care of each other. If you grow, we grow</p>
+      </div>
+      <div class="careers-view__carousel-item itemC">
+        <div class="careers-view__carousel-bullet-point">
+          <div class="careers-view__carousel-hyphen"></div>
+          <p class="careers-view__carousel-letter font-athelas-bold">C</p>
+        </div>
+        <h2 class="careers-view__carousel-item-heading font-metropolis-bold">Enjoy your Mondays!</h2>
+        <p class="careers-view__carousel-item-description font-athelas-bold">Start the week with the best team</p>
+      </div>
+      <div class="careers-view__carousel-item itemD">
+        <div class="careers-view__carousel-bullet-point">
+          <div class="careers-view__carousel-hyphen"></div>
+          <p class="careers-view__carousel-letter font-athelas-bold">D</p>
+        </div>
+        <h2 class="careers-view__carousel-item-heading font-metropolis-bold">Keep growing with us</h2>
+        <p class="careers-view__carousel-item-description font-athelas-bold">Continuous learning is our motto</p>
+      </div>
+      <div class="careers-view__carousel-item itemE">
+        <div class="careers-view__carousel-bullet-point">
+          <div class="careers-view__carousel-hyphen"></div>
+          <p class="careers-view__carousel-letter font-athelas-bold">E</p>
+        </div>
+        <h2 class="careers-view__carousel-item-heading font-metropolis-bold">There are no bosses, only leaders</h2>
+        <p class="careers-view__carousel-item-description font-athelas-bold">We all need a guide to keep getting better</p>
+      </div>
+     </div>{# Fin de carrusel #}
+    <div id="applyNow" class="career-view_apply-now-section">
+      <p class="careers-view_apply-now-title font-metropolis-bold">Apply now</p>
+      <div class="careers-view__main-form">
+        <div class="careers-view__main-form__col1">
+          <form name="form-careers-1" method="post">
+            <div class="careers-view__main-form-group">
+              <input class="font-metropolis-medium" type="text" name="nameCareers" id="nameCareers" required autocomplete="off">
+              <label for="nameCareers" class="font-metropolis-medium">Full name</label>
+            </div>
+            <div class="careers-view__main-form-group">
+              <input class="font-metropolis-medium" type="email" name="emailCareers" id="emailCareers" required autocomplete="off">
+              <label for="emailCareers" class="font-metropolis-medium">E-mail</label>
+            </div>
+            <div class="careers-view__main-form-group">
+              <input class="font-metropolis-medium" type="tel" name="phoneCareers" id="phoneCareers" required autocomplete="off">
+              <label for="phoneCareers" class="font-metropolis-medium">Phone number</label>
+            </div>
+            <div class="careers-view__main-form-group">
+              <select name="openingCareers" id="openingCareers" class="font-metropolis-medium" required>
+                <option class="font-metropolis-medium select-option" value="Selec an openning">Select an openning</option>
+                <option class="font-metropolis-medium select-option" value="UI Designer">UI Designer</option>
+                <option class="font-metropolis-medium select-option" value="UX Designer">UX Designer</option>
+                <option class="font-metropolis-medium select-option" value="Tech Lead">Tech Lead</option>
+                <option class="font-metropolis-medium select-option" value="Front-End Developer">Front-End Developer</option>
+                <option class="font-metropolis-medium select-option" value="Back-End Developer">Back-End Developer</option>
+                <option class="font-metropolis-medium select-option" value="Growth Hacker">Growth Hacker</option>
+                <option class="font-metropolis-medium select-option" value="Project Manager">Project Manager</option>
+                <option class="font-metropolis-medium select-option" value="Sales">Sales</option>
+                <option class="font-metropolis-medium select-option" value="Graphic Designer">Graphic Designer</option>
+                <option class="font-metropolis-medium select-option" value="Finance and Administration">Finance and Administration</option>
+                <option class="font-metropolis-medium select-option" value="Human resources">Human resources</option>
+              </select>
+            </div>
+            <button type="submit" class="careers-view__main-form-send__button">
+              <img src="img/icons/np-right-arrow.png">
+              <p class="font-metropolis-medium">Send</p>
+            </button>
+          </form>
+        </div>
+        <div class="cv-form__box2">
+          <img src="img/work@more2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="careers-view__optional-form">
+      <p class="careers-view__optional-form-title font-metropolis-bold">Go the extra mile <span class="font-athelas-bold">(Optionals)</span></p>
+      <form name="form-careers-2" method="post">
+        <div class="careers-view__optional-form-group">
+          <input class="font-metropolis-medium" type="text" name="LiCareers" id="LiCareers" required autocomplete="off">
+          <label for="LiCareers" class="font-metropolis-medium">Linkedin Profile</label>
+        </div>
+        <div class="careers-view__optional-form-group">
+          <input class="font-metropolis-medium" type="text" name="portfolioCareers" id="portfolioCareers" required autocomplete="off">
+          <label for="portfolioCareers" class="font-metropolis-medium">Behance Portfolio</label>
+        </div>
+        <div class="careers-view__optional-form-group">
+          <input class="font-metropolis-medium" type="text" name="githubCareers" id="githubCareers" required autocomplete="off">
+          <label for="githubCareers" class="font-metropolis-medium">GitHub Username</label>
+        </div>
+        <div class="careers-view__optional-form-group">
+          <input class="font-metropolis-medium" type="text" name="urlCareers" id="urlCareers" required autocomplete="off">
+          <label for="urlCareers" class="font-metropolis-medium">Portfolio URL</label>
+        </div>
+        <div class="careers-view__optional-form-group">
+          <textarea class="font-metropolis-medium" cols="24" rows="2" type="text" name="whyMoreCareers" id="whyMoreCareers" required></textarea>
+          <label for="whyMoreCareers" class="font-metropolis-medium">Why would you like to work with us?</label>
+        </div>
+        <button type="submit" class="careers-view__optional-form-send__button">
+          <img src="img/icons/np-right-arrow.png">
+          <p class="font-metropolis-medium">Send</p>
+        </button>
+      </form>
+    </div>
+  </div>{# Fin de section wrapper #}
+</section>
+{% endblock %}

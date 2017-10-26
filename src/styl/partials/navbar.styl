@@ -1,3 +1,4 @@
+
 .site-navbar
   background #fff
   display flex
@@ -34,8 +35,9 @@
     
     .second_menu
       //transform translateX(178px)
-      transform translateX(27px)
-    
+      transform translateX(6px)
+      padding 0
+      
     .site-navbar__divider
       opacity 0
     
@@ -51,7 +53,6 @@
       display none
       
     .site-lang__menu-link
-      background-color $blueStandar
       color #fff
     
     .site-navbar__menu-link
@@ -106,6 +107,9 @@
   text-align right
   height 100%
 
+img[src="img/logos/more-white-mobile.png"]
+    display none
+
 .site-navbar__menu
   height 100%
   display flex
@@ -151,6 +155,7 @@
   display flex
   align-items center
   transition transform .47s
+  padding 40px 0 14px 0
 
 .site-navbar__divider
   width 1px
@@ -193,11 +198,9 @@
 
 .lang-down-arrow
   padding 0 5px 2.5px 0
+  width 12px
   
-@media screen and (max-width: 766px) // Change
-  .second_menu
-    display none 
-  
+@media screen and (max-width: 766px)  
   .site-navbar
     -webkit-box-shadow 0px 3px 8px -4px rgba(0,0,0,0.75)
     -moz-box-shadow 0px 3px 8px -4px rgba(0,0,0,0.75)
@@ -225,7 +228,7 @@
       
       .site-navbar__menu-container
         top -30px
-      
+        
       .site-navbar__menu-black
         display none
       
@@ -254,9 +257,13 @@
     .site-navbar__mobile-img-menu
       width 40px
 
-    img
+    img:nth-child(1)
       width 3.5em
-
+    .site-lang__menu-link
+      font-size 1.3rem
+      color #fff
+  .second_menu
+    padding 15px 0 15px 0
   .site-navbar__menu-trigger
     display flex
     align-items center
@@ -278,6 +285,11 @@
     transition right 0.2s
     width 280px
     padding-top 25px // Change
+
+    img[src="img/logos/more-white-mobile.png"]
+      display block
+      width 3.5rem
+      margin-left 30px
 
   .site-navbar__menu-container--show-menu
     right 0

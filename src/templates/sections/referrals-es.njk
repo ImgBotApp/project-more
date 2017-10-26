@@ -1,0 +1,51 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Referrals
+{% endblock %}
+
+{% block content %}
+
+<section class="referrals-view">
+  <div class="referrals_view-wrapper">
+    <img class="services_logo_more" src="img/logos/more-black-mobile.png" alt="">
+    <h1 class="referrals-view__title font-metropolis-bold">Referrals Program</h1>
+    <p class="referrals_view__description font-athelas-regular">Would you like to make some money helping your network to have an <br> amazing Website, E-commerce or Software?</p>
+    <hr>
+    <div class="referrals_view-container">
+      <div class="referrals_view-condition-wrapper">
+        <div class="referrals-view-hyphen"></div>
+        <p class="referrals_view-condition-text font-athelas-regular hide-on-mobile">You just have to fill out this form and we’ll contact you. </p>
+      </div>
+      <p class="referrals_view-comision-text font-metropolis-bold">Get a commission for every sale we make coming from you</p>
+      <div class="referrals-view-form">
+        <form name="form-referrals" method="post">
+          <div class="careers-view__optional-form-group">
+            <input class="font-metropolis-regular" type="text" name="nameReferrals" id="nameReferrals" required autocomplete="off">
+            <label for="nameReferrals" class="font-metropolis-medium">Full name</label>
+          </div>
+          <div class="careers-view__optional-form-group">
+            <input class="font-metropolis-regular" type="email" name="mailReferrals" id="mailReferrals" required autocomplete="off">
+            <label for="mailReferrals" class="font-metropolis-medium">E-mail</label>
+          </div>
+          <div class="careers-view__optional-form-group">
+            <input class="font-metropolis-regular" type="tel" name="phoneReferrals" id="phoneReferrals" required autocomplete="off">
+            <label for="phoneReferrals" class="font-metropolis-medium">Phone Number</label>
+          </div>
+          <div class="careers-view__optional-form-group">
+            <textarea cols="24" rows="2" type="text" name="messageReferrals" id="messageReferrals" required></textarea>
+            <label for="messageReferrals" class="font-metropolis-medium">Message</label>
+          </div>
+          <button type="submit" class="careers-view__optional-form-send__button">
+            <img src="img/icons/np-right-arrow.png">
+            <p class="font-metropolis-medium">Send</p>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -315,7 +315,14 @@ img[src="img/logos/more-white-mobile.png"]
   
     &.active
       border-left 4px solid $blueStandar
-      background-color transparent
+      background-color transparent !important
+      &:after
+        width 0 !important
+        height 0 !important
+    &:hover
+       &:after
+        width 0 !important
+        height 0 !important
   
   .site-navbar__desktop-logo-container
       transform translate(0px, 0px)

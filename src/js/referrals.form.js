@@ -1,3 +1,4 @@
+var currentFile = window.location.pathname;
 $('form[name="form-referrals"]').validate({
   submitHandler: function(form) {
     var data = $('form[name="form-referrals"]').serialize();
@@ -6,10 +7,13 @@ $('form[name="form-referrals"]').validate({
       method: 'POST',
       data: data
     }).done(function(data) {
-      
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        alertify.success("Thanks for contacting us!");
+        if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+          alertify.success("Thanks for contacting us!");
+        }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
+          alertify.success("¡Gracias por contactarnos!");
+        }
         $('form[name="form-referrals"]')[0].reset();
       }
     });
@@ -17,7 +21,11 @@ $('form[name="form-referrals"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    alertify.error("Verify your information, you have " + errors + " errors.");
+    if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+      alertify.error("Verify your information, you have " + errors + " errors.");
+    }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
+      alertify.error("Verifica tu infomación, tienes " + errors + " errores.");
+    }
   },
   rules:('add', {
     nameReferrals: {

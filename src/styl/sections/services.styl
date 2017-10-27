@@ -24,7 +24,7 @@
 .services_view-options-container
   total-center()
   flex-direction row
-  width 211px
+  width 230px
   height 61px
   margin 0 15px
   background-color #fff
@@ -117,18 +117,22 @@
         transform scale(1.1)
 
     div.services_view-item-subtitle
-      total-center()
-      flex-direction row-reverse
       img
         width 115px
       img:nth-child(1)
         margin-right 15px
       p
         border-right 1px solid #000
-        border-left 1px solid #000
+        // border-left 1px solid #000
         padding 3px 14px
+        width 300px
+        text-align right
         letter-spacing 5.5px
-        margin-left 15px
+        margin-bottom 15px
+      .services_shopify-wrapper
+        display flex
+        align-items center
+        justify-content flex-end
 
   .services_view-item-details.details1:after
     position absolute

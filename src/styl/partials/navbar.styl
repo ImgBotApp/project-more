@@ -1,4 +1,10 @@
-
+.cover-lang_menu-d, .cover-lang_menu-m
+  height 100%
+  width 100%
+  position absolute
+  background-color transparent
+.coverOn
+  z-index -1
 .site-navbar
   background #fff
   display flex
@@ -43,7 +49,7 @@
     
     .site-navbar__menu-link
       color #fff
-      padding 21px 8px 18px 
+      padding 0 8px 0 8px
       
     .site-navbar__desktop-logo-top
       display block
@@ -111,10 +117,10 @@ img[src="img/logos/more-white-mobile.png"]
     display none
 
 .site-navbar__menu
-  height 100%
+  height 85px
   display flex
   justify-content flex-end
-  align-items flex-start
+  align-items center
   transition .8s transform
 
 .site-navbar__menu-link
@@ -151,11 +157,11 @@ img[src="img/logos/more-white-mobile.png"]
     // color #fff
 
 .second_menu
-  height 55px
+  height auto
   display flex
   align-items center
   transition transform .47s
-  padding 40px 0 14px 0
+  padding 0
 
 .site-navbar__divider
   width 1px
@@ -168,7 +174,7 @@ img[src="img/logos/more-white-mobile.png"]
   display flex
   border 1px solid #fff0
   flex-direction column
-  height 20px
+  height 21px
   overflow hidden
   transition height .2s, border-color .25s
   

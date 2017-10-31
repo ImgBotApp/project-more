@@ -201,6 +201,8 @@
         top -30px 
 
 @media screen and (max-width: 767px)
+  .quotation_view-container
+    margin-top 0
   .quotation_logo_more
     display none
   .quotation-view 
@@ -218,15 +220,17 @@
       height 30%
       
   .quotation_view-wrapper
-    .quotation-view__main-title,
     .quotation_view__description,
     .quotation_view-comision-text
       padding 0 35px 
       text-align left
-      margin 35px 0
+      margin 20px 0 20px 0
     hr
       width calc(100% - 70px)
-
+  .quotation-view__main-title
+    margin-top 35px
+  .quotation_view-comision-text
+    line-height 25px
   .quotation_view-container
     form
       margin 0

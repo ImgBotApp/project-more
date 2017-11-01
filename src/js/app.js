@@ -1,7 +1,7 @@
 (function () {
   var currentFile = window.location.pathname;
   var fixField;
-  if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+  if (currentFile === '/' || currentFile === '/index.html'  || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
    fixField = "Please fix this field.";
     $.extend( $.validator.messages, {
       required: "This field is required.",

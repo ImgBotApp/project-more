@@ -43,7 +43,7 @@ $('form[name="form-contact-more_desktop"]').validate({
     }).done(function(data) {
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+        if (currentFile === '/' || currentFile === '/index.html' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html') {
           alertify.success("Thanks for contacting us!");
         }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
           alertify.success("¡Gracias por contactarnos!");
@@ -55,7 +55,7 @@ $('form[name="form-contact-more_desktop"]').validate({
   invalidHandler: function(event, validator) {
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+    if (currentFile === '/' || currentFile === '/index.html' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html') {
       alertify.error("Verify your information, you have " + errors + " errors.");
     }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
       alertify.error("Verifica tu infomación, tienes " + errors + " errores.");
@@ -108,7 +108,7 @@ $('form[name="form-contact-more_mobile"]').validate({
     }).done(function(data) {
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+        if (currentFile === '/' || currentFile === '/index.html' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html') {
           alertify.success("Thanks for contacting us!");
         }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
           alertify.success("¡Gracias por contactarnos!");
@@ -121,7 +121,7 @@ $('form[name="form-contact-more_mobile"]').validate({
     var data = $('form[name="form-contact-more_mobile"]').serialize();
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+    if (currentFile === '/' || currentFile === '/index.html' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html') {
       alertify.error("Verify your information, you have " + errors + " errors.");
     }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
       alertify.error("Verifica tu infomación, tienes " + errors + " errores.");
@@ -158,7 +158,7 @@ $('form[name="form-contact-more_contact"]').validate({
     }).done(function(data) {
       if (parseInt(data) === 1) {
         alertify.logPosition("bottom right");
-        if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+        if (currentFile === '/' || currentFile === '/index.html' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html') {
           alertify.success("Thanks for contacting us!");
         }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
           alertify.success("¡Gracias por contactarnos!");
@@ -171,7 +171,7 @@ $('form[name="form-contact-more_contact"]').validate({
     var data = $('form[name="form-contact-more_contact"]').serialize();
     var errors = validator.numberOfInvalids();
     alertify.logPosition("bottom right");
-    if (currentFile === '/' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
+    if (currentFile === '/' || currentFile === '/index.html' || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html') {
       alertify.error("Verify your information, you have " + errors + " errors.");
     }else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){
       alertify.error("Verifica tu infomación, tienes " + errors + " errores.");

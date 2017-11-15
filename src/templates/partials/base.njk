@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    
-    {% block meta %}{% endblock %}
+    {#<meta property="og:image:width" content="279">
+    <meta property="og:image:height" content="146">#}
+    {% block meta %}
+    <meta property="og:url" content="http://getmore.mx/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Diseño web y desarrollo de software | More Co.">
+    <meta property="og:description" content="We are a Design and Development Company and we create the best solutions. From Websites and E-commerce to big Tailor-made platforms.">
+    <meta property="og:image" content="http://getmore.mx/img/og-image.jpg">
+    <meta name="description" content="We are a Design and Development Company and we create the best solutions. From Websites and E-commerce to big Tailor-made platforms.">
+    <meta name="author" content="More Co.">
+    <meta name="robots" content="index, nofollow">
+    {% endblock %}
     {% block extra_css %}{% endblock %}
     <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
@@ -15,20 +24,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-
-    <title>Diseño web y desarrollo de software | More Co.</title>
+    <title>{% if section != 'index'%}{% block title %}{% endblock %} | {% endif %}{{ projectName }}</title>
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="We are a Design and Development Company and we create the best solutions. From Websites and E-commerce to big Tailor-made platforms.">
-    <meta name="author" content="More Co.">
-    <meta name="robots" content="index, nofollow">
-    <meta property="og:image" content="http://getmore.mx/img/og-image.jpg">
-    {#<meta property="og:image:width" content="279">
-    <meta property="og:image:height" content="146">#}
-    <meta property="og:title" content="Diseño web y desarrollo de software | More Co.">
-    <meta property="og:description" content="We are a Design and Development Company and we create the best solutions. From Websites and E-commerce to big Tailor-made platforms.">
-    <meta property="og:url" content="http://getmore.mx/">
-    <meta property="og:type" content="website">
-  </head>
+  </head>gi
   <!-- HubSpot Embed Code --> 
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3998157.js"></script> 
   <!-- Tidio script --> 

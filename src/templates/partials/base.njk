@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     {% block meta %}
-    <meta property="og:url" content="http://getmore.mx/">
-    <meta property="og:type" content="website">
     <meta property="og:title" content="Diseño web y desarrollo de software | More Co.">
     <meta property="og:description" content="We are a Design and Development Company and we create the best solutions. From Websites and E-commerce to big Tailor-made platforms.">
-    <meta property="og:image" content="http://getmore.mx/img/og-image.jpg">
     <meta name="description" content="We are a Design and Development Company and we create the best solutions. From Websites and E-commerce to big Tailor-made platforms.">
-    <meta name="author" content="More Co.">
-    <meta name="robots" content="index, nofollow">
     {% endblock %}
+    <meta property="og:url" content="http://getmore.mx/">
+    <meta property="og:type" content="website">
+    <meta name="author" content="More Co.">
+    <meta property="og:image" content="http://getmore.mx/img/og-image.jpg">
+    <meta name="robots" content="index, nofollow">
     {% block extra_css %}{% endblock %}
     <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <title>{% if section != 'index'%}{% block title %}{% endblock %} | {% endif %}{{ projectName }}</title>
+    <title>{% block title %}{% endblock %} | {{ projectName }}</title>
     <meta name="theme-color" content="#ffffff">
   </head>
   <!-- HubSpot Embed Code --> 

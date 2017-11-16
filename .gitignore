@@ -6,3 +6,5 @@ dist/
 .publish/
 _templates/
 .DS_Store
+
+.idea

@@ -3,8 +3,8 @@ var gulp = require('gulp'),
   argv = require('yargs').argv,
   production = argv.production;
 
-gulp.task('copy:sitemap', function () {
+gulp.task('copy:seo', function () {
   var baseDir = production ? config.paths.dist : config.paths.build;
-  return gulp.src(config.paths.src) //
+  return gulp.src(config.paths.src.seo) //
     .pipe(gulp.dest(baseDir.root));
 });

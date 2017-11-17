@@ -22,8 +22,7 @@ module.exports = {
       templates_sections: src + '/templates/sections/*.njk',
       root: src,
       nginx: src + '/nginx/project-*',
-      robots: src +'/robots.txt',
-      sitemap: src + '/sitemap.txt'
+      seo: src +'/seo/*.txt',
     },
     build: {
       css: build + '/css/',

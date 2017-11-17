@@ -21,7 +21,9 @@ module.exports = {
       templates_partials: src + '/templates/partials/*.njk',
       templates_sections: src + '/templates/sections/*.njk',
       root: src,
-      nginx: src + '/nginx/project-*'
+      nginx: src + '/nginx/project-*',
+      robots: src +'/robots.txt',
+      sitemap: src + '/sitemap.txt'
     },
     build: {
       css: build + '/css/',

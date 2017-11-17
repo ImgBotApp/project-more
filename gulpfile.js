@@ -10,7 +10,9 @@ var gulp = require('gulp'),
     'copy:fonts',
     'copy:images',
     'build:html',
-    'copy:nginx'
+    'copy:nginx',
+    'copy:robots',
+    'copy:sitemap'
   ],
   defaultTasks = [
     'build'

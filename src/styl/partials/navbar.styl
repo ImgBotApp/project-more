@@ -1,8 +1,6 @@
 .cover-lang_menu-d, .cover-lang_menu-m
   height 100%
   width 100%
-  position absolute
-  background-color transparent
 .coverOn
   z-index -1
 .site-navbar
@@ -44,9 +42,6 @@
       //transform translateX(178px)
       transform translateX(6px)
       padding 0
-      
-    .site-navbar__divider
-      opacity 0
     
     .site-navbar__menu-link
       color #fff
@@ -181,21 +176,15 @@ img[src="img/logos/more-white-mobile.png"]
   background-color $blueStandar
   height 20px
   margin 0 9px
-  transition opacity .2s
 
 .lang_menu_wrapper
   display flex
-  border 1px solid #fff0
-  flex-direction column
-  height 21px
-  overflow hidden
-  transition height .2s, border-color .25s
+  flex-direction row
+  /*height 21px*/
   
   &.active
 
-    border 1px solid #fff
     height auto
-    transform translateY(8px)
     
     .site-lang__menu:hover
       background-color #2D698F
@@ -203,7 +192,6 @@ img[src="img/logos/more-white-mobile.png"]
 .site-lang__menu
   cursor pointer
   background-color transparent
-  transition background-color .1s
 
 .site-lang__menu-link
   color #000
@@ -219,7 +207,7 @@ img[src="img/logos/more-white-mobile.png"]
   padding 0 5px 2.5px 0
   width 12px
   
-@media screen and (max-width: 766px)  
+@media screen and (max-width: 766px)
   .site-navbar
     -webkit-box-shadow 0px 3px 8px -4px rgba(0,0,0,0.75)
     -moz-box-shadow 0px 3px 8px -4px rgba(0,0,0,0.75)
@@ -253,6 +241,10 @@ img[src="img/logos/more-white-mobile.png"]
       
       .site-navbar__menu
         transform translateX(0)
+        height auto !important
+
+      .site-navbar__menu-link
+        height auto !important
 
   .site-navbar
     .site-navbar__menu-black

@@ -4,22 +4,22 @@
   if (currentFile === '/' || currentFile === '/index.html'  || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
    fixField = "Please fix this field.";
     $.extend( $.validator.messages, {
-      required: "This field is required.",
+      required: "This field is mandatory.",
       remote: "Please fix this field.",
-      email: "Please enter a valid email address.",
-      url: "Please enter a valid URL.",
-      date: "Please enter a valid date.",
-      dateISO: "Please enter a valid date (ISO).",
-      number: "Please enter a valid number.",
-      digits: "Please enter only digits.",
-      equalTo: "Please enter the same value again.",
-      maxlength: $.validator.format( "Please enter no more than {0} characters." ),
-      minlength: $.validator.format( "Please enter at least {0} characters." ),
-      rangelength: $.validator.format( "Please enter a value between {0} and {1} characters long." ),
-      range: $.validator.format( "Please enter a value between {0} and {1}." ),
-      max: $.validator.format( "Please enter a value less than or equal to {0}." ),
-      min: $.validator.format( "Please enter a value greater than or equal to {0}." ),
-      step: $.validator.format( "Please enter a multiple of {0}." )
+      email: "Please write a valid email address",
+      url: "Please write a valid URL.",
+      date: "Please write a valid date.",
+      dateISO: "Please write a valid date (ISO).",
+      number: "Please write a valid number.",
+      digits: "Please write only digits.",
+      equalTo: "Please write the same value again.",
+      maxlength: $.validator.format( "Please write no more than {0} characters." ),
+      minlength: $.validator.format( "Please write at least {0} characters." ),
+      rangelength: $.validator.format( "Please write a value between {0} and {1} characters long." ),
+      range: $.validator.format( "Please write a value between {0} and {1}." ),
+      max: $.validator.format( "Please write a value less than or equal to {0}." ),
+      min: $.validator.format( "Please write a value greater than or equal to {0}." ),
+      step: $.validator.format( "Please write a multiple of {0}." )
     });
   }
   else if (currentFile === '/index-es.html' || currentFile === '/portfolio-es.html' || currentFile === '/services-es.html' || currentFile === '/careers-es.html' || currentFile === '/team-es.html' || currentFile === '/referrals-es.html' || currentFile === '/quote-es.html' || currentFile === '/contact-es.html'){

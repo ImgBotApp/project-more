@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
     
 <meta property="og:title" content="Inicio | More Co.">
 <meta property="og:description" content="Somos una empresa de diseño y desarrollo de software, nos dedicamos a crear las mejores soluciones tecnológicas. Desde páginas web, tiendas en línea o grandes plataformas.">
@@ -12,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta name="author" content="More Co.">
     <meta property="og:image" content="http://getmore.mx/img/og-image.jpg">
-    <meta name="robots" content="index, nofollow">
+    <meta name="robots" content="noindex, nofollow">
     
     <link rel="stylesheet" href="css/project-more.libs.css">
     <link rel="stylesheet" href="css/main.css">
@@ -51,12 +56,10 @@ Inicio
           <div class="lang_menu_wrapper lang_mobile">
             <div class="cover-lang_menu-m"></div> 
             <div class="site-lang__menu">
-              <a href="" class="site-lang__menu-link font-metropolis-extralight">ESP</a>
-              <img src="img/icons/lang-down-arrow.png" alt="" class="lang-down-arrow">
+              <a href="" class="site-lang__menu-link font-metropolis-bold">ESP</a>
             </div>
             <div class="site-lang__menu">
               <a href="index.html" class="site-lang__menu-link font-metropolis-extralight">ENG</a>
-              <img src="img/icons/lang-down-arrow.png" alt="" class="lang-down-arrow">
             </div>
           </div>
         </div>
@@ -76,12 +79,10 @@ Inicio
           <div class="lang_menu_wrapper lang_menu_desktop">
             <div class="cover-lang_menu-d"></div> 
             <div class="site-lang__menu">
-              <a href="" class="site-lang__menu-link font-metropolis-extralight">ESP</a>
-              <img src="img/icons/lang-down-arrow.png" alt="" class="lang-down-arrow">
+              <a href="" class="site-lang__menu-link font-metropolis-bold">ESP</a>
             </div>
             <div class="site-lang__menu">
               <a href="index.html" class="site-lang__menu-link font-metropolis-extralight">ENG</a>
-              <img src="img/icons/lang-down-arrow.png" alt="" class="lang-down-arrow">
             </div>
           </div>
         </div>
@@ -205,12 +206,12 @@ Inicio
           </div>
         </div>
         <div class="section_services-tabs">
-          <button class="section_services-tablink open-tab" onclick="showTab(this, 'websites')" target="websites" id="defaultTab"><p class="section_services-tablink-title font-metropolis-regular">Páginas<br class="show-on-mobile"> Web</p></button>
-          <button class="section_services-tablink" onclick="showTab(this, 'eCommerce')" target="eCommerce"><p class="section_services-tablink-title font-metropolis-regular">Tiendas<br class="show-on-mobile"> en línea</p></button>
+          <button class="section_services-tablink" onclick="showTab(this, 'websites')" target="websites" id="defaultTab"><p class="section_services-tablink-title font-metropolis-regular">Páginas<br class="show-on-mobile"> Web</p></button>
+          <button class="section_services-tablink open-tab" onclick="showTab(this, 'eCommerce')" target="eCommerce"><p class="section_services-tablink-title font-metropolis-regular">Tiendas<br class="show-on-mobile"> en línea</p></button>
           <button class="section_services-tablink" onclick="showTab(this, 'software')" target="software"><p class="section_services-tablink-title font-metropolis-regular">Desarrollo<br class="show-on-mobile"> de <i>software</i></p></button>
         </div>
         <div class="section_services-tabs-wrapper">
-          <div id="websites" class="section_services-tabcontent-wrapper">
+          <div id="websites" class="section_services-tabcontent-wrapper" style="display:none;">
             <img class="section_services-tabcontent-img hide-on-mobile" src="img/services-websites.jpg" alt="Image to services">
             <img class="section_services-tabcontent-img show-on-mobile" src="img/services-websites-m.jpg" alt="Image to services">
             <div class="section_services-tabcontent">
@@ -224,7 +225,7 @@ Inicio
               </a>
             </div>
           </div>
-          <div id ="eCommerce" class="section_services-tabcontent-wrapper" style="display:none;">
+          <div id ="eCommerce" class="section_services-tabcontent-wrapper">
             <img class="section_services-tabcontent-img hide-on-mobile" src="img/services-eCommerce.jpg" alt="Image to services">
             <img class="section_services-tabcontent-img show-on-mobile" src="img/services-eCommerce-m.jpg" alt="Image to services">
             <div class="section_services-tabcontent">
@@ -232,8 +233,8 @@ Inicio
               <div class="section_services-tabcontent-divider hide-onMobile"></div>
               <p class="section_services-tabcontent-text font-athelas-regular hide-onMobile">No importa si tienes una empresa chica, mediana o grande. Te podemos ayudar a ser un negocio en línea de verdad. Diseñando y programando una bellísima tienda en línea para que le llegue a millones de clientes, creando una excelente experiencia de compra.</p>
               <div class="shopify-wrapper">
-                <img src="img/logos/shopify-white.png" alt="Shopify logo">
-                <img src="img/logos/shop-expert-white.png" alt="Shopify logo">
+                <a href="https://experts.shopify.com/getmore" target="_blank"><img src="img/logos/shopify-white.png" alt="Shopify logo"></a>
+                <a href="https://experts.shopify.com/getmore" target="_blank"><img src="img/logos/shop-expert-white.png" alt="Shopify logo"></a>
               </div>
               <a href="services-es.html">
                 <div class="section_services-btn">
